@@ -5,6 +5,10 @@ def init_db():
     # Ensure we're creating the database in the right location
     db_path = os.path.join(os.path.dirname(__file__), 'beers.db')
     
+    # Remove existing database if it exists
+    if os.path.exists(db_path):
+        os.remove(db_path)
+    
     # Connect to the database (this will create it if it doesn't exist)
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
@@ -39,23 +43,45 @@ def init_db():
     );
     ''')
     
-    # Insert some sample data
+    # Insert sample data
     cursor.execute('''
     INSERT INTO breweries (name, address, city, state, website)
     VALUES ('Revolution Brewing', '2323 N Milwaukee Ave', 'Chicago', 'IL', 'https://revbrew.com')
     ''')
+    
+    brewery_id = cursor.lastrowid
     
     cursor.execute('''
     INSERT INTO beers (name, type, abv, description)
     VALUES ('Anti-Hero IPA', 'IPA', 6.7, 'Iconic Chicago IPA with citrus and pine notes')
     ''')
     
-    brewery_id = cursor.lastrowid
+    beer_id = cursor.lastrowid
     
     cursor.execute('''
     INSERT INTO beer_locations (beer_id, brewery_id)
-    VALUES (1, 1)
+    VALUES (?, ?)
+    ''', (beer_id, brewery_id))
+    
+    # Add a few more beers for testing
+    cursor.execute('''
+    INSERT INTO breweries (name, address, city, state, website)
+    VALUES ('Half Acre Beer Company', '4257 N Lincoln Ave', 'Chicago', 'IL', 'https://halfacrebeer.com')
     ''')
+    
+    brewery_id = cursor.lastrowid
+    
+    cursor.execute('''
+    INSERT INTO beers (name, type, abv, description)
+    VALUES ('Daisy Cutter', 'Pale Ale', 5.2, 'Flagship pale ale with citrus and floral notes')
+    ''')
+    
+    beer_id = cursor.lastrowid
+    
+    cursor.execute('''
+    INSERT INTO beer_locations (beer_id, brewery_id)
+    VALUES (?, ?)
+    ''', (beer_id, brewery_id))
     
     # Commit changes and close connection
     conn.commit()

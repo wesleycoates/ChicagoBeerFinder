@@ -18,15 +18,19 @@ function App() {
     setError('');
     
     try {
-      // Important: Vite requires the full URL during development
-      const response = await axios.get(`http://localhost:5000/api/search?q=${encodeURIComponent(query)}`);
-      setResults(response.data.results);
+      // Using the proxy set up in vite.config.js
+      const response = await axios.get(`/api/search?q=${encodeURIComponent(query)}`);
       
-      if (response.data.results.length === 0) {
+      if (response.data.results && response.data.results.length > 0) {
+        setResults(response.data.results);
+        setError('');
+      } else {
+        setResults([]);
         setError('No beers found matching your search');
       }
     } catch (error) {
       console.error('Error searching beers:', error);
+      setResults([]);
       setError('An error occurred while searching. Please try again.');
     } finally {
       setLoading(false);
@@ -46,7 +50,7 @@ function App() {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Search for beers by name or type..."
-          onKeyPress={(e) => e.key === 'Enter' && searchBeers()}
+          onKeyDown={(e) => e.key === 'Enter' && searchBeers()}
         />
         <button onClick={searchBeers} disabled={loading}>
           {loading ? 'Searching...' : 'Search'}
