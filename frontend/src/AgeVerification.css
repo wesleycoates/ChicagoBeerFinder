@@ -1,0 +1,67 @@
+.age-verification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .age-verification-modal {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 48px;
+    margin: 1rem 0;
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .verify-button, .reject-button {
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .verify-button {
+    background-color: #d32f2f;
+    color: white;
+  }
+  
+  .verify-button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .reject-button {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .reject-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .disclaimer {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 1rem;
+  }
