@@ -9,11 +9,11 @@ def init_db():
     if os.path.exists(db_path):
         os.remove(db_path)
     
-    # Connect to the database (this will create it if it doesn't exist)
+    # Connect to the database
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
     
-    # Create tables
+    # Create tables with enhanced schema
     cursor.executescript('''
     CREATE TABLE IF NOT EXISTS breweries (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -21,7 +21,14 @@ def init_db():
         address TEXT,
         city TEXT,
         state TEXT,
-        website TEXT
+        zip_code TEXT,
+        latitude REAL,       -- Added for mapping
+        longitude REAL,      -- Added for mapping
+        phone TEXT,          -- Added for contact info
+        website TEXT,
+        hours TEXT,          -- Added for visitor info
+        has_taproom INTEGER DEFAULT 0,  -- Added to indicate if brewery has a taproom
+        description TEXT     -- Added for brewery description
     );
 
     CREATE TABLE IF NOT EXISTS beers (
@@ -29,7 +36,12 @@ def init_db():
         name TEXT NOT NULL,
         type TEXT,
         abv REAL,
-        description TEXT
+        ibu REAL,            -- Added for beer bitterness
+        description TEXT,
+        image_url TEXT,      -- Added for beer image
+        untappd_id TEXT,     -- Added for Untappd integration
+        rating_score REAL,   -- Added for average rating
+        seasonal INTEGER DEFAULT 0  -- Added to indicate seasonal availability
     );
 
     CREATE TABLE IF NOT EXISTS beer_locations (
@@ -37,57 +49,19 @@ def init_db():
         beer_id INTEGER,
         brewery_id INTEGER,
         is_available INTEGER DEFAULT 1,
+        price TEXT,           -- Added for price information
+        serving_types TEXT,   -- Added for available serving types (draft, bottle, can)
         last_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
         FOREIGN KEY (beer_id) REFERENCES beers (id),
         FOREIGN KEY (brewery_id) REFERENCES breweries (id)
     );
     ''')
     
-    # Insert sample data
-    cursor.execute('''
-    INSERT INTO breweries (name, address, city, state, website)
-    VALUES ('Revolution Brewing', '2323 N Milwaukee Ave', 'Chicago', 'IL', 'https://revbrew.com')
-    ''')
-    
-    brewery_id = cursor.lastrowid
-    
-    cursor.execute('''
-    INSERT INTO beers (name, type, abv, description)
-    VALUES ('Anti-Hero IPA', 'IPA', 6.7, 'Iconic Chicago IPA with citrus and pine notes')
-    ''')
-    
-    beer_id = cursor.lastrowid
-    
-    cursor.execute('''
-    INSERT INTO beer_locations (beer_id, brewery_id)
-    VALUES (?, ?)
-    ''', (beer_id, brewery_id))
-    
-    # Add a few more beers for testing
-    cursor.execute('''
-    INSERT INTO breweries (name, address, city, state, website)
-    VALUES ('Half Acre Beer Company', '4257 N Lincoln Ave', 'Chicago', 'IL', 'https://halfacrebeer.com')
-    ''')
-    
-    brewery_id = cursor.lastrowid
-    
-    cursor.execute('''
-    INSERT INTO beers (name, type, abv, description)
-    VALUES ('Daisy Cutter', 'Pale Ale', 5.2, 'Flagship pale ale with citrus and floral notes')
-    ''')
-    
-    beer_id = cursor.lastrowid
-    
-    cursor.execute('''
-    INSERT INTO beer_locations (beer_id, brewery_id)
-    VALUES (?, ?)
-    ''', (beer_id, brewery_id))
-    
     # Commit changes and close connection
     conn.commit()
     conn.close()
     
-    print("Database initialized successfully. Created at:", db_path)
+    print("Enhanced database initialized successfully. Created at:", db_path)
 
 if __name__ == '__main__':
     init_db()

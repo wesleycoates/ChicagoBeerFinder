@@ -1,0 +1,6 @@
+2025-03-27 21:34:43,186 - INFO - Starting web scraping for Chicago breweries and beers...
+2025-03-27 21:34:43,187 - INFO - Starting Chicago beer scraping process
+2025-03-27 21:34:44,232 - ERROR - Error fetching https://www.beeradvocate.com/place/city/18/: 403 Client Error: Forbidden for url: https://www.beeradvocate.com/place/city/18/
+2025-03-27 21:34:44,232 - INFO - Completed Chicago beer scraping process
+2025-03-27 21:34:44,232 - INFO - Web scraping completed.
+2025-03-27 21:34:44,232 - INFO - Database population completed successfully.
