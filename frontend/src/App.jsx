@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import AgeVerification from './AgeVerification';
@@ -9,10 +9,41 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [isVerified, setIsVerified] = useState(false);
+  
+  // Filter states
+  const [showFilters, setShowFilters] = useState(false);
+  const [filterOptions, setFilterOptions] = useState({
+    types: [],
+    abv_range: { min: 0, max: 15 },
+    breweries: []
+  });
+  const [selectedFilters, setSelectedFilters] = useState({
+    type: '',
+    min_abv: '',
+    max_abv: '',
+    brewery: ''
+  });
+
+  // Fetch filter options when component mounts
+  useEffect(() => {
+    const fetchFilterOptions = async () => {
+      try {
+        const response = await axios.get('/api/filters');
+        setFilterOptions(response.data);
+      } catch (error) {
+        console.error('Error fetching filter options:', error);
+      }
+    };
+    
+    if (isVerified) {
+      fetchFilterOptions();
+    }
+  }, [isVerified]);
 
   const searchBeers = async () => {
-    if (!query.trim()) {
-      setError('Please enter a search term');
+    if (!query.trim() && !selectedFilters.type && !selectedFilters.min_abv && 
+        !selectedFilters.max_abv && !selectedFilters.brewery) {
+      setError('Please enter a search term or select filters');
       return;
     }
     
@@ -20,15 +51,22 @@ function App() {
     setError('');
     
     try {
-      // Using the proxy set up in vite.config.js
-      const response = await axios.get(`/api/search?q=${encodeURIComponent(query)}`);
+      // Build query parameters including filters
+      const params = new URLSearchParams();
+      if (query.trim()) params.append('q', query);
+      if (selectedFilters.type) params.append('type', selectedFilters.type);
+      if (selectedFilters.min_abv) params.append('min_abv', selectedFilters.min_abv);
+      if (selectedFilters.max_abv) params.append('max_abv', selectedFilters.max_abv);
+      if (selectedFilters.brewery) params.append('brewery', selectedFilters.brewery);
+      
+      const response = await axios.get(`/api/search?${params.toString()}`);
       
       if (response.data.results && response.data.results.length > 0) {
         setResults(response.data.results);
         setError('');
       } else {
         setResults([]);
-        setError('No beers found matching your search');
+        setError('No beers found matching your criteria');
       }
     } catch (error) {
       console.error('Error searching beers:', error);
@@ -37,6 +75,22 @@ function App() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleFilterChange = (filter, value) => {
+    setSelectedFilters(prev => ({
+      ...prev,
+      [filter]: value
+    }));
+  };
+
+  const clearFilters = () => {
+    setSelectedFilters({
+      type: '',
+      min_abv: '',
+      max_abv: '',
+      brewery: ''
+    });
   };
 
   return (
@@ -55,13 +109,79 @@ function App() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search for beers by name or type..."
+              placeholder="Search for beers by name..."
               onKeyDown={(e) => e.key === 'Enter' && searchBeers()}
             />
             <button onClick={searchBeers} disabled={loading}>
               {loading ? 'Searching...' : 'Search'}
             </button>
+            <button 
+              className="filter-toggle" 
+              onClick={() => setShowFilters(!showFilters)}
+            >
+              {showFilters ? 'Hide Filters' : 'Show Filters'}
+            </button>
           </div>
+          
+          {showFilters && (
+            <div className="filters-container">
+              <div className="filter-group">
+                <label>Beer Type</label>
+                <select 
+                  value={selectedFilters.type}
+                  onChange={(e) => handleFilterChange('type', e.target.value)}
+                >
+                  <option value="">Any Type</option>
+                  {filterOptions.types.map((type, index) => (
+                    <option key={index} value={type}>{type}</option>
+                  ))}
+                </select>
+              </div>
+              
+              <div className="filter-group">
+                <label>ABV Range</label>
+                <div className="abv-range">
+                  <input
+                    type="number"
+                    min={filterOptions.abv_range.min}
+                    max={filterOptions.abv_range.max}
+                    step="0.1"
+                    placeholder="Min"
+                    value={selectedFilters.min_abv}
+                    onChange={(e) => handleFilterChange('min_abv', e.target.value)}
+                  />
+                  <span>to</span>
+                  <input
+                    type="number"
+                    min={filterOptions.abv_range.min}
+                    max={filterOptions.abv_range.max}
+                    step="0.1"
+                    placeholder="Max"
+                    value={selectedFilters.max_abv}
+                    onChange={(e) => handleFilterChange('max_abv', e.target.value)}
+                  />
+                </div>
+              </div>
+              
+              <div className="filter-group">
+                <label>Brewery</label>
+                <select
+                  value={selectedFilters.brewery}
+                  onChange={(e) => handleFilterChange('brewery', e.target.value)}
+                >
+                  <option value="">Any Brewery</option>
+                  {filterOptions.breweries.map((brewery, index) => (
+                    <option key={index} value={brewery}>{brewery}</option>
+                  ))}
+                </select>
+              </div>
+              
+              <div className="filter-buttons">
+                <button onClick={searchBeers}>Apply Filters</button>
+                <button onClick={clearFilters}>Clear Filters</button>
+              </div>
+            </div>
+          )}
           
           {error && <p className="error">{error}</p>}
           

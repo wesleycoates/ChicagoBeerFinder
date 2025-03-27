@@ -18,24 +18,49 @@ def get_db_connection():
 @app.route('/api/search', methods=['GET'])
 def search_beers():
     query = request.args.get('q', '')
-    
-    if not query:
-        return jsonify({'error': 'No search query provided', 'results': []}), 400
+    beer_type = request.args.get('type', '')
+    min_abv = request.args.get('min_abv', '')
+    max_abv = request.args.get('max_abv', '')
+    brewery = request.args.get('brewery', '')
     
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
         
-        # Search by beer name or type
-        cursor.execute("""
+        # Build the SQL query dynamically based on filters
+        sql = """
             SELECT b.name, b.type, b.abv, b.description, br.name as brewery, 
                    br.address, br.city, br.state, br.website
             FROM beers b
             JOIN beer_locations bl ON b.id = bl.beer_id
             JOIN breweries br ON bl.brewery_id = br.id
-            WHERE (b.name LIKE ? OR b.type LIKE ?)
-            AND bl.is_available = 1
-        """, (f'%{query}%', f'%{query}%'))
+            WHERE bl.is_available = 1
+        """
+        
+        params = []
+        
+        # Add conditions based on filters
+        if query:
+            sql += " AND (b.name LIKE ? OR b.description LIKE ?)"
+            params.extend([f'%{query}%', f'%{query}%'])
+        
+        if beer_type:
+            sql += " AND b.type LIKE ?"
+            params.append(f'%{beer_type}%')
+        
+        if min_abv:
+            sql += " AND b.abv >= ?"
+            params.append(float(min_abv))
+        
+        if max_abv:
+            sql += " AND b.abv <= ?"
+            params.append(float(max_abv))
+        
+        if brewery:
+            sql += " AND br.name LIKE ?"
+            params.append(f'%{brewery}%')
+        
+        cursor.execute(sql, params)
         
         results = cursor.fetchall()
         
@@ -62,6 +87,35 @@ def search_beers():
     
     except Exception as e:
         return jsonify({'error': str(e), 'results': []}), 500
+
+@app.route('/api/filters', methods=['GET'])
+def get_filters():
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        # Get unique beer types
+        cursor.execute("SELECT DISTINCT type FROM beers ORDER BY type")
+        types = [row['type'] for row in cursor.fetchall()]
+        
+        # Get min and max ABV
+        cursor.execute("SELECT MIN(abv) as min_abv, MAX(abv) as max_abv FROM beers")
+        abv_range = cursor.fetchone()
+        
+        # Get breweries
+        cursor.execute("SELECT DISTINCT name FROM breweries ORDER BY name")
+        breweries = [row['name'] for row in cursor.fetchall()]
+        
+        conn.close()
+        
+        return jsonify({
+            'types': types,
+            'abv_range': {'min': abv_range['min_abv'], 'max': abv_range['max_abv']},
+            'breweries': breweries
+        })
+    
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 # Route to list all beers (for testing)
 @app.route('/api/beers', methods=['GET'])
