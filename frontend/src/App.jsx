@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import AgeVerification from './AgeVerification';
+import BeerDetail from './BeerDetail';
 
 function App() {
   const [query, setQuery] = useState('');
@@ -9,6 +10,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [isVerified, setIsVerified] = useState(false);
+  const [selectedBeer, setSelectedBeer] = useState(null);
   
   // Filter states
   const [showFilters, setShowFilters] = useState(false);
@@ -93,6 +95,29 @@ function App() {
     });
   };
 
+  const handleBeerClick = async (beer) => {
+    if (beer.beer_id) {
+      try {
+        const response = await axios.get(`/api/beer/${beer.beer_id}`);
+        if (response.data && response.data.length > 0) {
+          setSelectedBeer(response.data[0]);
+        } else {
+          setSelectedBeer(beer);
+        }
+      } catch (error) {
+        console.error('Error fetching beer details:', error);
+        setSelectedBeer(beer);
+      }
+    } else {
+      setSelectedBeer(beer);
+    }
+  };
+
+  // function to close the detail modal
+  const closeModal = () => {
+    setSelectedBeer(null);
+  };
+
   return (
     <div className="App">
       <AgeVerification onVerified={() => setIsVerified(true)} />
@@ -109,7 +134,7 @@ function App() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search for beers by name..."
+              placeholder="Search for beers..."
               onKeyDown={(e) => e.key === 'Enter' && searchBeers()}
             />
             <button onClick={searchBeers} disabled={loading}>
@@ -187,7 +212,11 @@ function App() {
           
           <div className="results">
             {results.map((beer, index) => (
-              <div className="beer-card" key={index}>
+              <div 
+              className="beer-card" 
+              key={index}
+              onClick={() => handleBeerClick(beer)}
+              >
                 <h3>{beer.beer}</h3>
                 <div className="beer-details">
                   <p><strong>Type:</strong> {beer.type}</p>
@@ -200,6 +229,11 @@ function App() {
                   <p>{beer.city}, {beer.state}</p>
                   {beer.website && <a href={beer.website} target="_blank" rel="noopener noreferrer">Visit Website</a>}
                 </div>
+
+                {/* Beer Detail Modal */}
+                {selectedBeer && (
+                  <BeerDetail beer={selectedBeer} onClose={closeModal} />
+                )}
               </div>
             ))}
           </div>
