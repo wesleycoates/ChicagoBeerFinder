@@ -38,19 +38,26 @@ class ChicagoBeerScraper:
         """Get BeautifulSoup object from URL with error handling and rate limiting"""
         try:
             # Add random delay to avoid hitting rate limits
+            print(f"Making request to https://www.beeradvocate.com/place/city/6/")
             time.sleep(randint(1, 3))
             response = requests.get(url, headers=self.headers)
+            print(f"Response status code: {response.status_code}")
+
+            # Print the first 100 chars of the response text
+            print(f"Response preview: {response.text[:100]}")
+
             response.raise_for_status()
             
             return BeautifulSoup(response.content, 'html.parser')
         except requests.RequestException as e:
+            print(f"Error fetching https://www.beeradvocate.com/place/city/6/: {e}")
             logging.error(f"Error fetching {url}: {e}")
             return None
     
     def scrape_chicago_brewery_list(self):
         """Scrape a list of Chicago breweries from Beer Advocate"""
         # Beer Advocate's Chicago brewery list
-        url = "https://www.beeradvocate.com/place/city/18/"
+        url = "https://www.beeradvocate.com/place/city/6/"
         soup = self._get_soup(url)
         
         breweries = []
@@ -69,17 +76,20 @@ class ChicagoBeerScraper:
                     'name': brewery_name,
                     'url': brewery_url
                 })
+        print(f"Found {len(brewery_listings)} brewery listings")
         
         logging.info(f"Found {len(breweries)} breweries on Beer Advocate")
         return breweries
     
     def scrape_brewery_details(self, brewery_info):
+        print("Trying to scrape brewery list from https://www.beeradvocate.com/place/city/6/")
         """Scrape details about a brewery from its page"""
         if not brewery_info.get('url'):
             return brewery_info
         
         soup = self._get_soup(brewery_info['url'])
         if not soup:
+            print("Failed to get soup from URL")
             return brewery_info
         
         # Extract address information
@@ -198,6 +208,7 @@ class ChicagoBeerScraper:
             return False
     
     def run(self):
+        print("Starting the Chicago beer scraping process")
         """Run the complete scraping process"""
         logging.info("Starting Chicago beer scraping process")
         
