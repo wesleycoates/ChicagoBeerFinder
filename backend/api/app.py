@@ -1,11 +1,17 @@
 from flask import Flask, request, jsonify
 import sqlite3
+import sys
 import os
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from local_beer_client import LocalBeerClient
 from flask_cors import CORS
+from local_beer_client import LocalBeerClient
 
 app = Flask(__name__)
 # Enable CORS for all domains
 CORS(app, resources={r"/api/*": {"origins": "*"}})
+
+beer_client = LocalBeerClient()
 
 # Helper function to get database connection
 def get_db_connection():
@@ -23,6 +29,9 @@ def search_beers():
     max_abv = request.args.get('max_abv', '')
     brewery = request.args.get('brewery', '')
     
+    # Flag to determine whether to include beer data
+    include_beer_data = request.args.get('include_beer_data', 'true').lower() == 'true'
+
     try:
         conn = get_db_connection()
         cursor = conn.cursor()
@@ -76,11 +85,50 @@ def search_beers():
                 'address': row['address'],
                 'city': row['city'],
                 'state': row['state'],
-                'website': row['website']
+                'website': row['website'],
+                'source': 'local'
             })
         
         conn.close()
         
+        # If we have brewery results but no beer data and we want to include beer data
+        if include_beer_data and brewery:
+            # Search for beers to associate with the brewery
+            beer_results = beer_client.get_all_beers(per_page=5)
+            
+            # Add these beers to the results
+            for beer in beer_results:
+                result_list.append({
+                    'beer': beer['name'],
+                    'type': beer.get('style', beer.get('tagline', '')),
+                    'abv': beer.get('abv', 0),
+                    'description': beer.get('description', ''),
+                    'brewery': brewery,  # Associate with the searched brewery
+                    'image_url': beer.get('image_url'),
+                    'food_pairing': beer.get('food_pairing', []),
+                    'beer_id': beer.get('id'),
+                    'source': 'beer_database'
+                })
+        
+        # If we're searching for a beer name and we want to include beer data
+        elif include_beer_data and query and not result_list:
+            # Search for beers by name
+            beer_results = beer_client.search_beers_by_name(query)
+            
+            # Add these beers to the results
+            for beer in beer_results:
+                result_list.append({
+                    'beer': beer['name'],
+                    'type': beer.get('style', beer.get('tagline', '')),
+                    'abv': beer.get('abv', 0),
+                    'description': beer.get('description', ''),
+                    'brewery': 'BrewDog',  # Default brewery for our beer data
+                    'image_url': beer.get('image_url'),
+                    'food_pairing': beer.get('food_pairing', []),
+                    'beer_id': beer.get('id'),
+                    'source': 'beer_database'
+                })
+
         return jsonify({
             'results': result_list
         })
@@ -147,6 +195,60 @@ def list_beers():
 @app.route('/', methods=['GET'])
 def index():
     return jsonify({'message': 'Chicago Beer Finder API is running'})
+
+@app.route('/api/beer/<beer_id>', methods=['GET'])
+def get_beer_details(beer_id):
+    """Get detailed information about a specific beer."""
+    try:
+        result = beer_client.get_beer(beer_id)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/beers/random', methods=['GET'])
+def get_random_beer():
+    """Get a random beer."""
+    try:
+        result = beer_client.get_random_beer()
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/beers', methods=['GET'])
+def list_all_beers():
+    """Get a list of beers with pagination."""
+    try:
+        page = request.args.get('page', 1, type=int)
+        per_page = request.args.get('per_page', 25, type=int)
+        result = beer_client.get_all_beers(page=page, per_page=per_page)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/beers/by_abv', methods=['GET'])
+def get_beers_by_abv():
+    """Get beers by ABV range."""
+    try:
+        min_abv = request.args.get('min_abv', type=float)
+        max_abv = request.args.get('max_abv', type=float)
+        page = request.args.get('page', 1, type=int)
+        result = beer_client.search_beers_by_abv(min_abv=min_abv, max_abv=max_abv, page=page)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/beers/by_food', methods=['GET'])
+def get_beers_by_food():
+    """Get beers that pair with a specific food."""
+    try:
+        food = request.args.get('food', '')
+        if not food:
+            return jsonify({'error': 'Food parameter is required'}), 400
+            
+        result = beer_client.search_beers_by_food(food)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 # Make sure we can run this directly
 if __name__ == '__main__':

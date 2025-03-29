@@ -1,4 +1,6 @@
-.age-verification-overlay {
+
+  
+  .age-verification-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -64,4 +66,41 @@
     font-size: 0.8rem;
     color: #666;
     margin-top: 1rem;
+  }
+  
+  /* Mobile responsive styles */
+  @media screen and (max-width: 480px) {
+    .age-verification-modal {
+      padding: 1.5rem;
+      width: 85%;
+    }
+    
+    .logo {
+      font-size: 36px;
+      margin: 0.5rem 0;
+    }
+    
+    .age-verification-modal h2 {
+      font-size: 1.4rem;
+      margin-top: 0;
+    }
+    
+    .age-verification-modal p {
+      font-size: 0.95rem;
+      margin: 0.7rem 0;
+    }
+    
+    .buttons {
+      margin: 1.5rem 0;
+      gap: 0.8rem;
+    }
+    
+    .verify-button, .reject-button {
+      padding: 0.6rem 0.8rem;
+      font-size: 0.95rem;
+    }
+    
+    .disclaimer {
+      font-size: 0.7rem;
+    }
   }

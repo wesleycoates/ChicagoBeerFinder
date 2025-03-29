@@ -3,6 +3,8 @@ import axios from 'axios';
 import './App.css';
 import AgeVerification from './AgeVerification';
 import BeerDetail from './BeerDetail';
+import { useRef } from 'react';
+import OfflineDetection from './OfflineDetection';
 
 function App() {
   const [query, setQuery] = useState('');
@@ -25,6 +27,8 @@ function App() {
     max_abv: '',
     brewery: ''
   });
+  
+  const filtersRef = useRef(null);
 
   // Fetch filter options when component mounts
   useEffect(() => {
@@ -41,6 +45,17 @@ function App() {
       fetchFilterOptions();
     }
   }, [isVerified]);
+
+
+  // Add this useEffect for scrolling to filters when they're shown
+useEffect(() => {
+  if (showFilters && filtersRef.current) {
+    // Small delay to ensure DOM is updated
+    setTimeout(() => {
+      filtersRef.current.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  }
+}, [showFilters]);
 
   const searchBeers = async () => {
     if (!query.trim() && !selectedFilters.type && !selectedFilters.min_abv && 
@@ -120,6 +135,7 @@ function App() {
 
   return (
     <div className="App">
+      <OfflineDetection />
       <AgeVerification onVerified={() => setIsVerified(true)} />
       
       {isVerified && (
@@ -136,23 +152,32 @@ function App() {
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search for beers..."
               onKeyDown={(e) => e.key === 'Enter' && searchBeers()}
+              aria-label="Search for beers"
             />
-            <button onClick={searchBeers} disabled={loading}>
+            <button onClick={searchBeers} disabled={loading} aria-label="Search">
               {loading ? 'Searching...' : 'Search'}
             </button>
             <button 
               className="filter-toggle" 
               onClick={() => setShowFilters(!showFilters)}
+              aria-expanded={showFilters}
+              aria-controls="filter-panel"
             >
               {showFilters ? 'Hide Filters' : 'Show Filters'}
             </button>
           </div>
           
           {showFilters && (
-            <div className="filters-container">
+            <div 
+            className="filters-container"
+            ref={filtersRef}
+            id="filter-panel" 
+            aria-label="Filter options"
+            >
               <div className="filter-group">
-                <label>Beer Type</label>
+              <label htmlFor="beer-type">Beer Type</label>
                 <select 
+                  id="beer-type"
                   value={selectedFilters.type}
                   onChange={(e) => handleFilterChange('type', e.target.value)}
                 >
@@ -174,6 +199,8 @@ function App() {
                     placeholder="Min"
                     value={selectedFilters.min_abv}
                     onChange={(e) => handleFilterChange('min_abv', e.target.value)}
+                    aria-label="Minimum ABV"
+                    id="min-abv"
                   />
                   <span>to</span>
                   <input
@@ -184,13 +211,16 @@ function App() {
                     placeholder="Max"
                     value={selectedFilters.max_abv}
                     onChange={(e) => handleFilterChange('max_abv', e.target.value)}
+                    aria-label="Maximum ABV"
+                    id="max-abv"
                   />
                 </div>
               </div>
               
               <div className="filter-group">
-                <label>Brewery</label>
+              <label htmlFor="brewery">Brewery</label>
                 <select
+                  id="brewery"
                   value={selectedFilters.brewery}
                   onChange={(e) => handleFilterChange('brewery', e.target.value)}
                 >
@@ -202,19 +232,35 @@ function App() {
               </div>
               
               <div className="filter-buttons">
-                <button onClick={searchBeers}>Apply Filters</button>
-                <button onClick={clearFilters}>Clear Filters</button>
+                <button
+                  onClick={searchBeers}
+                  aria-label="Apply filters"
+                >
+                  Apply Filters
+
+                </button>
+                <button
+                  onClick={clearFilters}
+                  aria-label="Clear all filters"
+                >
+                  Clear Filters
+                </button>
               </div>
             </div>
           )}
           
-          {error && <p className="error">{error}</p>}
+          {error && <p className="error" role="alert">{error}</p>}
           
-          <div className="results">
+          <div className="results" aria-live="polite">
+            {results.length > 0 && (
+              <h2 className="visually-hidden">Search Results</h2>
+            )}  
+            
             {results.map((beer, index) => (
               <div 
               className="beer-card" 
               key={index}
+              tabIndex="0"
               onClick={() => handleBeerClick(beer)}
               >
                 <h3>{beer.beer}</h3>
@@ -227,7 +273,16 @@ function App() {
                   <h4>Available at: {beer.brewery}</h4>
                   <p>{beer.address}</p>
                   <p>{beer.city}, {beer.state}</p>
-                  {beer.website && <a href={beer.website} target="_blank" rel="noopener noreferrer">Visit Website</a>}
+                  {beer.website && (
+                    <a 
+                      href={beer.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label={`Visit ${beer.brewery} website`}
+                    >
+                      Visit Website
+                    </a>
+                  )}
                 </div>
 
                 {/* Beer Detail Modal */}
@@ -236,6 +291,11 @@ function App() {
                 )}
               </div>
             ))}
+
+              {results.length === 0 && !loading && !error && (
+                  <p>Search for beers to see results here</p>
+                )}
+                
           </div>
         </>
       )}
