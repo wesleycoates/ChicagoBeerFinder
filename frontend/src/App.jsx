@@ -5,6 +5,7 @@ import AgeVerification from './AgeVerification';
 import BeerDetail from './BeerDetail';
 import { useRef } from 'react';
 import OfflineDetection from './OfflineDetection';
+import ModernMapView from './ModernMapView';
 
 function App() {
   const [query, setQuery] = useState('');
@@ -13,6 +14,8 @@ function App() {
   const [error, setError] = useState('');
   const [isVerified, setIsVerified] = useState(false);
   const [selectedBeer, setSelectedBeer] = useState(null);
+  const [viewMode, setViewMode] = useState('list'); // 'list' or 'map'
+  const [breweryData, setBreweryData] = useState([]);
   
   // Filter states
   const [showFilters, setShowFilters] = useState(false);
@@ -251,6 +254,24 @@ useEffect(() => {
           
           {error && <p className="error" role="alert">{error}</p>}
           
+          {/* View Mode Toggle Buttons */}
+          <div className="view-modes">
+            <button 
+              className={viewMode === 'list' ? 'active' : ''} 
+              onClick={() => setViewMode('list')}
+            >
+              List View
+            </button>
+            <button 
+              className={viewMode === 'map' ? 'active' : ''} 
+              onClick={() => setViewMode('map')}
+            >
+              Map View
+            </button>
+          </div>
+
+
+
           <div className="results" aria-live="polite">
             {results.length > 0 && (
               <h2 className="visually-hidden">Search Results</h2>
