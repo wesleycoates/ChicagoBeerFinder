@@ -25,7 +25,7 @@ const ModernMapView = ({ breweries = [] }) => {
 
   return (
     <div className="map-container">
-      <LoadScript googleMapsApiKey="" loadingElement={<div>Loading Map...</div>}>
+      <LoadScript googleMapsApiKey="AIzaSyBeisboGfwRqcDJoyiIKrkHVW4IliANoe8" loadingElement={<div>Loading Map...</div>}>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
           center={mapCenter}
