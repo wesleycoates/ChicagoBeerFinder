@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from local_beer_client import LocalBeerClient
 from flask_cors import CORS
 from local_beer_client import LocalBeerClient
+from simple_geocoding import add_coordinates_to_results
 
 app = Flask(__name__)
 # Enable CORS for all domains
@@ -89,6 +90,18 @@ def search_beers():
                 'source': 'local'
             })
         
+        # Add coordinates to the results
+        result_list = add_coordinates_to_results(result_list)
+        
+        conn.close()
+        
+        return jsonify({
+            'results': result_list
+        })
+    
+    except Exception as e:
+        return jsonify({'error': str(e), 'results': []}), 500
+
         conn.close()
         
         # If we have brewery results but no beer data and we want to include beer data
@@ -164,6 +177,74 @@ def get_filters():
     
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+# Add this new endpoint for brewery locations
+@app.route('/api/brewery-locations', methods=['GET'])
+def brewery_locations():
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        # Get distinct breweries and their info
+        cursor.execute("""
+            SELECT DISTINCT br.name, br.address, br.city, br.state, br.website
+            FROM breweries br
+            JOIN beer_locations bl ON br.id = bl.brewery_id
+            WHERE bl.is_available = 1
+        """)
+        
+        breweries = cursor.fetchall()
+        brewery_list = []
+        
+        for brewery in breweries:
+            brewery_name = brewery['name']
+            
+            # Get beers for this brewery
+            cursor.execute("""
+                SELECT b.name, b.type, b.abv, b.description
+                FROM beers b
+                JOIN beer_locations bl ON b.id = bl.beer_id
+                JOIN breweries br ON bl.brewery_id = br.id
+                WHERE br.name = ? AND bl.is_available = 1
+            """, (brewery_name,))
+            
+            beers = cursor.fetchall()
+            beer_list = []
+            
+            for beer in beers:
+                beer_list.append({
+                    'name': beer['name'],
+                    'type': beer['type'],
+                    'abv': beer['abv'],
+                    'description': beer['description']
+                })
+            
+            # Create brewery dictionary with all info
+            brewery_dict = {
+                'name': brewery_name,
+                'address': brewery['address'],
+                'city': brewery['city'],
+                'state': brewery['state'],
+                'website': brewery['website'],
+                'beers': beer_list
+            }
+            
+            # Add coordinates
+            from simple_geocoding import get_coordinates_for_brewery
+            coords = get_coordinates_for_brewery(brewery_name)
+            brewery_dict['lat'] = coords['lat']
+            brewery_dict['lng'] = coords['lng']
+            
+            brewery_list.append(brewery_dict)
+        
+        conn.close()
+        
+        return jsonify({
+            'breweries': brewery_list
+        })
+    
+    except Exception as e:
+        return jsonify({'error': str(e), 'breweries': []}), 500
 
 # Route to list all beers (for testing)
 @app.route('/api/beers', methods=['GET'])
