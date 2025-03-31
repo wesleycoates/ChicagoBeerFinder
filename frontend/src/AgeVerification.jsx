@@ -7,7 +7,13 @@ const AgeVerification = ({ onVerified }) => {
   useEffect(() => {
     // Check if user has previously verified
     const verified = localStorage.getItem('ageVerified');
-    if (verified === 'true') {
+    const verifiedDate = localStorage.getItem('ageVerifiedDate');
+
+    // Check if verification exists and is less than 30 days old
+    const isValid = verified === 'true' && verifiedDate && 
+                  (new Date().getTime() - parseInt(verifiedDate) < 30 * 24 * 60 * 60 * 1000);
+
+    if (isValid === 'true') {
       setShow(false);
       onVerified();
     }
@@ -15,6 +21,7 @@ const AgeVerification = ({ onVerified }) => {
   
   const handleVerify = () => {
     localStorage.setItem('ageVerified', 'true');
+    localStorage.setItem('ageVerifiedDate', new Date().getTime().toString());
     setShow(false);
     onVerified();
   };
