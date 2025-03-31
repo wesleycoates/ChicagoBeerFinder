@@ -9,9 +9,9 @@ const AgeVerification = ({ onVerified }) => {
     const verified = localStorage.getItem('ageVerified');
     const verifiedDate = localStorage.getItem('ageVerifiedDate');
 
-    // Check if verification exists and is less than 30 days old
+    // Check if verification exists and is less than 7 days old
     const isValid = verified === 'true' && verifiedDate && 
-                  (new Date().getTime() - parseInt(verifiedDate) < 30 * 24 * 60 * 60 * 1000);
+                  (new Date().getTime() - parseInt(verifiedDate) < 7 * 24 * 60 * 60 * 1000);
 
     if (isValid === 'true') {
       setShow(false);
