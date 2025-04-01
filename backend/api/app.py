@@ -3,10 +3,12 @@ import sqlite3
 import sys
 import os
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 from local_beer_client import LocalBeerClient
 from flask_cors import CORS
 from local_beer_client import LocalBeerClient
 from simple_geocoding import add_coordinates_to_results
+from geocoding import geocode_address  # You'll need to create this module
 
 app = Flask(__name__)
 # Enable CORS for all domains
@@ -77,6 +79,13 @@ def search_beers():
         # Convert results to dictionary
         result_list = []
         for row in results:
+            # Add coordinates to each result
+            # Create a full address for geocoding
+            full_address = f"{row['address']}, {row['city']}, {row['state']}"
+
+            # Get coordinates for the brewery
+            coordinates = geocode_address(full_address)
+
             result_list.append({
                 'beer': row['name'],
                 'type': row['type'],
@@ -87,7 +96,8 @@ def search_beers():
                 'city': row['city'],
                 'state': row['state'],
                 'website': row['website'],
-                'source': 'local'
+                'source': 'local',
+                'coordinates': coordinates
             })
         
         # Add coordinates to the results
@@ -241,6 +251,43 @@ def brewery_locations():
         
         return jsonify({
             'breweries': brewery_list
+        })
+    
+    except Exception as e:
+        return jsonify({'error': str(e), 'breweries': []}), 500
+
+@app.route('/api/breweries', methods=['GET'])
+def get_breweries():
+    try:
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        
+        cursor.execute("""
+            SELECT DISTINCT br.name, br.address, br.city, br.state, br.website
+            FROM breweries br
+            JOIN beer_locations bl ON br.id = bl.brewery_id
+            WHERE bl.is_available = 1
+            ORDER BY br.name
+        """)
+        
+        breweries = []
+        for row in cursor.fetchall():
+            full_address = f"{row['address']}, {row['city']}, {row['state']}"
+            coordinates = geocode_address(full_address)
+            
+            breweries.append({
+                'name': row['name'],
+                'address': row['address'],
+                'city': row['city'],
+                'state': row['state'],
+                'website': row['website'],
+                'coordinates': coordinates
+            })
+        
+        conn.close()
+        
+        return jsonify({
+            'breweries': breweries
         })
     
     except Exception as e:
