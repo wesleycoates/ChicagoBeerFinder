@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
-import './MapView.css';
+import './LeafletMap.css';
 
-const MapView = ({ breweries }) => {
+const LeafletMap = ({ breweries }) => {
   const mapContainerRef = useRef(null);
   const [isLoading, setIsLoading] = useState(true);
   const leafletMapRef = useRef(null);
@@ -9,6 +9,8 @@ const MapView = ({ breweries }) => {
   
   // Effect to load Leaflet script and CSS
   useEffect(() => {
+    console.log("LeafletMap component mounted");
+    
     // Clean up any existing Leaflet map
     if (leafletMapRef.current) {
       leafletMapRef.current.remove();
@@ -26,6 +28,7 @@ const MapView = ({ breweries }) => {
       link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
       link.media = 'all';
       head.appendChild(link);
+      console.log("Leaflet CSS added to head");
     }
     
     // Then load the Leaflet JavaScript
@@ -34,15 +37,25 @@ const MapView = ({ breweries }) => {
       const script = document.createElement('script');
       script.id = scriptId;
       script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
-      script.onload = initMap;
+      script.onload = () => {
+        console.log("Leaflet JS loaded successfully");
+        initMap();
+      };
+      script.onerror = () => {
+        console.error("Failed to load Leaflet JS");
+        setIsLoading(false);
+      };
       document.body.appendChild(script);
+      console.log("Leaflet JS script added to body");
     } else {
       // If script already exists, initialize map directly
+      console.log("Leaflet JS already loaded, initializing map");
       initMap();
     }
     
     // Cleanup function
     return () => {
+      console.log("LeafletMap component unmounting, cleaning up");
       if (leafletMapRef.current) {
         leafletMapRef.current.remove();
         leafletMapRef.current = null;
@@ -54,31 +67,44 @@ const MapView = ({ breweries }) => {
   const initMap = () => {
     console.log("Initializing Leaflet map");
     
-    if (!mapContainerRef.current || !window.L) {
-      console.error("Map container ref is null or Leaflet not loaded!");
+    if (!mapContainerRef.current) {
+      console.error("Map container ref is null!");
       return;
     }
     
-    // Create Leaflet map
-    const map = window.L.map(mapContainerRef.current).setView([41.8781, -87.6298], 12);
+    if (!window.L) {
+      console.error("Leaflet not loaded!");
+      return;
+    }
     
-    // Add OpenStreetMap tile layer
-    window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-    
-    // Store map reference
-    leafletMapRef.current = map;
-    setIsLoading(false);
-    
-    // Update markers if breweries data is available
-    if (breweries && breweries.length > 0) {
-      updateMarkers();
+    try {
+      // Create Leaflet map
+      const map = window.L.map(mapContainerRef.current).setView([41.8781, -87.6298], 12);
+      
+      // Add OpenStreetMap tile layer
+      window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }).addTo(map);
+      
+      console.log("Leaflet map created successfully");
+      
+      // Store map reference
+      leafletMapRef.current = map;
+      setIsLoading(false);
+      
+      // Update markers if breweries data is available
+      if (breweries && breweries.length > 0) {
+        updateMarkers();
+      }
+    } catch (error) {
+      console.error("Error initializing Leaflet map:", error);
+      setIsLoading(false);
     }
   };
   
   // Effect to update markers when breweries change
   useEffect(() => {
+    console.log("Breweries changed:", breweries?.length);
     if (leafletMapRef.current && breweries && breweries.length > 0) {
       updateMarkers();
     }
@@ -86,7 +112,10 @@ const MapView = ({ breweries }) => {
   
   // Function to update markers
   const updateMarkers = () => {
-    if (!leafletMapRef.current || !window.L) return;
+    if (!leafletMapRef.current || !window.L) {
+      console.log("Can't update markers - map or Leaflet not ready");
+      return;
+    }
     
     const map = leafletMapRef.current;
     
@@ -134,21 +163,22 @@ const MapView = ({ breweries }) => {
     if (markerPositions.length > 0) {
       const bounds = window.L.latLngBounds(markerPositions);
       map.fitBounds(bounds, { padding: [50, 50] });
+      console.log("Map bounds adjusted to fit markers");
     }
   };
   
   return (
-    <div className="map-container">
+    <div className="leaflet-map-container">
       {isLoading && (
-        <div className="map-loading">
-          <div className="spinner"></div>
+        <div className="leaflet-loading">
+          <div className="leaflet-spinner"></div>
           <p>Loading map...</p>
         </div>
       )}
-      <div ref={mapContainerRef} className="map"></div>
+      <div ref={mapContainerRef} className="leaflet-map"></div>
       
       {breweries && breweries.length > 0 && (
-        <div className="map-info">
+        <div className="leaflet-map-info">
           <p>Showing {breweries.length} {breweries.length === 1 ? 'brewery' : 'breweries'}</p>
         </div>
       )}
@@ -156,4 +186,4 @@ const MapView = ({ breweries }) => {
   );
 };
 
-export default MapView;
+export default LeafletMap;

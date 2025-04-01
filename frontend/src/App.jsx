@@ -5,7 +5,7 @@ import AgeVerification from './AgeVerification';
 import BeerDetail from './BeerDetail';
 import { useRef } from 'react';
 import OfflineDetection from './OfflineDetection';
-import ModernMapView from './ModernMapView';
+import LeafletMap from './LeafletMap';
 
 function App() {
   const [query, setQuery] = useState('');
@@ -16,6 +16,7 @@ function App() {
   const [selectedBeer, setSelectedBeer] = useState(null);
   const [viewMode, setViewMode] = useState('list'); // 'list' or 'map'
   const [breweryData, setBreweryData] = useState([]);
+  const [breweries, setBreweries] = useState([]);
   
   // Filter states
   const [showFilters, setShowFilters] = useState(false);
@@ -35,30 +36,21 @@ function App() {
 
   // Fetch filter options when component mounts
   useEffect(() => {
-    const fetchFilterOptions = async () => {
+    const fetchData = async () => {
       try {
-        const response = await axios.get('/api/filters');
-        setFilterOptions(response.data);
+        const filtersResponse = await axios.get('/api/filters');
+        setFilterOptions(filtersResponse.data);
+
+        const breweriesResponse = await axios.get('/api/breweries');
+        setBreweries(breweriesResponse.data.breweries);
+
       } catch (error) {
         console.error('Error fetching filter options:', error);
       }
     };
     
-    // Load brewery data for the map
-    const fetchBreweryLocations = async () => {
-      try {
-        const response = await axios.get('/api/brewery-locations');
-        if (response.data && response.data.breweries) {
-          setBreweryData(response.data.breweries);
-        }
-      } catch (error) {
-        console.error('Error fetching brewery locations:', error);
-      }
-    };
-
     if (isVerified) {
-      fetchFilterOptions();
-      fetchBreweryLocations(); // Load brewery data when component mounts
+      fetchData();
     }
   }, [isVerified]);
 
@@ -178,7 +170,30 @@ useEffect(() => {
   const closeModal = () => {
     setSelectedBeer(null);
   };
-
+  const getUniqueBreweries = () => {
+    if (!results || results.length === 0) return [];
+    
+    const uniqueBreweries = [];
+    const breweryIds = new Set();
+    
+    results.forEach(beer => {
+      const breweryKey = `${beer.brewery}-${beer.address}`;
+      if (!breweryIds.has(breweryKey)) {
+        breweryIds.add(breweryKey);
+        uniqueBreweries.push({
+          brewery: beer.brewery,
+          address: beer.address,
+          city: beer.city,
+          state: beer.state,
+          website: beer.website,
+          coordinates: beer.coordinates // Use coordinates from backend
+        });
+      }
+    });
+    
+    return uniqueBreweries;
+  };
+  
   return (
     <div className="App">
       <OfflineDetection />
@@ -298,6 +313,26 @@ useEffect(() => {
           {error && <p className="error" role="alert">{error}</p>}
           
           {/* View Mode Toggle Buttons */}
+          <div className="view-toggle">
+            <button 
+              className={viewMode === 'list' ? 'active' : ''} 
+              onClick={() => setViewMode('list')}
+            >
+              List View
+            </button>
+            <button 
+              className={viewMode === 'map' ? 'active' : ''}
+              onClick={() => setViewMode('map')}
+            >
+              Map View
+            </button>
+            <button 
+              className={viewMode === 'breweries' ? 'active' : ''}
+              onClick={() => setViewMode('breweries')}
+            >
+              All Breweries
+            </button>
+        </div>
           <div className="view-modes">
             <button 
               className={viewMode === 'list' ? 'active' : ''} 
@@ -316,7 +351,7 @@ useEffect(() => {
           {/* Conditionally render either map or list view */}
           {viewMode === 'map' ? (
             breweryData.length > 0 ? (
-              <ModernMapView breweries={breweryData} />
+              <LeafletMap breweries={breweryData} />
             ) : (
               <p>No brewery data available. Try searching for beers first.</p>
             )
@@ -340,7 +375,13 @@ useEffect(() => {
               ))}
             </div>
           )}
-
+          {/* Map View for All Breweries */}
+          {viewMode === 'breweries' && breweries.length > 0 && (
+            <div>
+              <h2>All Breweries in Chicago</h2>
+              <LeafletMap breweries={breweries} />
+            </div>
+          )}
           <div className="results" aria-live="polite">
             {results.length > 0 && (
               <h2 className="visually-hidden">Search Results</h2>
