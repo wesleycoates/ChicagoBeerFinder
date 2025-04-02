@@ -1,6 +1,6 @@
-# run_scrapers.py
-from off_color_scraper import OffColorScraper
-from suncatcher_scraper import SuncatcherScraper  # Assuming you've renamed your previous script
+# scraper_runner.py
+from suncatcher import SuncatcherScraper
+from offcolor import OffColorScraper
 
 def run_scrapers():
     """Run all brewery scrapers"""

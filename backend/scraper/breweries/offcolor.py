@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import re
 import json
 
+
 class OffColorScraper(BreweryScraper):
     def __init__(self):
         super().__init__(
