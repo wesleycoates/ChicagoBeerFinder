@@ -1,384 +1,276 @@
 import os
+import sys
 import time
-import json
-import re
-import pandas as pd
+import csv
+import shutil
+import tempfile
+import subprocess
+from datetime import datetime
+
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 
-# Create a directory to store scraped data
-os.makedirs('chicago_beer_data', exist_ok=True)
+def kill_chrome_processes():
+    """
+    Attempt to kill existing Chrome and ChromeDriver processes
+    """
+    try:
+        # Kill Chrome processes
+        subprocess.run(['pkill', '-f', 'google-chrome'], stderr=subprocess.DEVNULL)
+        subprocess.run(['pkill', '-f', 'chromedriver'], stderr=subprocess.DEVNULL)
+        
+        # Wait a moment for processes to terminate
+        time.sleep(2)
+    except Exception as e:
+        print(f"Error killing Chrome processes: {e}")
 
-def setup_driver():
-    """Set up and return a configured Chrome webdriver."""
+def setup_chrome_driver():
+    """
+    Set up Chrome WebDriver with comprehensive process management
+    """
+    # Kill existing Chrome processes
+    kill_chrome_processes()
+    
+    # Create a unique temporary directory for Chrome user data
+    user_data_dir = tempfile.mkdtemp()
+    
     chrome_options = Options()
-    # Uncomment the next line if you want to see the browser (good for debugging)
-    # chrome_options.add_argument("--headless")
+    
+    # Explicitly set the Chrome binary location
+    chrome_options.binary_location = "/usr/bin/google-chrome"
+    
+    # Set unique user data directory
+    chrome_options.add_argument(f"user-data-dir={user_data_dir}")
+    
+    # Add additional options for debugging and stability
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
-    chrome_options.add_argument("--window-size=1920,1080")
-    chrome_options.add_argument("--user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")
+    chrome_options.add_argument("--disable-extensions")
+    chrome_options.add_argument("--remote-debugging-port=9222")
+    chrome_options.add_argument("--headless")  # Run in headless mode
     
-    # Initialize the driver
-    driver = webdriver.Chrome(options=chrome_options)
-    return driver
-
-def handle_revolution_age_verification(driver):
-    """Handle age verification for Revolution Brewing by directly setting the cookie."""
-    print("Setting Revolution Brewing age verification cookie...")
+    # Detailed logging
+    chrome_options.add_argument("--enable-logging")
+    chrome_options.add_argument("--v=1")
     
-    # First navigate to the main domain to set cookies properly
-    driver.get("https://revbrew.com")
-    time.sleep(2)
-    
-    # Set the age verification cookie directly
-    driver.execute_script("document.cookie = 'ageVerificationCookie=yes; path=/; max-age=5184000'")
-    print("Age verification cookie set")
-    
-    # Navigate to the beer page
-    driver.get("https://revbrew.com/beer/year-round")
-    print("Navigated to beer page")
-    time.sleep(5)
-    
-    # Save the page source to verify we got past the age gate
-    page_source = driver.page_source
-    with open("chicago_beer_data/revolution_after_cookie.html", "w", encoding="utf-8") as f:
-        f.write(page_source)
-    
-    # Check if we're still on the age verification page
-    if "Are you 21 or over?" in page_source:
-        print("Still on age verification page, trying direct click method...")
-        
-        try:
-            # Try to find and click the 'Yes' button
-            yes_button = driver.find_element(By.ID, "js-verify")
-            yes_button.click()
-            print("Clicked 'Yes' button")
-            time.sleep(5)
-            
-            # Save page source again to verify
-            page_source = driver.page_source
-            with open("chicago_beer_data/revolution_after_click.html", "w", encoding="utf-8") as f:
-                f.write(page_source)
-                
-            if "Are you 21 or over?" in page_source:
-                print("Still on age verification page after clicking, trying JS execution...")
-                
-                # Try to execute the verification function directly
-                driver.execute_script("""
-                    createCookie('ageVerificationCookie', 'yes', 60);
-                    document.location = 'https://revbrew.com/beer/year-round';
-                """)
-                time.sleep(5)
-            
-        except Exception as e:
-            print(f"Error with direct click: {e}")
-    
-    return True
-
-def scrape_revolution_beers():
-    """Scrape beer information from Revolution Brewing."""
-    print("Scraping Revolution Brewing...")
-    
-    driver = setup_driver()
+    # User agent to mimic a real browser
+    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36")
     
     try:
-        # Handle age verification
-        handle_revolution_age_verification(driver)
+        # Alternative method to get ChromeDriver
+        service = Service(ChromeDriverManager().install())
         
-        # Navigate to the year-round beers page
-        driver.get("https://revbrew.com/beer/year-round")
-        print(f"Navigating to year-round beers page")
-        time.sleep(5)
+        # Create and return the driver
+        driver = webdriver.Chrome(service=service, options=chrome_options)
         
-        # Save the page source for debugging
-        page_source = driver.page_source
-        with open("chicago_beer_data/revolution_beer_page.html", "w", encoding="utf-8") as f:
-            f.write(page_source)
-        print("Saved page source")
+        # Set a default page load timeout
+        driver.set_page_load_timeout(30)
         
-        # Try to extract beer data using JavaScript
-        print("Extracting beer data...")
+        return driver, user_data_dir
+    
+    except Exception as e:
+        print(f"Error setting up WebDriver: {e}")
+        import traceback
+        traceback.print_exc()
         
-        script = """
-        const beers = [];
+        # Additional diagnostic information
+        try:
+            chrome_version = subprocess.check_output(["/usr/bin/google-chrome", "--version"]).decode().strip()
+            print(f"Chrome version: {chrome_version}")
+        except Exception as version_error:
+            print(f"Could not retrieve Chrome version: {version_error}")
         
-        // Look for elements with class 'beer-item'
-        const beerElements = document.querySelectorAll('.beer-wrapper, .beer-item, article.beer');
+        raise
+
+def handle_age_verification(driver):
+    """
+    Attempt to handle age verification popup
+    """
+    try:
+        # Wait for potential age verification modal
+        wait = WebDriverWait(driver, 10)
         
-        console.log('Found ' + beerElements.length + ' beer elements');
+        # Try multiple potential age verification button selectors
+        age_verification_selectors = [
+            "//button[contains(text(), 'Yes, I am 21 or older')]",
+            "//button[contains(text(), 'Yes')]",
+            "//button[contains(text(), 'Enter')]",
+            "#age-verification-submit",
+            ".age-verify-yes"
+        ]
         
-        if (beerElements.length > 0) {
-            for (const beerElement of beerElements) {
-                try {
-                    // Extract name, style, and ABV
-                    const nameEl = beerElement.querySelector('h2, h3, .beer-title, .beer-name');
-                    const styleEl = beerElement.querySelector('.beer-style, .style');
-                    const abvEl = beerElement.querySelector('.beer-abv, .abv');
-                    
-                    if (nameEl) {
-                        const beerInfo = {
-                            name: nameEl.textContent.trim(),
-                            style: styleEl ? styleEl.textContent.trim() : 'N/A',
-                            abv: abvEl ? abvEl.textContent.trim() : 'N/A'
-                        };
-                        beers.push(beerInfo);
-                    }
-                } catch (err) {
-                    console.error('Error extracting beer data:', err);
-                }
-            }
-        } else {
-            // If no beer elements found, try a more general approach
-            const sections = document.querySelectorAll('section, article, div.beer-section');
-            
-            for (const section of sections) {
-                const headings = section.querySelectorAll('h2, h3, h4');
-                
-                for (const heading of headings) {
-                    const name = heading.textContent.trim();
-                    
-                    // Skip if it's not likely a beer name
-                    if (name.toLowerCase().includes('menu') || 
-                        name.toLowerCase().includes('contact') ||
-                        name.length < 3) {
-                        continue;
-                    }
-                    
-                    // Look for style and ABV near the heading
-                    let style = 'N/A';
-                    let abv = 'N/A';
-                    
-                    // Check siblings and nearby elements
-                    const parent = heading.parentElement;
-                    if (parent) {
-                        const parentText = parent.textContent.toLowerCase();
-                        const paragraphs = parent.querySelectorAll('p');
-                        
-                        for (const p of paragraphs) {
-                            const text = p.textContent.toLowerCase();
-                            
-                            if (text.includes('style:') || 
-                                text.includes('type:') || 
-                                text.includes('ale') || 
-                                text.includes('lager') || 
-                                text.includes('ipa')) {
-                                style = p.textContent.trim();
-                            }
-                            
-                            if (text.includes('abv:') || 
-                                text.includes('alcohol:') || 
-                                text.includes('%')) {
-                                abv = p.textContent.trim();
-                            }
-                        }
-                        
-                        beers.push({
-                            name: name,
-                            style: style,
-                            abv: abv
-                        });
-                    }
-                }
-            }
-        }
-        
-        return beers;
-        """
-        
-        beer_data = driver.execute_script(script)
-        print(f"Found {len(beer_data)} beers")
-        
-        # Process the beer data
-        beers = []
-        for beer in beer_data:
+        for selector in age_verification_selectors:
             try:
-                name = beer.get('name', 'Unknown')
-                style = beer.get('style', 'N/A')
-                abv_text = beer.get('abv', 'N/A')
+                # Try to find and click the age verification button
+                if selector.startswith('//'):
+                    age_button = wait.until(
+                        EC.element_to_be_clickable((By.XPATH, selector))
+                    )
+                else:
+                    age_button = wait.until(
+                        EC.element_to_be_clickable((By.CSS_SELECTOR, selector))
+                    )
                 
-                # Extract ABV percentage if available
-                abv = "N/A"
-                if abv_text != "N/A":
-                    abv_match = re.search(r'(\d+\.?\d*)%', abv_text)
-                    if abv_match:
-                        abv = float(abv_match.group(1))
-                    else:
-                        # Try another pattern that might be used
-                        abv_match = re.search(r'ABV[:\s]+(\d+\.?\d*)', abv_text, re.IGNORECASE)
-                        if abv_match:
-                            abv = float(abv_match.group(1))
+                # Scroll into view and click
+                driver.execute_script("arguments[0].scrollIntoView(true);", age_button)
+                time.sleep(1)  # Brief pause
+                age_button.click()
                 
-                # Skip if we don't have a valid name
-                if name == 'Unknown' or len(name) < 3:
-                    continue
-                    
-                # Skip elements that are clearly not beers
-                if any(word in name.lower() for word in ['menu', 'home', 'contact']):
-                    continue
+                print(f"Clicked age verification button: {selector}")
                 
-                beers.append({
+                # Wait for page to potentially load
+                time.sleep(2)
+                return True
+            
+            except TimeoutException:
+                # If this selector doesn't work, continue to next
+                continue
+        
+        print("No age verification button found with standard selectors")
+        return False
+    
+    except Exception as e:
+        print(f"Error handling age verification: {e}")
+        return False
+
+def scrape_revolution_beers():
+    """
+    Scrape beers from Revolution Brewing website
+    """
+    # Set up driver with unique user data directory
+    driver, user_data_dir = setup_chrome_driver()
+    beers = []
+    
+    try:
+        # Navigate to the website
+        driver.get('https://revbrew.com/visit/brewery/tap-room-dl')
+        
+        # Attempt to handle age verification
+        handle_age_verification(driver)
+        
+        # Wait and find beer elements
+        wait = WebDriverWait(driver, 10)
+        
+        # Beer list selectors to try
+        beer_selectors = [
+            '.untapped-beer-capsule',
+            '.beer-list__col',
+            'li.beer-list__col',
+            '.beer-item',
+            'div[class*="beer"]'
+        ]
+        
+        beer_elements = None
+        for selector in beer_selectors:
+            try:
+                beer_elements = wait.until(
+                    EC.presence_of_all_elements_located((By.CSS_SELECTOR, selector))
+                )
+                print(f"Found {len(beer_elements)} elements using selector: {selector}")
+                
+                if beer_elements:
+                    break
+            except TimeoutException:
+                print(f"No elements found with selector: {selector}")
+        
+        if not beer_elements:
+            print("No beer elements found")
+            return beers
+        
+        for beer_elem in beer_elements:
+            try:
+                # Safe text extraction function
+                def safe_find_text(element, selector, default='Unknown'):
+                    try:
+                        return element.find_element(By.CSS_SELECTOR, selector).text.strip()
+                    except NoSuchElementException:
+                        return default
+                
+                # Extract beer details
+                name = safe_find_text(beer_elem, '.untapped-beer-capsule__name, h2.beer-name')
+                style = safe_find_text(beer_elem, '.untapped-beer-capsule__style, .beer-style')
+                abv = safe_find_text(beer_elem, '.untapped-beer-capsule__abv, .beer-abv')
+                ibu = safe_find_text(beer_elem, '.untapped-beer-capsule__ibu, .beer-ibu')
+                
+                # Clean up ABV
+                if abv and '%' in abv:
+                    abv = abv.rstrip('%')
+                
+                beer_info = {
                     'name': name,
-                    'type': style,
+                    'style': style,
                     'abv': abv,
+                    'ibu': ibu,
                     'brewery': 'Revolution Brewing',
-                    'address': '2323 N Milwaukee Ave',
-                    'city': 'Chicago',
-                    'state': 'IL',
-                    'website': 'https://revbrew.com'
-                })
-            except Exception as e:
-                print(f"Error processing beer data: {e}")
-        
-        # Try other beer pages if we didn't find beers
-        if not beers:
-            other_pages = [
-                "https://revbrew.com/beer/seasonals",
-                "https://revbrew.com/beer/hero-series"
-            ]
-            
-            for page in other_pages:
-                try:
-                    print(f"Trying alternative page: {page}")
-                    driver.get(page)
-                    time.sleep(5)
-                    
-                    # Save page source
-                    page_source = driver.page_source
-                    with open(f"chicago_beer_data/revolution_{page.split('/')[-1]}.html", "w", encoding="utf-8") as f:
-                        f.write(page_source)
-                    
-                    # Execute the same script
-                    beer_data = driver.execute_script(script)
-                    print(f"Found {len(beer_data)} beers on {page}")
-                    
-                    # Process the beer data
-                    for beer in beer_data:
-                        try:
-                            name = beer.get('name', 'Unknown')
-                            style = beer.get('style', 'N/A')
-                            abv_text = beer.get('abv', 'N/A')
-                            
-                            # Extract ABV percentage if available
-                            abv = "N/A"
-                            if abv_text != "N/A":
-                                abv_match = re.search(r'(\d+\.?\d*)%', abv_text)
-                                if abv_match:
-                                    abv = float(abv_match.group(1))
-                                else:
-                                    # Try another pattern that might be used
-                                    abv_match = re.search(r'ABV[:\s]+(\d+\.?\d*)', abv_text, re.IGNORECASE)
-                                    if abv_match:
-                                        abv = float(abv_match.group(1))
-                            
-                            # Skip if we don't have a valid name
-                            if name == 'Unknown' or len(name) < 3:
-                                continue
-                                
-                            # Skip elements that are clearly not beers
-                            if any(word in name.lower() for word in ['menu', 'home', 'contact']):
-                                continue
-                            
-                            beers.append({
-                                'name': name,
-                                'type': style,
-                                'abv': abv,
-                                'brewery': 'Revolution Brewing',
-                                'address': '2323 N Milwaukee Ave',
-                                'city': 'Chicago',
-                                'state': 'IL',
-                                'website': 'https://revbrew.com'
-                            })
-                        except Exception as e:
-                            print(f"Error processing beer data: {e}")
-                            
-                    # If we found beers on this page, we can stop
-                    if beers:
-                        break
-                        
-                except Exception as e:
-                    print(f"Error scraping {page}: {e}")
-        
-        # If we still couldn't find any beers, add fallback data
-        if not beers:
-            print("No beers found. Adding fallback data.")
-            fallback_beers = [
-                {"name": "Anti-Hero IPA", "type": "IPA", "abv": 6.7},
-                {"name": "Fist City", "type": "Pale Ale", "abv": 5.5},
-                {"name": "Rev Pils", "type": "Pilsner", "abv": 5.5},
-                {"name": "Freedom of Speech", "type": "Session IPA", "abv": 4.5},
-                {"name": "Cross of Gold", "type": "Golden Ale", "abv": 5.0},
-                {"name": "Eugene Porter", "type": "Porter", "abv": 6.8},
-                {"name": "Every Day-Hero", "type": "Session IPA", "abv": 4.3}
-            ]
-            
-            for beer in fallback_beers:
-                beers.append({
-                    'name': beer["name"],
-                    'type': beer["type"],
-                    'abv': beer["abv"],
-                    'brewery': 'Revolution Brewing',
-                    'address': '2323 N Milwaukee Ave',
-                    'city': 'Chicago',
-                    'state': 'IL',
-                    'website': 'https://revbrew.com'
-                })
-        
-        # Save results
-        save_to_json(beers, "chicago_beer_data/revolution_beers.json")
-        save_to_csv(beers, "chicago_beer_data/revolution_beers.csv")
-        
-        print(f"Successfully extracted {len(beers)} beers from Revolution Brewing")
-        return beers
+                    'scraped_date': datetime.now().isoformat()
+                }
+                
+                beers.append(beer_info)
+                
+            except Exception as beer_extract_error:
+                print(f"Error extracting individual beer: {beer_extract_error}")
         
     except Exception as e:
         print(f"Error scraping Revolution Brewing: {e}")
-        # Fallback data
-        fallback_beers = [
-            {"name": "Anti-Hero IPA", "type": "IPA", "abv": 6.7},
-            {"name": "Fist City", "type": "Pale Ale", "abv": 5.5},
-            {"name": "Rev Pils", "type": "Pilsner", "abv": 5.5},
-            {"name": "Freedom of Speech", "type": "Session IPA", "abv": 4.5},
-            {"name": "Cross of Gold", "type": "Golden Ale", "abv": 5.0}
-        ]
-        
-        beers = []
-        for beer in fallback_beers:
-            beers.append({
-                'name': beer["name"],
-                'type': beer["type"],
-                'abv': beer["abv"],
-                'brewery': 'Revolution Brewing',
-                'address': '2323 N Milwaukee Ave',
-                'city': 'Chicago',
-                'state': 'IL',
-                'website': 'https://revbrew.com'
-            })
-        
-        # Save results even in case of error
-        save_to_json(beers, "chicago_beer_data/revolution_beers.json")
-        save_to_csv(beers, "chicago_beer_data/revolution_beers.csv")
-        
-        print(f"Using fallback data: {len(beers)} beers")
-        return beers
+        import traceback
+        traceback.print_exc()
+    
     finally:
+        # Always quit the driver and clean up temp directory
         driver.quit()
+        try:
+            shutil.rmtree(user_data_dir)
+        except Exception as cleanup_error:
+            print(f"Error cleaning up temp directory: {cleanup_error}")
+    
+    return beers
 
-def save_to_json(data, filename):
-    """Save data to a JSON file."""
-    with open(filename, 'w', encoding='utf-8') as f:
-        json.dump(data, f, indent=4)
-    print(f"Data saved to {filename}")
+def save_to_csv(beers, filename='revolution_beers.csv'):
+    """
+    Save scraped beer information to a CSV file
+    """
+    if not beers:
+        print("No beers to save.")
+        return
+    
+    try:
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(filename) or '.', exist_ok=True)
+        
+        # Specify the fieldnames based on the keys in the first beer dictionary
+        fieldnames = beers[0].keys()
+        
+        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            
+            # Write the header
+            writer.writeheader()
+            
+            # Write each beer's information
+            for beer in beers:
+                writer.writerow(beer)
+        
+        print(f"Successfully saved {len(beers)} beers to {filename}")
+    
+    except Exception as e:
+        print(f"Error saving to CSV: {e}")
 
-def save_to_csv(data, filename):
-    """Convert data to DataFrame and save as CSV."""
-    df = pd.DataFrame(data)
-    df.to_csv(filename, index=False)
-    print(f"Data saved to {filename}")
+def main():
+    # Scrape Revolution Brewing
+    print("Scraping Revolution Brewing...")
+    revolution_beers = scrape_revolution_beers()
+    
+    if revolution_beers:
+        print(f"Found {len(revolution_beers)} beers from Revolution Brewing")
+        save_to_csv(revolution_beers, 'revolution_beers.csv')
+    else:
+        print("No beers found or scraping failed")
 
-if __name__ == "__main__":
-    scrape_revolution_beers()
+if __name__ == '__main__':
+    main()
