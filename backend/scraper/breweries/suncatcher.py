@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
+import os
 
 class SuncatcherScraper(BreweryScraper):
     def __init__(self):
@@ -12,7 +13,22 @@ class SuncatcherScraper(BreweryScraper):
             location="Chicago, IL"
         )
         self.beer_url = "https://suncatcherbrewing.com/beer"
+        self.output_dir = "scraped_data"
         
+        # Create output directory if it doesn't exist
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+
+    def save_to_json(self, data):
+        """Save scraped data to a JSON file"""
+        filename = os.path.join(self.output_dir, f"{self.brewery_name.lower().replace(' ', '_')}_beers.json")
+        
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+        
+        print(f"Saved {len(data['beers'])} beers to {filename}")
+        return filename
+
     def scrape(self):
         """Scrape Suncatcher Brewing website for beer information"""
         # Initialize the brewery info
@@ -165,3 +181,12 @@ class SuncatcherScraper(BreweryScraper):
             "brewery": brewery_info,
             "beers": beers
         }
+
+# For direct script testing
+def main():
+    scraper = SuncatcherScraper()
+    data = scraper.scrape()
+    scraper.save_to_json(data)
+
+if __name__ == "__main__":
+    main()

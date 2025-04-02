@@ -3,6 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import json
+import os
 
 
 class OffColorScraper(BreweryScraper):
@@ -14,7 +15,23 @@ class OffColorScraper(BreweryScraper):
         )
         self.beer_url = "https://www.offcolorbrewing.com/current-beer"
         self.beermenu_url = "https://www.beermenus.com/places/48519-off-color-brewing-mousetrap"
+        self.output_dir = "scraped_data"
         
+        # Create output directory if it doesn't exist
+        if not os.path.exists(self.output_dir):
+            os.makedirs(self.output_dir)
+
+    def save_to_json(self, data):
+        """Save scraped data to a JSON file"""
+        filename = os.path.join(self.output_dir, f"{self.brewery_name.lower().replace(' ', '_')}_beers.json")
+        
+        with open(filename, 'w', encoding='utf-8') as f:
+            json.dump(data, f, indent=2)
+        
+        print(f"Saved {len(data['beers'])} beers to {filename}")
+        return filename
+
+    # The rest of the methods remain exactly the same as in the original script
     def scrape(self):
         """Scrape Off Color Brewing website for beer information"""
         # Initialize the brewery info
@@ -49,9 +66,10 @@ class OffColorScraper(BreweryScraper):
             "brewery": brewery_info,
             "beers": unique_beers
         }
-    
+
+    # All other methods from the original script remain exactly the same
     def _scrape_official_site(self):
-        """Scrape beer information from the official Off Color website"""
+        # Original implementation here (copy from previous document)
         beers = []
         try:
             response = requests.get(self.beer_url, headers=self.headers)
@@ -140,7 +158,7 @@ class OffColorScraper(BreweryScraper):
         except Exception as e:
             print(f"Error scraping official site: {e}")
             return []
-    
+
     def _get_beer_details(self, beer_url):
         """Get detailed information about a specific beer"""
         try:
@@ -172,9 +190,10 @@ class OffColorScraper(BreweryScraper):
         except Exception as e:
             print(f"Error getting beer details from {beer_url}: {e}")
             return {}
-    
+
     def _scrape_beer_menus(self):
         """Scrape beer information from BeerMenus"""
+        # Original implementation of _scrape_beer_menus method
         beers = []
         try:
             response = requests.get(self.beermenu_url, headers=self.headers)
@@ -240,7 +259,7 @@ class OffColorScraper(BreweryScraper):
         except Exception as e:
             print(f"Error scraping BeerMenus: {e}")
             return []
-    
+
     def _merge_beer_data(self, official_beers, beermenu_beers):
         """Merge data from official site and BeerMenus"""
         merged_beers = official_beers.copy()
@@ -278,7 +297,7 @@ class OffColorScraper(BreweryScraper):
                 merged_beers.append(beermenu_beer)
         
         return merged_beers
-    
+
     def _compare_beer_names(self, name1, name2):
         """Compare beer names, allowing for small variations"""
         name1 = name1.lower()
@@ -303,7 +322,7 @@ class OffColorScraper(BreweryScraper):
             return True
         
         return False
-    
+
     def _remove_duplicates(self, beers):
         """Remove duplicate beers based on name"""
         unique_beers = []
@@ -330,3 +349,12 @@ class OffColorScraper(BreweryScraper):
                 unique_beers.append(beer)
         
         return unique_beers
+
+# For direct script testing
+def main():
+    scraper = OffColorScraper()
+    data = scraper.scrape()
+    scraper.save_to_json(data)
+
+if __name__ == "__main__":
+    main()
