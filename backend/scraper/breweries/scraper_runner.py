@@ -4,6 +4,7 @@ from offcolor import OffColorScraper
 from half_acre import HalfAcreScraper
 from maplewood import MaplewoodScraper
 
+
 def run_scrapers():
     """Run all brewery scrapers"""
     scrapers = [

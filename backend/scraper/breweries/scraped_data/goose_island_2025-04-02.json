@@ -1,0 +1,146 @@
+[
+    {
+        "name": "Honkers",
+        "type": "Ale",
+        "abv": "4.3",
+        "description": "Like with all good friends, goodbye is never forever. Goose Island Honker\u2019s Ale was the first beer brewed at our Clybourn Brewpub in 1988. Picking up where we left off, we proudly welcome back a true Chicago original and the beer that started it all.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/honkers"
+    },
+    {
+        "name": "BIG JUICY BEER HUG",
+        "type": "IPA",
+        "abv": "9.9",
+        "description": "If you're a fan of Tropical Beer Hug, you'll love it's punchy sibling, Big Juicy Beer Hug. Coming in at 9.9% ABV, this fruit forward Imperial IPA has an aroma bursting with a tropical bouquet of passionfruit, orange, and guava.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/big-juicy-beer-hug"
+    },
+    {
+        "name": "312 Wheat Ale",
+        "type": "Wheat Ale",
+        "abv": "4.2",
+        "description": "Your boss called. They said you need a 312 Wheat Ale. This bright, lemony, 'bit hazy wheat ale is what makes Goose Island \"Chicago's Beer.\" P.S. If they've never used a landline, they're too young for you.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/312-wheat-ale"
+    },
+    {
+        "name": "FULL POCKET",
+        "type": "IPA",
+        "abv": "5.2",
+        "description": "Don\u2019t you hate it when your pockets are empty? Or when you\u2019re craving a clean, crisp, pils in a sea of milkshake IPAs? Us too, that\u2019s why we just wanted to make a good beer with a great vibe. It\u2019s hitting the spot in all the right ways. Fill up on Full Pocket.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/full-pocket-pilsner"
+    },
+    {
+        "name": "BLACKHAWKS PALE ALE",
+        "type": "Pale Ale",
+        "abv": "5",
+        "description": "Blackhawks Pale Ale is an easy-drinking, hockey-watching, post-game-excitement kind of beer. Whether you're sitting on your couch or on the glass, drink Chicago's Hockey Beer.Sold exclusively at the United Center.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/blackhawks-pale-ale"
+    },
+    {
+        "name": "SOFIE",
+        "type": "Belgian Style",
+        "abv": "6.5",
+        "description": "Feeling boujee? Embrace your self care era with this vibrant Belgian Style Ale. Want to get away this weekend or maybe hit up that happy hour after work? We\u2019ve got you. Take those plans out of the group chat and make them a reality. Always the life of every party, Sofie is the perfect plus one (or six).",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/sofie-belgian-style-saison"
+    },
+    {
+        "name": "IPA",
+        "type": "IPA",
+        "abv": "5.9",
+        "description": "Goose IPA is a six-time award winner at Great American Beer Festival. You could say we're proud, bumper-sticker, put-it-on-the-fridge parents. This classic, hoppy, and bold IPA is part of what makes Goose Island, Goose Island. Enjoy grapefruity goodness in every last sip.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/goose-ipa"
+    },
+    {
+        "name": "GREEN LINE",
+        "type": "Pale Ale",
+        "abv": "5.4",
+        "description": "Named for our train line that runs outside of our brewery, we bring you: Green Line. Of all the lines, this one we hold near and dear. We take it into work, we ride it off into the sunset after happy hour on the patio, and we wait in the cold for its arrival during Chicago winters. Green Line is always there for us.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/green-line-pale-ale"
+    },
+    {
+        "name": "TROPICAL BEER HUG",
+        "type": "IPA",
+        "abv": "9.9",
+        "description": "This big Imperial IPA is juicy and bursting with mango, pineapple, and peach flavors. It's just the thing to elevate your pit tickets or to celebrate your friend finally dumping Alex. We never liked Alex.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/tropical-beer-hug"
+    },
+    {
+        "name": "NEON BEER HUG",
+        "type": "IPA",
+        "abv": "7",
+        "description": "A shockingly easy-drinking 7% ABV IPA with an electric bouquet of tropical & citrus flavors. Nugget, Sultana, Citra, Mosaic, and Eureka hops provide the spark that makes Neon Beer Hug shine.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/neon-beer-hug"
+    },
+    {
+        "name": "Hoppy Beer Hug",
+        "type": "Pale Ale",
+        "abv": "6.8",
+        "description": "Introducing Hoppy Beer Hug, a vibrant addition exclusive to our variety pack. This 6.8% ABV hoppy beer greets you with an inviting aroma of citrus, peach and other stone fruit. The flavor unfolds with candied lemon and tangerine, delivering a bright tropical and citrusy experience. With a light body and perfectly balanced bitterness, Hoppy Beer Hug is the refreshing embrace your taste buds have been waiting for.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/hoppy-beer-hug"
+    },
+    {
+        "name": "BULL & GOOSE",
+        "type": "Ale",
+        "abv": "4.8",
+        "description": "The Chicago Bulls and Goose Island have teamed up to bring you Bull & Goose. This \u201cWest Side Ale\u201d is built to bring you joy in the 300 level or at home when you\u2019re watching the game. Bull & Goose is light, crisp and easy drinking. Get your Bulls jersey and your freshest pair of high tops. Let\u2019s ball.Sold exclusively at the United Center.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/bull-and-goose-west-side-ale"
+    },
+    {
+        "name": "BIG MANGO BEER HUG",
+        "type": "Ipa",
+        "abv": "9.9",
+        "description": "Best buds with Tropical Beer Hug and Big Juicy Beer Hug, Big Mango Beer Hug is bursting with luscious mango flavor. Big Mango has a fruity sweetness that hits just right and a finish that keeps you coming back for more. Whether you're relaxing at home or enjoying a sunny day with friends, Big Mango Beer Hug is unabashedly delicious.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/big-mango-beer-hug"
+    },
+    {
+        "name": "SUMMERTIME",
+        "type": "",
+        "abv": "5",
+        "description": "Greetings from Chicago, where we live for summer. Summertime a celebration of the sun finally shining, the temperature rising and the people smiling. That's right, we wait all year to see joy on our neighbors' faces. Whether you're battling the four seasons or warm all year 'round, Summertime is for those scorching beach days, patio hangs, and cookouts. All summer long, it's Summertime.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/summertime"
+    },
+    {
+        "name": "MATILDA",
+        "type": "Belgian",
+        "abv": "7",
+        "description": "We get it. Sometimes you need to find a moment to slow down and appreciate the little things. You deserve it. We are all here for you finding the magic in the everyday. Matilda proves this is why you can have nice things.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/matilda-belgian-style-pale-ale"
+    },
+    {
+        "name": "HAZY BEER HUG",
+        "type": "IPA",
+        "abv": "6.8",
+        "description": "This Hazy IPA is packed with notes of peaches, white grapes, and guava. Sip it on the beach or on your porch. It tastes just like a Bright, Sunshiny Haze.",
+        "brewery": "Goose Island",
+        "location": "Chicago, IL",
+        "url": "https://www.gooseisland.com/beers/hazy-beer-hug"
+    }
+]
