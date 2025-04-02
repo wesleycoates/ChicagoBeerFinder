@@ -2,6 +2,7 @@
 from suncatcher import SuncatcherScraper
 from offcolor import OffColorScraper
 from half_acre import HalfAcreScraper
+from maplewood import MaplewoodScraper
 
 def run_scrapers():
     """Run all brewery scrapers"""
@@ -9,6 +10,7 @@ def run_scrapers():
         SuncatcherScraper(),
         OffColorScraper(),
         HalfAcreScraper(),
+        MaplewoodScraper(),
         # Add more scrapers here as they're developed
     ]
     

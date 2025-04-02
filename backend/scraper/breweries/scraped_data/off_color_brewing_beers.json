@@ -51,6 +51,17 @@
       ]
     },
     {
+      "name": "0\nBeer for Hell",
+      "brewery": "Off Color Brewing",
+      "type": "Unknown",
+      "abv": "6.2%",
+      "description": "ABV: 6.2%",
+      "url": "https://www.offcolorbrewing.com/beer-for-hell/",
+      "sources": [
+        "official_site"
+      ]
+    },
+    {
       "name": "0\nBeer for Hoops",
       "brewery": "Off Color Brewing",
       "type": "Unknown",

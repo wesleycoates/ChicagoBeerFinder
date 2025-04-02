@@ -1,0 +1,965 @@
+{
+  "brewery": "Maplewood Brewing Co.",
+  "beers": [
+    {
+      "name": "1MPH",
+      "type": "Pale Ale",
+      "abv": 5.5,
+      "description": "An American Pale Ale featuring vibrant tropical and citrus aromas from the addition of Citra Hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "APOCALYPSE MEOW MEOW",
+      "type": "Golden Ale",
+      "abv": 6.3,
+      "description": "A Golden Ale with Metric Coffee, Raspberries, & Vanilla.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "ARROZ BY ANY OTHER NAME",
+      "type": "Rice Lager",
+      "abv": 4.7,
+      "description": "We used a blend of rice, including jasmine to lighten the body, add crispness and snap, as well as impart a delicate flavor to this clean lager. Very light in color, and balanced, with rounded malt, and herbal hop notes throughout.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "AZACCA MORRIS",
+      "type": "IPA",
+      "abv": 7.3,
+      "description": "Azacca Hops are the main protagonist of Azacca Morris IPA. With intense tropical aromas and flavored, Azacca Morris is a charming schemer who demonstrates a flair for citrus and very ripe mango, with notes of orchard fruit (pears, apples) and pine needles throughout.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "AZACCS MORRIS",
+      "type": "West Coast IPA",
+      "abv": 7.3,
+      "description": "Azacca hops are the main protagonist of Azacca Morris IPA. With intense tropical aromas and flavors, Azacca Morris is a charming schemer who demonstrates a flair for citrus and very ripe mango, with notes of orchard fruit and pine needles throughout.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BARREL AGED BARELY BUTCHER",
+      "type": "Barleywine-style Ale",
+      "abv": 12.5,
+      "description": "We took a portion of barleywine aged in bourbon & rye barrels, and blended in a small amount of imperial stout base that was aged in Madeira barrels.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BARREL AGED COFFEE MIND FK",
+      "type": "Imperial Stout",
+      "abv": 0.0,
+      "description": "Imperial Stout aged for 12 months in a freshly dumped Eagle Rare barrel with Metric Fulton Street coffee, vanilla beans and cacao nibs.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BAVARIAN DREAM",
+      "type": "Bavarian Style Hefeweizen",
+      "abv": 5.4,
+      "description": "It's a Hefe! Notes of clove and banana; effervescent and quenching.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BELLE LA VIE",
+      "type": "Belgian-Style Single",
+      "abv": 5.5,
+      "description": "A light and drinkable Belgian Style Single.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BELLE MONDE",
+      "type": "Belgian-Style Tripel",
+      "abv": 9.5,
+      "description": "Our traditional Tripel-style golden ale is brewed with the highest quality European malt and our favorite Belgian yeast strain.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BENDED SEA",
+      "type": "Baltic Porter",
+      "abv": 9.5,
+      "description": "This Baltic Porter has a silky mouthfeel and big roasty chocolate notes. It's complex and rich and a perfect sipper for the colder season.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BERLINER BLANC",
+      "type": "Berliner Weisse",
+      "abv": 3.5,
+      "description": "Dry-hopped Berliner Weisse.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BIG PULPY",
+      "type": "DDH DIPA",
+      "abv": 0.0,
+      "description": "This DIPA drinks like juice with insane amounts of hop aroma and flavor.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BLACK SAISON",
+      "type": "Saison",
+      "abv": 6.5,
+      "description": "A non-traditional saison brewed with malts more typical of a porter. The darker malt results in a rich flavor profile with notes of roasted barley and plums complimented by hints of citrus and spice from our yeast. We finish the beer by lightly dry hopping with Northern Brewer and Columbus hops. The resulting liquid is a new take on a farmhouse ale",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BOCK IN THE GROOVE",
+      "type": "Bock",
+      "abv": 6.2,
+      "description": "A traditional style bock beer brewed with a blend of the finest German malts. Dark amber",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BOHEMIAN RYE-CITY",
+      "type": "Pilsner",
+      "abv": 4.9,
+      "description": "A smoked rye pilsner.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BONUS POINTS",
+      "type": "Imperial Brown Ale",
+      "abv": 0.0,
+      "description": "",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BREAKFAST AT LUCIFERS",
+      "type": "DIPA",
+      "abv": 0.0,
+      "description": "We teamed up with 18th Street Brewing Co. and brewed a DIPA with blueberry and coffee. Big notes of fruit and coffee beans hit with a creamy mouthfeel; this is a strangely balanced beer.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "BROWNIE POINTS",
+      "type": "Brown Ale w/ Vanilla",
+      "abv": 5.7,
+      "description": "Full of malty chocolate and toffee flavors, Brownie Points has a creamy body from the addition of flaked oats.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "CASHMERE PANTS",
+      "type": "American Pale Ale",
+      "abv": 5.6,
+      "description": "American pale ale w/ lactose & oats, truly showcasing the Cashmere hops, but there's a kiss of Cascade on the back end. Fairly hazy.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "CASHMERE PULASKI",
+      "type": "Chicago Pilsner",
+      "abv": 5.1,
+      "description": "This variation on our dearest Pilsner is brewed annually for our Pulaski Day celebrations.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "CHARLATAN",
+      "type": "American Pale Ale",
+      "abv": 6.1,
+      "description": "An American Pale Ale generously hopped with Citra, Centennial, and Simcoe hops for fresh citrus flavors with mild earthy pine notes.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "CHINOOK IMPERIAL RED",
+      "type": "Imperial Red Ale",
+      "abv": 7.3,
+      "description": "Imperial Red Ale brewed with Chinook hops",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "CLOSER THAN WE THINK",
+      "type": "DDH DIPA",
+      "abv": 0.0,
+      "description": "Double India Pale Ale brewed with Simcoe hops and Simcoe Dynaboost, an extract that enhances all the juicy stone fruit, and tropical notes of Simcoe. Double dry-hopped with Elani hops, which pair insanely well, adding more peach flavor and pineapple aroma.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "COAST RIDER",
+      "type": "West Coast Pilsner",
+      "abv": 5.2,
+      "description": "Brewed with the finest pilsner malt and Citra hops, this west coast interpretation of a Pilsner is refreshing and flavorful. A simple recipe results in balance, with big notes of citrus zest, and crusty, malty bread.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "COLLIDING CANOPIES",
+      "type": "Double India Pale Ale",
+      "abv": 0.0,
+      "description": "A Northeast style Double IPA brewed Citra, Riwaka, and Motueka Cryo hops. Popping with overripe tropical notes and hints of grapefruit, grape juice and gooseberries.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "COOL AUGUST MOON",
+      "type": "Saison",
+      "abv": 0.0,
+      "description": "Foeder aged honey saison with wine grapes.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "CORN TO BE WILD",
+      "type": "West Coast Corn IPA",
+      "abv": 6.5,
+      "description": "We use Eclipse, Citra, and Motueka hops in heavy doses throughout the brewing process, so this west coaster has tons of orange, and tangerine peel, with notes of pine and tropical fruit.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "COSMIC ROCKS",
+      "type": "Berliner Weisse",
+      "abv": 3.8,
+      "description": "This low ABV wheat ale has bright notes of citrus and a tart finish that refreshes your palette for the next sip...and the next...and the next....and the, well you get the idea. It's delicious!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "CREEPY GINGER",
+      "type": "Belgian Golden",
+      "abv": 6.8,
+      "description": "Brewed to celebrate one of the red-headed founders of Maplewood Brewing Company, the Creepy Ginger is a Belgian-Style Golden Strong Ale brewed with a pilsner malt base and a healthy amount of spelt. A modest amount of organic ginger root is infused after fermentation to add subtle complexity to classic Belgian fruity and spicy flavors, resulting in a unique and refreshing Belgian-style ale.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "CRUSHINATOR",
+      "type": "Session IPA",
+      "abv": 4.5,
+      "description": "This easy-drinking IPA uses a base of Vienna malt and \ufb02aked maize to create great depth in a low ABV beer.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DAGGERTOOTH",
+      "type": "Black IPA",
+      "abv": 6.5,
+      "description": "A balanced IPA that looks like a stout but still drinks like an IPA.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DEM GUAVA BOYS",
+      "type": "Berliner Weisse",
+      "abv": 3.5,
+      "description": "Our Berliner Weisse is brewed with an heirloom variety pilsner malt from Germany and the finest American grown wheat. The malts we chose impart a rich and grainy base which is married with the refreshing tartness achieved by kettle souring with a blend of Lactobacillus.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DISTANT ARROW",
+      "type": "American Wheat",
+      "abv": 5.6,
+      "description": "Distant Arrow is a crisp American Wheat Ale with a bright citrus hop profile, perfect for a warm Chicago day...OR night...OR morning...OR whenever",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DOOMBUGGY",
+      "type": "DIPA",
+      "abv": 0.0,
+      "description": "We double dry hopped with Vic Secret and Citra hops resulting in huge tropical notes of pineapple and passionfruit with hints of dank pine.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DOUBLE CHARLATAN",
+      "type": "DIPA",
+      "abv": 0.0,
+      "description": "A Double dry hopped Double IPA brewed with Citra, Centennial, Columbus & Amarillo hops. It\u2019s our award winning pale ale but kicked up a notch. Big peach, citrus and tropical notes.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DR. JUICENSTEIN",
+      "type": "IPA",
+      "abv": 0.0,
+      "description": "A modest grain bill of pale pilsner and wheat malts with a grandiose hop bill of lupulin powder from Simcoe, Citra and Mosaic hops BUT that's not it, we also added pure hop extract from mosaic hops. The Dr. is brimming with such vivid tropical flavor and aroma the first sip will drive you to brink of insanity!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DRINK DAT CITRA",
+      "type": "DDH IPA",
+      "abv": 6.5,
+      "description": "DDH Citra IPA w/ citra hops, citra cryo and citra terpine",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DRINK DAT MOSAIC",
+      "type": "DDH IPA",
+      "abv": 6.5,
+      "description": "DDH IPA focusing on the Mosaic hop.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "DRIPPING CITRA",
+      "type": "DDH IPA",
+      "abv": 0.0,
+      "description": "This is our juicy love letter to Citra hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "ELLA OPAL",
+      "type": "Farmhouse Ale",
+      "abv": 3.6,
+      "description": "A hint of tart with flavors of rustic wheat & lemon. Mango balances out the bite on the finish.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "FAT PUG",
+      "type": "Oatmeal Milk Stout",
+      "abv": 5.9,
+      "description": "With welcoming notes of dark chocolate and coffee, this Milk Stout combines a variety of roasted grains to produce a complex yet mellow flavor.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "FEAR STALKS THE LAND",
+      "type": "India Pale Ale",
+      "abv": 0.0,
+      "description": "Our newest Hazy, brewed with CGX Strata, Sabro Cryo, Sabro and Idaho 7 hops. It boasts tropical flavors of coconut, pineapple and tangerine sitting on big notes of dankness.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "FESTBIER",
+      "type": "Golden Oktoberfest Lager",
+      "abv": 0.0,
+      "description": "Brewed with the finest German malts and noble hops!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "FLASHES OF LIGHT",
+      "type": "Czech Style Pilsner",
+      "abv": 4.5,
+      "description": "Brewed with the finest Bohemian pilsner malt and Czech-grown Saaz hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "FLUFFY BOTTOMS",
+      "type": "American Pale Ale",
+      "abv": 5.6,
+      "description": "Expect bright citrus notes, with waves of mango, papaya, guava & fruit punch. (Motueka and Cashmere hops)",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "FOEDER CHERRY APOCALYPSE",
+      "type": "Sour",
+      "abv": 5.5,
+      "description": "Mixed culture cherry beer, foeder aged, with lactose and vanilla, conditioned on single origin Peruvian coffee beans.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "FOGEY'S ESB",
+      "type": "Extra Special Bitter",
+      "abv": 5.2,
+      "description": "Our brewers strive to brew the perfect balance of malt and hop with this style, resulting in a drinkable beer with the rich malt flavors of honey, and fresh baked bread nuanced with the complex citrus, and herbal spice notes of the hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "GOBY",
+      "type": "Tropical Sour",
+      "abv": 0.0,
+      "description": "A light and insanely refreshing tart ale overflowing with tropical juiciness! Crisp and dry, but balanced by the addition of pineapple, orange, and guava.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "GOLDEN COLDIE",
+      "type": "IPL",
+      "abv": 6.9,
+      "description": "A golden India Pale Lager.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "GREEN CREST",
+      "type": "West Coast IPA",
+      "abv": 6.8,
+      "description": "Citrus punch, with notes of apricot, and juicy peach are presented in a golden, crisp, and medium bodied IPA.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "GUATAMALAN BAM BAM",
+      "type": "American Brown Ale",
+      "abv": 6.3,
+      "description": "American Brown Ale With Coffee.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "HERITAGE CHARLATAN",
+      "type": "Pale Ale",
+      "abv": 6.1,
+      "description": "A unique American Pale Ale with English malt character. Charlatan is generously hopped with Simcoe, Citra, and Centennial hops. Charlatan has fresh citrus and tropical flavors (mango, passion fruit, grapefruit). You might also pick up some earthy pine notes from the Simcoe. Low co-humulone bittering hops provide a smooth bitterness that balances Charlatan\u2019s round malt backbone to create an extremely drinkable pale ale.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "HIGHS AND MIDS",
+      "type": "Double India Pale Ale",
+      "abv": 0.0,
+      "description": "Double India Pale Ale brewed and double dry-hopped with Strata, Citra, Columbus, and Ekuanot hops. This is a dank and sticky hazy with overripe tropical notes that has hints of pine forest and herb.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "HOP FRIED RICE",
+      "type": "DDH DIPA",
+      "abv": 7.4,
+      "description": "A collaboration beer with Transient Artisan Ales brewed with rice and hopped at heavy levels with Hopsteiner hops Lotus and Experimental 09326.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "HOP TOPIC",
+      "type": "West Coast IPA",
+      "abv": 6.8,
+      "description": "A West Coast IPA brewed with a simplified grain bill of 2-row barley and carapils.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "HUSKY PANTS",
+      "type": "DDH DIPA",
+      "abv": 0.0,
+      "description": "This fat older brother to Juice Pants pours hazy and has huge notes of tropical fruit with some dankness. You're going to have to work up a husky thirst for this big ol' boy. Hops: Sultana, Idaho 7, Citra, Columbus",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "IN DARK TREES",
+      "type": "Dark Czech Lager",
+      "abv": 0.0,
+      "description": "A lightly roasted dark lager with notes of toasted barley and spicy hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "IT MIGHT BE, IT COULD BE, IT IS",
+      "type": "K\u00f6lsch",
+      "abv": 5.2,
+      "description": "",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "JUICE JORTS",
+      "type": "Hazy Pale Ale",
+      "abv": 0.0,
+      "description": "Juicy pale ale double dry hopped with Citra & Azacca and El Dorado hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "JUICE PANTS",
+      "type": "India Pale Ale",
+      "abv": 0.0,
+      "description": "Juice Pants is a healthily hopped hazy IPA showcasing both Citra hops & cryo, as well as Mosaic hops & cryo.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "KELL EM ALL",
+      "type": "Kellerbier",
+      "abv": 4.5,
+      "description": "Brewed with the 100% German grown Pilsner malt and hopped lightly with Slovenian grown hops; Styrian Golding and the slightly fruitier Styrian Wolf. This beer should be slammed. Responsibly.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "KELLERFORNIA LOVE",
+      "type": "Kellerbier",
+      "abv": 4.6,
+      "description": "Brewed with a base of German floor malted pilsner malt and good ol' West Coast grown Citra hops; this German lager is bright and has notes of citrus zest smothered in honey with hints of tropical fruit peaking in. Easy drinking and complex at the same time.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "KR\u00d6MPUS",
+      "type": "Imperial Porter",
+      "abv": 8.1,
+      "description": "Porter brewed with rum and vanilla bean.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "LEMON DROP",
+      "type": "American Pale Wheat",
+      "abv": 5.6,
+      "description": "",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "LIL GRIZ AND THE BOYZ",
+      "type": "Grisette",
+      "abv": 0.0,
+      "description": "Barrel fermented Grisette aged in neutral American oak barrels",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "LOGAN IS FOR LOVERS",
+      "type": "IPA",
+      "abv": 6.5,
+      "description": "Our new neighbors came a-knockin' for some lovin' and of course we said, yes! This intensely tropical collab with Middlebrow drinks like everyone's favorite childhood bev: Hawaiian Punch. Featuring Middlebrow's house yeast blend, Denali & Mosaic hops, and a medley of real Passion Fruit, Mango, Pink Guava, and Pineapple, one sip will transport your mind to the summers of yesteryear.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "LOUNGE LAGER",
+      "type": "American Adjunct Lager",
+      "abv": 4.5,
+      "description": "American Adjunct Lager brewed with 6-Row Barley and flaked corn showcasing malty undertones with a refreshing noble hop bite.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MANDARINA BAVARIA",
+      "type": "Saison",
+      "abv": 6.7,
+      "description": "An honest reward for an honest day's work. Grain: Pilsner, Spelt, Abbey, and Melanoidin. Hops: Mandarina Bavaria, Mt. Hood, and Warrior.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MANGOES ON MAIN",
+      "type": "American Pale Ale",
+      "abv": 5.9,
+      "description": "A pale ale full of juicy dank citrus flavor, dosed with mangos to take this pale ale from the festival straight into summer",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MARGARITA GOSE",
+      "type": "Sour Gose",
+      "abv": 4.4,
+      "description": "A German style wheat beer that was soured with a special Lactobacillus blend and brewed with lime peel, orange peel and sea salt. Spelt was used to impart a nutty flavor that compliments the bread-like qualities from the malt/wheat. A lightly tart ale with a crisp and refreshing flavor reminiscent of a margarita on the rocks with a salted rim",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MEGA DRY",
+      "type": "Brut IPA",
+      "abv": 6.4,
+      "description": "This baby drinks and tastes like a sparkling white wine, super dry, spritzy, super refreshing. Introducing our Brut IPA collab with Omega Yeast Labs - Maplewood Mega Dry. We fermented it with Omega\u2019s exclusive Voss Kveik strain for extra sex appeal.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MEGA DRY BRUT ROS\u00c9",
+      "type": "Brut IPA",
+      "abv": 7.5,
+      "description": "The ros\u00e9 variant on our Mega Dry series focuses on the red wine notes imparted from the addition of black currant juxtaposed with the white wine notes from a dry hop of Nelson Sauvin and some Galaxy terps",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MELTING MOSAIC",
+      "type": "DDH IPA",
+      "abv": 0.0,
+      "description": "Our juicy love letter to Mosaic hops is double dry hopped with a hefty amount.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "METHODE HAZE",
+      "type": "DDH DIPA",
+      "abv": 0.0,
+      "description": "Double IPA double dry hopped with Citra and Meridian hops. A tropical juice bomb!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MIKHAIL GORBACHEV",
+      "type": "Russian Imperial Stout",
+      "abv": 0.0,
+      "description": "Fair trade rooibos tea, ginger, beetroot, whole cloves, coriander, cardamom, cinnomon, almond and Aplles.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MIND FK",
+      "type": "Stout",
+      "abv": 0.0,
+      "description": "Tea infused Russian Imperial Stout (black tea with coconut and cocoa nibs)",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MOON FRUIT",
+      "type": "DDH DIPA",
+      "abv": 0.0,
+      "description": "A luscious double dry hopped DIPA brewed with Galaxy, Citra and Mosaic hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "MY COUSIN BINNY VOL. 3",
+      "type": "DDH DIPA",
+      "abv": 0.0,
+      "description": "We used insanely juicy cuts of Riwaka, Motueka, and Wai-iti hops to make for a tropical DIPA with notes of grapefruit zest, orange pulp, papaya and passionfruit.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "NELSON SAUVIN JUICE PANTS",
+      "type": "India Pale Ale",
+      "abv": 0.0,
+      "description": "Juice Pants has been bombarded with hops once again and this time there's a lot of Nelson Sauvin!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "ORANGE CRUSHINATOR",
+      "type": "Session IPA",
+      "abv": 4.5,
+      "description": "Session IPA with blood orange and vanilla beans",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "PANIC! AT THE RODEO",
+      "type": "Thiolized Czech Lager",
+      "abv": 4.5,
+      "description": "The yeast biotransforms thiol precursors from the malt and hops, and generates notes of passionfruit and guava on top of the malt driven lager with lovely notes of lemon and lime.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "PAULIE CHOCOLATES",
+      "type": "Imperial Stout",
+      "abv": 0.0,
+      "description": "Cacoa Nib filtered Imperial Milk Stout.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "PINKY CHERRY WIT",
+      "type": "Witbier",
+      "abv": 4.7,
+      "description": "",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "PULASKI PILS",
+      "type": "Chicago Pilsner",
+      "abv": 5.1,
+      "description": "Classic meets Chicago in our Pulaski Pils.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "RADIO SILENCE",
+      "type": "Red IPA",
+      "abv": 6.8,
+      "description": "Expect sticky notes of citrus covered pine with hints of stone fruit and honey slathered toast. With each sip, embrace the silence and let the flavors speak for themselves.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "RIPE DREAM",
+      "type": "IPA",
+      "abv": 0.0,
+      "description": "Brewed and double dry hopped with Mosaic, Nelson Sauvin and Columbus hops this IPA is dripping with notes of ripe tropical fruit!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "RIWAKA'N ON SUNSHINE",
+      "type": "DDH DIPA",
+      "abv": 0.0,
+      "description": "Our juicy expression of NZ grown Riwaka hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SANTA SANGRE",
+      "type": "Grisette",
+      "abv": 3.5,
+      "description": "A tart Belgian style ale brewed with pilsner and spelt and fermented in a neutral oak barrel using a mixed culture. Aged for two years.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SATAN\u2019S SLACKS",
+      "type": "IPA",
+      "abv": 6.4,
+      "description": "",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SIDEWALK SURFER",
+      "type": "West Coast DIPA",
+      "abv": 0.0,
+      "description": "West Coast style IPA brewed with hand selected Strata (Indie Hops), Mosaic, and Citra hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SILVER MORNING",
+      "type": "Winter Lager",
+      "abv": 6.8,
+      "description": "A malty and robust Doppelbock Lager brewed with rich malts and noble hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SIMPLICITY IS BLISS",
+      "type": "Barrel Aged Stout",
+      "abv": 14.5,
+      "description": "Complex and elegant with notes of fudge, and fresh roasted coffee beans, with big waves of vanilla that were complimented by and addition of Tanzanian vanilla beans.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SNEAKERBEAST",
+      "type": "West Coast Pale Ale",
+      "abv": 5.6,
+      "description": "A light and easy drinking West Coast style pale ale brewed with british pale malt, wheat and a dash of honey malt.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SON OF JUICE",
+      "type": "India Pale Ale",
+      "abv": 6.3,
+      "description": "Bursting with notes of tropical fruit, Son of Juice features loads of Mosaic, Mosaic Cryo, Simcoe, Simcoe Cryo, and Nugget hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SON OF SHAKEY",
+      "type": "Milkshake IPA",
+      "abv": 6.5,
+      "description": "Brewed with wheat, oats, and lactose for that thick and creamy body you've come to expect from the Shakey surname.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SOUTH OF PASSION",
+      "type": "IPA",
+      "abv": 0.0,
+      "description": "This juice bomb is loaded with Southern Passion hops from South Africa and a bit of good ol' American Mosaic for good measure.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SPRUCETTE",
+      "type": "Grisette",
+      "abv": 0.0,
+      "description": "A Belgian style table beer brewed with a large portion of rye which lends body and spice. This beer was conditioned on Colorado grown hand picked spruce tips which add a woodsy character and depth to the fruit and spice notes from the yeast and malt/rye.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "STA",
+      "type": "DDH IPA",
+      "abv": 0.0,
+      "description": "Our juicy, double dry hopped love letter to Sabro hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "STEAMLESS IN CHICAGO",
+      "type": "IPA",
+      "abv": 0.0,
+      "description": "A collaboration with our friends St. Errant Brewing couldn't be normal, so unlike almost all traditional beer, this DIPA is not boiled prior to fermentation. This allows for more proteins to reach the final beer, which results in ax extra lush and silky mouthfeel. Double dry-hopped with Citra cryo, Mosaic cryo, Amarillo cryo, and some Galaxy for good measure, expect huge tropical and citrusy hop flavor and aroma. HUUUGE!!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "SUPER SON OF JUICE",
+      "type": "Imperial India Pale Ale",
+      "abv": 0.0,
+      "description": "We took our hazy baby and practically doubled everything. It's busting at the seams with juicy notes of citrus, pineapple, and mango!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "THE CHANTELAIN",
+      "type": "Belgian Pale Ale",
+      "abv": 6.1,
+      "description": "Inspired by Paulie at Monk's Pub Chicago",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "THE CHILL AIR",
+      "type": "Vienna Lager",
+      "abv": 5.5,
+      "description": "A traditional Vienna-style lager brewed with rich German malts.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "THE KINGS ENGLISH",
+      "type": "ESB",
+      "abv": 0.0,
+      "description": "We used the finest Maris Otter malt and hops that the UK could provide which resulted in a golden hued ale with layers of malt flavor and subtle hop spice.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "THE ROYAL TANNENBAUM",
+      "type": "Festive Red Ale",
+      "abv": 6.6,
+      "description": "Our jolly red IPA, brewed with dark and toasty malt and hopped with Citra, Chinook and Cascade Cryo.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "THE SOUND",
+      "type": "West Coast Style India Pale Ale",
+      "abv": 6.5,
+      "description": "Hopped with Simcoe, Centennial, Chinook, and Amarillo Cryo. Brewed with malt and hops both grown near the West Coast. This IPA is bright and citrusy with hints of pine and resin.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "THE WILHELM",
+      "type": "Cream Ale",
+      "abv": 4.5,
+      "description": "A modern Cream Ale brewed with oats and lightly dry-hopped with Cascade and Motueka hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "THREAT LEVEL SIMCOE",
+      "type": "IPA",
+      "abv": 7.5,
+      "description": "A hazy IPA brewed and dry hopped with a dangerous level of simcoe hops. Simcoe pellets were used in tandem with cryo powder and isolated terpenes. An amazing expression of one of our favorite hops!",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "TIGER MOUNTAIN",
+      "type": "Munich Style Helles",
+      "abv": 4.5,
+      "description": "A traditional style Helles brewed with high quality heritage malt from Germany and noble hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "TOP POCKET",
+      "type": "Blonde Ale",
+      "abv": 4.8,
+      "description": "Our light and refreshing blonde ale is brewed with honey malt to add some golden-hued sweetness",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "TROPICAMO",
+      "type": "DDH IPA",
+      "abv": 0.0,
+      "description": "A hazy IPA brewed and double dry hopped with Nelson Sauvin, Citra and Azacca hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "UNBREAKABLE PACTS: WOLFHOLD",
+      "type": "Blended American Stout",
+      "abv": 0.0,
+      "description": "Our collaboration with Solemn Oath is a drinkable stout at a reasonable ABV. We designed the recipe around the concept of blending in 20% barrel aged stout.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "VIENNA LAGER",
+      "type": "Lager",
+      "abv": 5.8,
+      "description": "Unfiltered lager.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "WALLABREEZY",
+      "type": "IPA",
+      "abv": 0.0,
+      "description": "Our hazy love letter to Southern Hemisphere hops. Double dry hopped with Nelson Sauvin, Moteuka, Galaxy and Rakau.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "WHEN LIFE GIVES YOU KUMQUATS",
+      "type": "Saison",
+      "abv": 6.9,
+      "description": "A Saison with lemony sorrel and pink peppercorns, then racked onto kumquats and pomelo! Citrus, Spice, and Belgian Goodness.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "WILD IDAHO NIGHTS",
+      "type": "DDH IPA",
+      "abv": 0.0,
+      "description": "A hazy IPA brewed and double dry hopped with Citra and Idaho 7 hops.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "WILLO",
+      "type": "Witbier",
+      "abv": 4.5,
+      "description": "Belgian-style wheat ale brewed with barley, flaked wheat, malted and unmalted wheat.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "WOKEBERRIES",
+      "type": "Golden Ale",
+      "abv": 6.3,
+      "description": "Golden ale brewed with Metric coffee, raspberries, and vanilla.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "WORLD OUTSIDE",
+      "type": "Porter",
+      "abv": 6.5,
+      "description": "A well balanced porter that has big notes of caramel and chocolate, with hints of coffee and toasted malt throughout.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    },
+    {
+      "name": "ZERO FOX",
+      "type": "IPA",
+      "abv": 6.7,
+      "description": "Copper IPA.",
+      "brewery": "Maplewood Brewing Co.",
+      "status": "Archived"
+    }
+  ]
+}

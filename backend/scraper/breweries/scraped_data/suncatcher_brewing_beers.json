@@ -14,15 +14,8 @@
       "type": "Pale Ale",
       "status": "SOLD OUT",
       "location": "Chicago, IL",
-      "website": "https://suncatcherbrewing.com/beer"
-    },
-    {
-      "name": "Rye Lager",
-      "abv": "4.9% ABV",
-      "brewery": "Suncatcher Brewing",
-      "type": "Lager",
-      "location": "Chicago, IL",
-      "website": "https://suncatcherbrewing.com/beer"
+      "website": "https://suncatcherbrewing.com/beer",
+      "description": "Pale malt and c-20, ID Chinook, WA Columbus and Cascade\u2026"
     },
     {
       "name": "Amber Ale",
@@ -30,7 +23,17 @@
       "brewery": "Suncatcher Brewing",
       "type": "Amber Ale",
       "location": "Chicago, IL",
-      "website": "https://suncatcherbrewing.com/beer"
+      "website": "https://suncatcherbrewing.com/beer",
+      "description": "Pale malt and c-20, ID Chinook, WA Columbus and Cascade\u2026There\u2019s a feeling I get, when I look to the west (Led Zeppelin)"
+    },
+    {
+      "name": "Rye Lager",
+      "abv": "4.9% ABV",
+      "brewery": "Suncatcher Brewing",
+      "type": "Lager",
+      "location": "Chicago, IL",
+      "website": "https://suncatcherbrewing.com/beer",
+      "description": "Sugar Creek German style base malts combined with English style caramel malts yield a copperish amber hue, dry hopped with Commet from Loza Farms in WA for an all-American experience\u2026"
     },
     {
       "name": "American Bitter",
@@ -39,16 +42,6 @@
       "type": "Unknown",
       "location": "Chicago, IL",
       "website": "https://suncatcherbrewing.com/beer"
-    },
-    {
-      "name": "Suncatcher DraftsBeer brewed in-house and served in 20 oz imperial pints, 12 oz sessions, and 5 oz tastersRye Lager 4.9% ABV",
-      "abv": "7.2% ABV",
-      "brewery": "Suncatcher Brewing",
-      "type": "IPA",
-      "status": "SOLD OUT",
-      "location": "Chicago, IL",
-      "website": "https://suncatcherbrewing.com/beer",
-      "description": "Beer brewed in-house and served in 20 oz imperial pints, 12 oz sessions, and 5 oz tasters"
     },
     {
       "name": "MI Pale Ale",
@@ -68,6 +61,15 @@
     },
     {
       "name": "Rye Lager 4.9% ABV",
+      "abv": "7.2% ABV",
+      "brewery": "Suncatcher Brewing",
+      "type": "IPA",
+      "status": "SOLD OUT",
+      "location": "Chicago, IL",
+      "website": "https://suncatcherbrewing.com/beer"
+    },
+    {
+      "name": "Suncatcher DraftsBeer brewed in-house and served in 20 oz imperial pints, 12 oz sessions, and 5 oz tastersRye Lager 4.9% ABV",
       "abv": "7.2% ABV",
       "brewery": "Suncatcher Brewing",
       "type": "IPA",
