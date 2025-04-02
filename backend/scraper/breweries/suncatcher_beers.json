@@ -1,0 +1,65 @@
+{
+    "brewery": {
+        "name": "Suncatcher Brewing",
+        "location": "Chicago, IL",
+        "website": "https://suncatcherbrewing.com/beer",
+        "service_info": "On Deck Suncatcher Drafts"
+    },
+    "beers": [
+        {
+            "name": "Rye Lager",
+            "abv": "4.9% ABV",
+            "brewery": "Suncatcher Brewing",
+            "type": "Lager",
+            "location": "Chicago, IL",
+            "website": "https://suncatcherbrewing.com/beer",
+            "description": "A duo of Indiana and malted rye malts add complexity and color to this cold conditioned Lager, while a duo of old and new hop varieties amplifies the rye spice..."
+        },
+        {
+            "name": "MI Pale Ale",
+            "abv": "5% ABV",
+            "brewery": "Suncatcher Brewing",
+            "type": "Pale Ale",
+            "location": "Chicago, IL",
+            "website": "https://suncatcherbrewing.com/beer",
+            "description": "Balanced foundation of pale barley malt with pineapple, berry and resin from MI grown nugget, chinook and cashmere hops..."
+        },
+        {
+            "name": "IPA",
+            "abv": "6.3% ABV",
+            "brewery": "Suncatcher Brewing",
+            "type": "IPA",
+            "location": "Chicago, IL",
+            "website": "https://suncatcherbrewing.com/beer",
+            "description": "Pale malt and c-20, ID Chinook, WA Columbus and Cascade\u2026"
+        },
+        {
+            "name": "American Bitter",
+            "abv": "4.9% ABV",
+            "brewery": "Suncatcher Brewing",
+            "type": "Unknown",
+            "location": "Chicago, IL",
+            "website": "https://suncatcherbrewing.com/beer",
+            "description": "UK Fuggle and WA Cascade lay down a leisurely rhythm for the C-60 and biscuit malts to riff on, a simple beer to keep time to\u2026"
+        },
+        {
+            "name": "Amber Ale",
+            "abv": "4.3% ABV",
+            "brewery": "Suncatcher Brewing",
+            "type": "Amber Ale",
+            "location": "Chicago, IL",
+            "website": "https://suncatcherbrewing.com/beer",
+            "description": "Sugar Creek German style base malts combined with English style caramel malts yield a copperish amber hue, dry hopped with Commet from Loza Farms in WA for an all-American experience\u2026"
+        },
+        {
+            "name": "San Diego Pale Ale",
+            "abv": "7.2% ABV",
+            "brewery": "Suncatcher Brewing",
+            "type": "Pale Ale",
+            "status": "SOLD OUT",
+            "location": "Chicago, IL",
+            "website": "https://suncatcherbrewing.com/beer",
+            "description": "An absolutely shredding hop load of Columbus, Nelson Sauvin and Amarillo bring the pacific dank to our San Diego inspired pale ale. This one rips..."
+        }
+    ]
+}
