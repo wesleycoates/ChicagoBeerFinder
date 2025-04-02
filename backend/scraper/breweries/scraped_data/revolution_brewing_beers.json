@@ -1,0 +1,560 @@
+{
+  "brewery": {
+    "name": "Revolution Brewing",
+    "location": "Chicago, IL",
+    "website": "https://revbrew.com/",
+    "description": "Revolution Brewing is Chicago's largest independent craft brewery, featuring a brewpub and taproom with a wide variety of beers."
+  },
+  "beers": [
+    {
+      "name": "FREEDOM LEMONADE",
+      "brewery": "Revolution Brewing",
+      "type": "SOUR - FRUITED",
+      "abv": 4.5,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  64OZ PITCHER | $26.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "CROSS OF GOLD",
+      "brewery": "Revolution Brewing",
+      "type": "BLONDE / GOLDEN ALE - OTHER",
+      "abv": 4.8,
+      "ibu": null,
+      "price_info": "16OZ PINT | $6.00  \u2022  10OZ SNIFTER | $4.00  \u2022  5OZ TASTER | $2.00  \u2022  64OZ PITCHER | $22.00  \u2022  32OZ CROWLER TO-GO | $12.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "COLD TIME",
+      "brewery": "Revolution Brewing",
+      "type": "LAGER - AMERICAN",
+      "abv": 4.8,
+      "ibu": null,
+      "price_info": "16OZ PINT | $6.00  \u2022  10OZ SNIFTER | $4.00  \u2022  5OZ TASTER | $2.00  \u2022  64OZ PITCHER | $22.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "FIST CITY",
+      "brewery": "Revolution Brewing",
+      "type": "PALE ALE - AMERICAN",
+      "abv": 5.5,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  64OZ PITCHER | $22.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "REV PILS",
+      "brewery": "Revolution Brewing",
+      "type": "PILSNER - GERMAN",
+      "abv": 5.5,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  64OZ PITCHER | $26.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "ASHES AND ECHOS",
+      "brewery": "Revolution Brewing",
+      "type": "PORTER - SMOKED",
+      "abv": 6.2,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  32OZ CROWLER TO-GO | $13.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "REPO MAN",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - AMERICAN",
+      "abv": 6.4,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  64OZ PITCHER | $26.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "BAPHOMET",
+      "brewery": "Revolution Brewing",
+      "type": "BOCK - SINGLE / TRADITIONAL",
+      "abv": 6.7,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  64OZ PITCHER | $26.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "ANTI-HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - AMERICAN",
+      "abv": 6.7,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  64OZ PITCHER | $26.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "A LITTLE CRAZY",
+      "brewery": "Revolution Brewing",
+      "type": "PALE ALE - BELGIAN",
+      "abv": 6.8,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  64OZ PITCHER | $26.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "HAZY HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - NEW ENGLAND / HAZY",
+      "abv": 7.3,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "DDH NELSON-HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - IMPERIAL / DOUBLE NEW ENGLAND / HAZY",
+      "abv": 7.5,
+      "ibu": null,
+      "price_info": "12OZ TULIP | $8.00  \u2022  5OZ TASTER | $4.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "CHUCK'D FULL O'HOPS",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - AMERICAN",
+      "abv": 7.8,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00  \u2022  CROWLER TO-GO | $13.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "WEST COAST-HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - IMPERIAL / DOUBLE",
+      "abv": 8.0,
+      "ibu": null,
+      "price_info": "16OZ PINT | $7.00  \u2022  10OZ SNIFTER | $5.00  \u2022  5OZ TASTER | $3.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "DDH JUKEBOX HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - IMPERIAL / DOUBLE BLACK",
+      "abv": 8.0,
+      "ibu": null,
+      "price_info": "12OZ TULIP | $8.00  \u2022  5OZ TASTER | $4.00  \u2022  32OZ CROWLER TO-GO | $15.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "WOOL SHEEP (WHEN WE'RE DEAD)",
+      "brewery": "Revolution Brewing",
+      "type": "SCOTCH ALE / WEE HEAVY",
+      "abv": 9.8,
+      "ibu": null,
+      "price_info": "10OZ SNIFTER | $8.00  \u2022  5OZ TASTER | $4.00  \u2022  32OZ CROWLER TO-GO | $25.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "X-HERO JUICY RUSH IPA",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - IMPERIAL / DOUBLE NEW ENGLAND / HAZY",
+      "abv": 10.0,
+      "ibu": null,
+      "price_info": "12OZ TULIP | $8.00  \u2022  5OZ TASTER | $4.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "SUPERMASSIVE CAF\u00c9 DETH (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - IMPERIAL / DOUBLE COFFEE",
+      "abv": 14.8,
+      "ibu": null,
+      "price_info": "10OZ SNIFTER | $13.00  \u2022  5OZ TASTER | $8.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "DOUBLE BARREL V.S.O.R.",
+      "brewery": "Revolution Brewing",
+      "type": "RYE WINE",
+      "abv": 16.4,
+      "ibu": null,
+      "price_info": "10OZ SNIFTER | $13.00  \u2022  5OZ TASTER | $8.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "SANCTUARY #10 - D.B.X.O. LYNOTT\u2019S TAR",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - IMPERIAL / DOUBLE",
+      "abv": 16.8,
+      "ibu": null,
+      "price_info": "10OZ SNIFTER | $13.00  \u2022  5OZ TASTER | $8.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "FREEDOM OF SPEACH",
+      "brewery": "Revolution Brewing",
+      "type": "SOUR - FRUITED",
+      "abv": 4.5,
+      "ibu": null,
+      "price_info": "12OZ CAN | $6.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "DETH BY BRAMBLE (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - IMPERIAL / DOUBLE OATMEAL",
+      "abv": 13.0,
+      "ibu": null,
+      "price_info": "12OZ CAN | $12.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "V.S.O.J. (VERY SPECIAL OLD JACKET) (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "BARLEYWINE - ENGLISH",
+      "abv": 14.4,
+      "ibu": null,
+      "price_info": "12OZ CAN | $15.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "CAF\u00c9 DETH (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - IMPERIAL / DOUBLE COFFEE",
+      "abv": 14.8,
+      "ibu": null,
+      "price_info": "12OZ CAN | $10.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "DETH'S TAR (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - IMPERIAL / DOUBLE OATMEAL",
+      "abv": 14.8,
+      "ibu": null,
+      "price_info": "12OZ CAN | $10.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "RYEWAY TO HEAVEN (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "RYE WINE",
+      "abv": 15.0,
+      "ibu": null,
+      "price_info": "12OZ CAN | $10.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "STRAIGHT JACKET (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "BARLEYWINE - ENGLISH",
+      "abv": 15.0,
+      "ibu": null,
+      "price_info": "12OZ CAN | $10.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "PEDESTRIAN",
+      "brewery": "Revolution Brewing",
+      "type": "CIDER - TRADITIONAL / APFELWEIN",
+      "abv": 5.6,
+      "ibu": null,
+      "price_info": "12OZ CAN | $7.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "VIBES FROM THE ORCHARD",
+      "brewery": "Revolution Brewing",
+      "type": "CIDER - OTHER FRUIT",
+      "abv": 6.1,
+      "ibu": null,
+      "price_info": "12OZ CAN | $7.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "MANGO DAYDREAM",
+      "brewery": "Revolution Brewing",
+      "type": "HARD KOMBUCHA / JUN",
+      "abv": 6.0,
+      "ibu": null,
+      "price_info": "12OZ CAN | $8.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "BLOOD ORANGE MINT",
+      "brewery": "Revolution Brewing",
+      "type": "HARD KOMBUCHA / JUN",
+      "abv": 6.0,
+      "ibu": null,
+      "price_info": "12OZ CAN | $8.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "SUPER ZERO",
+      "brewery": "Revolution Brewing",
+      "type": "NON-ALCOHOLIC - OTHER",
+      "abv": 0.0,
+      "ibu": null,
+      "price_info": "12OZ CAN | $3.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "SUNBEAM PILSNER",
+      "brewery": "Revolution Brewing",
+      "type": "NON-ALCOHOLIC - LAGER",
+      "abv": 0.4,
+      "ibu": null,
+      "price_info": "12OZ CAN | $6.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "NEW SCHOOL SOUR: BERRY",
+      "brewery": "Revolution Brewing",
+      "type": "NON-ALCOHOLIC - SOUR",
+      "abv": 0.4,
+      "ibu": null,
+      "price_info": "12OZ CAN | $6.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "THE STORY",
+      "brewery": "Revolution Brewing",
+      "type": "NON-ALCOHOLIC - IPA",
+      "abv": 0.5,
+      "ibu": null,
+      "price_info": "12OZ CAN | $6.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "SUPER ZERO",
+      "brewery": "Revolution Brewing",
+      "type": "NON-ALCOHOLIC - OTHER",
+      "abv": 0.0,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $9.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "FREEDOM LEMONADE",
+      "brewery": "Revolution Brewing",
+      "type": "SOUR - FRUITED",
+      "abv": 4.5,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $11.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "FREEDOM OF SPEACH",
+      "brewery": "Revolution Brewing",
+      "type": "SOUR - FRUITED",
+      "abv": 4.5,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $11.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "COLD TIME",
+      "brewery": "Revolution Brewing",
+      "type": "LAGER - AMERICAN",
+      "abv": 4.8,
+      "ibu": null,
+      "price_info": "12OZ CAN 12 PACK | $18.00  \u2022  12OZ CAN 6 PACK | $10.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "REV PILS",
+      "brewery": "Revolution Brewing",
+      "type": "PILSNER - GERMAN",
+      "abv": 5.5,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $11.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "FIST CITY",
+      "brewery": "Revolution Brewing",
+      "type": "PALE ALE - AMERICAN",
+      "abv": 5.5,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $11.00  \u2022  12OZ CAN 12 PACK | $20.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "REPO MAN",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - AMERICAN",
+      "abv": 6.4,
+      "ibu": null,
+      "price_info": "16OZ CAN 4 PACK | $12.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "ANTI-HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - AMERICAN",
+      "abv": 6.7,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $11.00  \u2022  12OZ CAN 12 PACK | $19.00  \u2022  19.2OZ CAN | $3.50",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "BAPHOMET",
+      "brewery": "Revolution Brewing",
+      "type": "BOCK - SINGLE / TRADITIONAL",
+      "abv": 6.7,
+      "ibu": null,
+      "price_info": "16OZ CAN 4 PACK | $12.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "A LITTLE CRAZY",
+      "brewery": "Revolution Brewing",
+      "type": "PALE ALE - BELGIAN",
+      "abv": 6.8,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $11.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "HAZY HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - NEW ENGLAND / HAZY",
+      "abv": 7.3,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $11.00  \u2022  19.2OZ CAN | $3.50",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "DDH NELSON-HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - IMPERIAL / DOUBLE NEW ENGLAND / HAZY",
+      "abv": 7.5,
+      "ibu": null,
+      "price_info": "16OZ CAN 4 PACK | $14.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "WEST COAST-HERO",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - IMPERIAL / DOUBLE",
+      "abv": 8.0,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $12.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "X-HERO JUICY RUSH IPA",
+      "brewery": "Revolution Brewing",
+      "type": "IPA - IMPERIAL / DOUBLE NEW ENGLAND / HAZY",
+      "abv": 10.0,
+      "ibu": null,
+      "price_info": "12OZ CAN 6 PACK | $12.00  \u2022  19.2OZ CAN | $3.50",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "DETH BY BRAMBLE",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - IMPERIAL / DOUBLE OATMEAL",
+      "abv": 13.0,
+      "ibu": null,
+      "price_info": "12OZ CAN 4 PACK | $40.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "STRAIGHT JACKET",
+      "brewery": "Revolution Brewing",
+      "type": "BARLEYWINE - ENGLISH",
+      "abv": 13.1,
+      "ibu": null,
+      "price_info": "12OZ CAN 4 PACK | $25.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "OAKPOCALYPSE LATER",
+      "brewery": "Revolution Brewing",
+      "type": "BARLEYWINE - OTHER",
+      "abv": 14.0,
+      "ibu": null,
+      "price_info": "12OZ CAN 4 PACK | $50.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "DETH'S TAR (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - IMPERIAL / DOUBLE OATMEAL",
+      "abv": 14.8,
+      "ibu": null,
+      "price_info": "12OZ CAN 4 PACK | $25.00  \u2022  19.2OZ CAN | $12.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "CAF\u00c9 DETH (2024)",
+      "brewery": "Revolution Brewing",
+      "type": "STOUT - IMPERIAL / DOUBLE COFFEE",
+      "abv": 14.8,
+      "ibu": null,
+      "price_info": "12OZ CAN 4 PACK | $30.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    },
+    {
+      "name": "RYEWAY TO HEAVEN",
+      "brewery": "Revolution Brewing",
+      "type": "RYE WINE",
+      "abv": 15.0,
+      "ibu": null,
+      "price_info": "12OZ CAN 4 PACK | $30.00",
+      "location": "Chicago, IL",
+      "website": "https://revbrew.com/"
+    }
+  ]
+}
