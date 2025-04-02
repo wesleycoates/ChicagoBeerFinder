@@ -1,0 +1,102 @@
+[
+    {
+        "name": "Anti-Hero IPA",
+        "type": "IPA",
+        "abv": 6.7,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Fist City",
+        "type": "Pale Ale",
+        "abv": 5.5,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Rev Pils",
+        "type": "Pilsner",
+        "abv": 5.5,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Freedom of Speech",
+        "type": "Session IPA",
+        "abv": 4.5,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Cross of Gold",
+        "type": "Golden Ale",
+        "abv": 5.0,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Goose IPA",
+        "type": "IPA",
+        "abv": 5.9,
+        "brewery": "Goose Island Beer Co",
+        "address": "1800 W Fulton St",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://www.gooseisland.com"
+    },
+    {
+        "name": "312 Urban Wheat Ale",
+        "type": "Wheat Ale",
+        "abv": 4.2,
+        "brewery": "Goose Island Beer Co",
+        "address": "1800 W Fulton St",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://www.gooseisland.com"
+    },
+    {
+        "name": "Bourbon County Stout",
+        "type": "Imperial Stout",
+        "abv": 14.7,
+        "brewery": "Goose Island Beer Co",
+        "address": "1800 W Fulton St",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://www.gooseisland.com"
+    },
+    {
+        "name": "Matilda",
+        "type": "Belgian Style Ale",
+        "abv": 7.0,
+        "brewery": "Goose Island Beer Co",
+        "address": "1800 W Fulton St",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://www.gooseisland.com"
+    },
+    {
+        "name": "Sofie",
+        "type": "Saison",
+        "abv": 6.5,
+        "brewery": "Goose Island Beer Co",
+        "address": "1800 W Fulton St",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://www.gooseisland.com"
+    }
+]

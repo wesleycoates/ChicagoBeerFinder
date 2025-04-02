@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Anti-Hero IPA",
+        "type": "IPA",
+        "abv": 6.7,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Fist City",
+        "type": "Pale Ale",
+        "abv": 5.5,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Rev Pils",
+        "type": "Pilsner",
+        "abv": 5.5,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Freedom of Speech",
+        "type": "Session IPA",
+        "abv": 4.5,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    },
+    {
+        "name": "Cross of Gold",
+        "type": "Golden Ale",
+        "abv": 5.0,
+        "brewery": "Revolution Brewing",
+        "address": "2323 N Milwaukee Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://revbrew.com"
+    }
+]
