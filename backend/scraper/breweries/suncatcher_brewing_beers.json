@@ -13,14 +13,22 @@
             "brewery": "Suncatcher Brewing",
             "type": "Unknown",
             "location": "Chicago, IL",
-            "website": "https://suncatcherbrewing.com/beer",
-            "description": "Pale malt and c-20, ID Chinook, WA Columbus and Cascade\u2026There\u2019s a feeling I get, when I look to the west (Led Zeppelin)"
+            "website": "https://suncatcherbrewing.com/beer"
         },
         {
-            "name": "Rye Lager",
-            "abv": "4.9% ABV",
+            "name": "IPA",
+            "abv": "6.3% ABV",
             "brewery": "Suncatcher Brewing",
-            "type": "Lager",
+            "type": "IPA",
+            "location": "Chicago, IL",
+            "website": "https://suncatcherbrewing.com/beer"
+        },
+        {
+            "name": "Rye Lager 4.9% ABV",
+            "abv": "7.2% ABV",
+            "brewery": "Suncatcher Brewing",
+            "type": "IPA",
+            "status": "SOLD OUT",
             "location": "Chicago, IL",
             "website": "https://suncatcherbrewing.com/beer"
         },
@@ -30,16 +38,17 @@
             "brewery": "Suncatcher Brewing",
             "type": "Amber Ale",
             "location": "Chicago, IL",
-            "website": "https://suncatcherbrewing.com/beer"
+            "website": "https://suncatcherbrewing.com/beer",
+            "description": "Beer brewed in-house and served in 20 oz imperial pints, 12 oz sessions, and 5 oz tasters"
         },
         {
-            "name": "San Diego Pale Ale",
-            "abv": "7.2% ABV",
+            "name": "Rye Lager",
+            "abv": "4.9% ABV",
             "brewery": "Suncatcher Brewing",
-            "type": "Pale Ale",
-            "status": "SOLD OUT",
+            "type": "Lager",
             "location": "Chicago, IL",
-            "website": "https://suncatcherbrewing.com/beer"
+            "website": "https://suncatcherbrewing.com/beer",
+            "description": "Pale malt and c-20, ID Chinook, WA Columbus and Cascade\u2026There\u2019s a feeling I get, when I look to the west (Led Zeppelin)"
         },
         {
             "name": "Suncatcher DraftsBeer brewed in-house and served in 20 oz imperial pints, 12 oz sessions, and 5 oz tastersRye Lager 4.9% ABV",
@@ -48,14 +57,13 @@
             "type": "IPA",
             "status": "SOLD OUT",
             "location": "Chicago, IL",
-            "website": "https://suncatcherbrewing.com/beer",
-            "description": "Suncatcher DraftsBeer brewed in-house and served in 20 oz imperial pints, 12 oz sessions, and 5 oz tasters"
+            "website": "https://suncatcherbrewing.com/beer"
         },
         {
-            "name": "Rye Lager 4.9% ABV",
+            "name": "San Diego Pale Ale",
             "abv": "7.2% ABV",
             "brewery": "Suncatcher Brewing",
-            "type": "IPA",
+            "type": "Pale Ale",
             "status": "SOLD OUT",
             "location": "Chicago, IL",
             "website": "https://suncatcherbrewing.com/beer",
@@ -68,15 +76,6 @@
             "type": "Pale Ale",
             "location": "Chicago, IL",
             "website": "https://suncatcherbrewing.com/beer"
-        },
-        {
-            "name": "IPA",
-            "abv": "6.3% ABV",
-            "brewery": "Suncatcher Brewing",
-            "type": "IPA",
-            "location": "Chicago, IL",
-            "website": "https://suncatcherbrewing.com/beer",
-            "description": "Beer brewed in-house and served in 20 oz imperial pints, 12 oz sessions, and 5 oz tasters"
         }
     ]
 }

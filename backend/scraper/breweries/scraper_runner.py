@@ -1,12 +1,14 @@
 # scraper_runner.py
 from suncatcher import SuncatcherScraper
 from offcolor import OffColorScraper
+from half_acre import HalfAcreScraper
 
 def run_scrapers():
     """Run all brewery scrapers"""
     scrapers = [
         SuncatcherScraper(),
         OffColorScraper(),
+        HalfAcreScraper(),
         # Add more scrapers here as they're developed
     ]
     
