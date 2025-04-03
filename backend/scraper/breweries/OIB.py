@@ -174,7 +174,7 @@ class OldIrvingBreweryScraper:
             return
         
         # Format filename with date
-        date_str = datetime.now().strftime('%Y-%m-%d')
+        date_str = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = os.path.join(self.output_dir, f"oldirving_{date_str}.json")
         
         print(f"Saving {len(beers_data)} beers to {filename}")
