@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Amber Ale",
+    "type": "Amber Ale",
+    "abv": 5.5,
+    "description": "An Amber Ale!",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$7"
+    }
+  },
+  {
+    "name": "Blinded By The Lite",
+    "type": "Lager",
+    "abv": 4.6,
+    "description": "American light lager.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$6"
+    }
+  },
+  {
+    "name": "Blonde Ale",
+    "type": "Blonde Ale",
+    "abv": 5.4,
+    "description": "Brewed with locally sourced Midwestern honey, our Blonde ale is clean and balanced, with subtle fruity notes in the fermentation profile and a dry finish.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$6"
+    }
+  },
+  {
+    "name": "Boat Shoes",
+    "type": "Kolsch",
+    "abv": 5.0,
+    "description": "With a moderate amount of bitterness and a crisp, dry finish, this light, malt-forward Kölsch-style ale is made for leisure. It might be what a fool believes, but we think that peaceful, easy felling is more of a mindset than anything a rich girl can buy.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$7"
+    }
+  },
+  {
+    "name": "Cashmere Pils",
+    "type": "Pilsner",
+    "abv": 5.0,
+    "description": "Dry-hopped with Cashmere hops, this easy-drinking Pils features delicate aromas of lemon and lime peel, with citrus and cracker balancing the flavors ahead of a dry, bitter finish.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$5"
+    }
+  },
+  {
+    "name": "Crash Landed",
+    "type": "Wheat Ale",
+    "abv": 7.0,
+    "description": "Our first ever recipe, this not-so-subtle wheat IPA has an assertive hop bitterness with citrus and floral notes, backed by a slightly sweet malt profile.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$8"
+    }
+  },
+  {
+    "name": "Dicey Riley",
+    "type": "Irish Red Ale",
+    "abv": 5.0,
+    "description": "Brewed with Maris Otter malt, this malty red ale has a slightly sweet, biscuity flavor with a mildly bitter finish and aromas of caramel and raisin.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$5"
+    }
+  },
+  {
+    "name": "Ducks Fly Together",
+    "type": "Lager",
+    "abv": 5.0,
+    "description": "Medium bitter, with orange rind and lemon zest notes, this easy-drinking dry-hopped American lager ends with a biscuity/malty finish. Wherever your Flying V takes you and your crew, it’s a great beer for sharing with friends and the perfect reminder that Ducks Fly Together.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$8"
+    }
+  },
+  {
+    "name": "Free Bird",
+    "type": "American Pale Ale",
+    "abv": 5.6,
+    "description": "A sessionable pale ale with a clean malt character and citrusy hop notes. This beer takes its name from the Falconer's Flight hops we use to brew it.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$7"
+    }
+  },
+  {
+    "name": "Hophazardly",
+    "type": "IPA",
+    "abv": 7.0,
+    "description": "Brewed with an adventurous amount of Simcoe and Citra hops, this IPA has a piney, citrusy aroma, and features citrusy grapefruit notes balanced by malty flavors that allow a dry, mellow finish. Throw caution to the wind with us and enjoy!",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$8"
+    }
+  },
+  {
+    "name": "Let It Go",
+    "type": "American Pale Ale",
+    "abv": 5.0,
+    "description": "Let it Go features rye malt, and Simcoe and Amarillo hops, to produce a dank and slightly spicy version of the American Pale Ale.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$7"
+    }
+  },
+  {
+    "name": "Neighborly Stout Nitro",
+    "type": "Dry Stout",
+    "abv": 6.0,
+    "description": "Aromas of roast and chocolate, backed by a very dry finish. Nitro elevates the mouthfeel, creating a soft, creamy body that perfectly compliments its taste.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$7"
+    }
+  },
+  {
+    "name": "No Tomorrow",
+    "type": "IPA",
+    "abv": 7.0,
+    "description": "In the spirit of living for today, we double dry-hopped this hazy IPA with copious amounts of Citra & Simcoe hops. It features notes of juicy citrus fruit, orange zest, candied peach, and a touch of dank pine. Just watch out for that first step — it’s a doozy!",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$8"
+    }
+  },
+  {
+    "name": "Rye Barrel Aged Imperial Pajamas - Sagamore Rye",
+    "type": "Barrel Aged",
+    "abv": 13.5,
+    "description": "We aged this variation of barrel-aged Imperial Pajamas for six months in Sagamore Spirit Straight Rye Whiskey barrels. The rich, oaky result is comfort beer at its finest. Tasting notes of cacao, caramel cherry wood, and rye.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "22oz",
+      "type": "Bottle",
+      "price": "$15"
+    }
+  },
+  {
+    "name": "When Cranberries Fly",
+    "type": "Sour Ale",
+    "abv": 4.5,
+    "description": "We'll be the first ones to admit that we never thought we'd make a sour. \"When pigs fly,\" we thought - and for no good reason, really, just because. But we hadn't considered all the other things that could fly...like cranberries.\n\nCranberry puree complements the tartness of the base beer and contributes a slightly tannic finish. It also gives this sour ale a light-pink appearance, so it's smart, complex and pretty.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "16oz",
+      "type": "Draft",
+      "price": "$8"
+    }
+  },
+  {
+    "name": "The Northman Rosé",
+    "type": "",
+    "abv": 6.5,
+    "description": "Aromas of dark cherry and rich plum are rounded with a lush body and layers of red fruit. Our rosé cider proves that dry can be beautiful too.",
+    "brewery": "Begyle Brewing",
+    "address": "1800 W Cuyler Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://begylebrewing.com",
+    "serving": {
+      "size": "12oz",
+      "type": "Can",
+      "price": "$7"
+    }
+  }
+]

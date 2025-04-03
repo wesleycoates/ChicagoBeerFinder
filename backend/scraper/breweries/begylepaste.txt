@@ -1,0 +1,933 @@
+<div class="menu-wrapper">
+    <div class="section-name-container row">
+      <h2 class="section-name">Taproom Menu</h2>
+    </div>
+      
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/brewery_logos/4849/square_begyle-brewing-company-92174a3c.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/542167-begyle-amber-ale">Amber Ale</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Amber Ale
+        </span>
+
+          <span class="item-abv">
+            5.5%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            An Amber Ale!
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$7</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/brewery_logos/4849/square_begyle-brewing-company-92174a3c.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/498596-begyle-blinded-by-the-lite">Blinded By The Lite</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Lager
+        </span>
+
+          <span class="item-abv">
+            4.6%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            American light lager.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$6</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/78505/thumb_begyle-blonde-ale-beer-f7b705b7.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/78505-begyle-blonde-ale">Blonde Ale</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Blonde Ale
+        </span>
+
+          <span class="item-abv">
+            5.4%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Brewed with locally sourced Midwestern honey, our Blonde ale is clean and balanced, with subtle fruity notes in the fermentation profile and a dry finish.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$6</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/203922/thumb_begyle-boat-shoes-beer-5931d7be.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/203922-begyle-boat-shoes">Boat Shoes</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Kolsch
+        </span>
+
+          <span class="item-abv">
+            5.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            With a moderate amount of bitterness and a crisp, dry finish, this light, malt-forward Kölsch-style ale is made for leisure. It might be what a fool believes, but we think that peaceful, easy felling is more of a mindset than anything a rich girl can buy.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$7</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/466933/thumb_begyle-cashmere-pils-beer-7329d354.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/466933-begyle-cashmere-pils">Cashmere Pils</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Pilsner
+        </span>
+
+          <span class="item-abv">
+            5.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Dry-hopped with Cashmere hops, this easy-drinking Pils features delicate aromas of lemon and lime peel, with citrus and cracker balancing the flavors ahead of a dry, bitter finish. 
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$5</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/22508/thumb_begyle-crash-landed-beer-60ec0a27.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/22508-begyle-crash-landed">Crash Landed</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Wheat Ale
+        </span>
+
+          <span class="item-abv">
+            7.0%
+          </span>
+
+          <span class="item-ibu hide-info">
+            69 IBU
+          </span>
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Our first ever recipe, this not-so-subtle wheat IPA has an assertive hop bitterness with citrus and floral notes, backed by a slightly sweet malt profile.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$8</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/43825/thumb_begyle-dicey-riley-beer-0925fb80.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/43825-begyle-dicey-riley">Dicey Riley</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Irish Red Ale
+        </span>
+
+          <span class="item-abv">
+            5.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Brewed with Maris Otter malt, this malty red ale has a slightly sweet, biscuity flavor with a mildly bitter finish and aromas of caramel and raisin.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$5</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/345020/thumb_begyle-ducks-fly-together-beer-e53db4d2.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/345020-begyle-ducks-fly-together">Ducks Fly Together</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Lager
+        </span>
+
+          <span class="item-abv">
+            5.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Medium bitter, with orange rind and lemon zest notes, this easy-drinking dry-hopped American lager ends with a biscuity/malty finish. Wherever your Flying V takes you and your crew, it’s a great beer for sharing with friends and the perfect reminder that Ducks Fly Together.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$8</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/43233/thumb_begyle-free-bird-beer-d3735d96.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/43233-begyle-free-bird">Free Bird</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          American Pale Ale
+        </span>
+
+          <span class="item-abv">
+            5.6%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            A sessionable pale ale with a clean malt character and citrusy hop notes. This beer takes its name from the Falconer's Flight hops we use to brew it.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$7</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/48636/thumb_begyle-hophazardly-beer-a88e8b5d.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/48636-begyle-hophazardly">Hophazardly</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          IPA
+        </span>
+
+          <span class="item-abv">
+            7.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Brewed with an adventurous amount of Simcoe and Citra hops, this IPA has a piney, citrusy aroma, and features citrusy grapefruit notes balanced by malty flavors that allow a dry, mellow finish. Throw caution to the wind with us and enjoy!
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$8</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/51557/thumb_begyle-let-it-go-2.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/51557-begyle-let-it-go">Let It Go</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          American Pale Ale
+        </span>
+
+          <span class="item-abv">
+            5.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Let it Go features rye malt, and Simcoe and Amarillo hops, to produce a dank and slightly spicy version of the American Pale Ale.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$7</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/70409/thumb_begyle-neighborly-stout-nitro-beer-d82a8548.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/70409-begyle-neighborly-stout-nitro">Neighborly Stout Nitro</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Dry Stout
+        </span>
+
+          <span class="item-abv">
+            6.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Aromas of roast and chocolate, backed by a very dry finish. Nitro elevates the mouthfeel, creating a soft, creamy body that perfectly compliments its taste.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$7</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/301355/thumb_begyle-no-tomorrow-beer-752b6910.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/301355-begyle-no-tomorrow">No Tomorrow</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          IPA
+        </span>
+
+          <span class="item-abv">
+            7.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            In the spirit of living for today, we double dry-hopped this hazy IPA with copious amounts of Citra &amp; Simcoe hops. It features notes of juicy citrus fruit, orange zest, candied peach, and a touch of dank pine. Just watch out for that first step — it’s a doozy!
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$8</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/402612/thumb_begyle-rye-barrel-aged-imperial-pajamas-sagamore-rye-beer-7dd56554.png">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/402612-begyle-rye-barrel-aged-imperial-pajamas-sagamore-rye">Rye Barrel Aged Imperial Pajamas - Sagamore Rye</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Barrel Aged
+        </span>
+
+          <span class="item-abv">
+            13.5%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            We aged this variation of barrel-aged Imperial Pajamas for six months in Sagamore Spirit Straight Rye Whiskey barrels. The rich, oaky result is comfort beer at its finest. Tasting notes of cacao, caramel cherry wood, and rye.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">22oz</span>
+          <span class="serving-type">
+            Bottle
+          </span>
+          <span class="serving-price">$15</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/402598/thumb_begyle-when-cranberries-fly-beer-fa0130ba.jpg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/402598-begyle-when-cranberries-fly">When Cranberries Fly</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Sour Ale
+        </span>
+
+          <span class="item-abv">
+            4.5%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            We'll be the first ones to admit that we never thought we'd make a sour. "When pigs fly," we thought - and for no good reason, really, just because. But we hadn't considered all the other things that could fly...like cranberries.
+
+Cranberry puree complements the tartness of the base beer and contributes a slightly tannic finish. It also gives this sour ale a light-pink appearance, so it's smart, complex and pretty.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$8</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/brewery_logos/32943/square_go-brewing-39378496.png">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/485404-go-brewing-new-school-sour-blueberry-strawberry">Go Brewing New School Sour Blueberry &amp; Strawberry</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Non-Alcoholic
+        </span>
+
+          <span class="item-abv">
+            0.22%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Naperville, IL
+          </span>
+</div>
+        <div class="item-description">
+            This sour brew with the perfect amount of sweetness is an ode to creators. The new school - the ones who build new things, try new things, and make the world more interesting with the shade of a pencil, the spray of a can, and the brush stroke.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">12oz</span>
+          <span class="serving-type">
+            Can
+          </span>
+          <span class="serving-price">$5</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/brewery_logos/32943/square_go-brewing-39378496.png">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/549656-go-brewing-not-just-another-story-double-ipa">Go Brewing Not Just Another Story Double Ipa</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Non-Alcoholic
+        </span>
+
+          <span class="item-abv">
+            0.49%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Naperville, IL
+          </span>
+</div>
+        <div class="item-description">
+            All the Double IPA flavor and bitter finish without the alcohol.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">12oz</span>
+          <span class="serving-type">
+            Can
+          </span>
+          <span class="serving-price">$5</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/492767/thumb_go-suspended-in-a-sunbeam-1.png">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/492767-go-brewing-suspended-in-a-sunbeam">Go Brewing Suspended In A Sunbeam</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Non-Alcoholic
+        </span>
+
+          <span class="item-abv">
+            0.45%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Naperville, IL
+          </span>
+</div>
+        <div class="item-description">
+            It’s all about perspective and seeking the light.
+
+There are thousands, maybe millions of pilsners, but this pilsner-style light brew invites you to look again - to take in everything that can exist all at once in a single beverage (or moment).
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">12oz</span>
+          <span class="serving-type">
+            Can
+          </span>
+          <span class="serving-price">$5</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/brewery_logos/31011/square_liquid-death-2aaae5b3.png">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/515877-liquid-death-dead-billionaire-iced-tea">Liquid Death Dead Billionaire Iced Tea</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Non-Alcoholic
+        </span>
+
+          <span class="item-abv">
+            0.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Austria
+          </span>
+</div>
+        <div class="item-description">
+            FKA Armless Palmer. These psychotic cans of half iced tea, half lemonade are dead set on using natural agave and B vitamins to savagely murder your thirst.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">19.2oz</span>
+          <span class="serving-type">
+            Can
+          </span>
+          <span class="serving-price">$3</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/brewery_logos/31011/square_liquid-death-2aaae5b3.png">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/448444-liquid-death-severed-lime">Liquid Death Severed Lime</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Non-Alcoholic
+        </span>
+
+          <span class="item-abv">
+            0.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Austria
+          </span>
+</div>
+        <div class="item-description">
+            These ruthless tallboys of flavored sparkling water are armed with agave nectar and merciless flavor to refresh your body and murder your thirst.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">19.2oz</span>
+          <span class="serving-type">
+            Can
+          </span>
+          <span class="serving-price">$3</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/brewery_logos/31011/square_liquid-death-2aaae5b3.png">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/448445-liquid-death-sparkling-water">Liquid Death Sparkling Water</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Non-Alcoholic
+        </span>
+
+          <span class="item-abv">
+            0.0%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Austria
+          </span>
+</div>
+        <div class="item-description">
+            Murder your thirst with plain sparkling water!
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">19.2oz</span>
+          <span class="serving-type">
+            Can
+          </span>
+          <span class="serving-price">$3</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/beer_labels/136338/thumb_stormalong-legendary-dry-1.jpeg">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/136338-stormalong-legendary-dry">Stormalong Legendary Dry</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          Cider
+        </span>
+
+          <span class="item-abv">
+            6.5%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Sherborn, MA
+          </span>
+</div>
+        <div class="item-description">
+            Dry cider.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">16oz</span>
+          <span class="serving-type">
+            Draft
+          </span>
+          <span class="serving-price">$8</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+<div class="item-wrapper">
+  <div class="item-image-wrapper">
+      <img class="item-image" src="https://d2sochvv0rudri.cloudfront.net/brewery_logos/13631/square_the-northman-beer-cider-garden-79b00826.png">
+</div>  <div class="item">
+    <div class="item-info">
+      <h3 class="item-name">
+           <a target="_blank" href="https://www.beermenus.com/beers/420201-the-northman-ros">The Northman Rosé</a>
+      </h3>
+
+      <div class="item-meta">
+        <span class="item-style">
+          
+        </span>
+
+          <span class="item-abv">
+            6.5%
+          </span>
+
+
+
+          <span class="item-producer-location" %="">
+            Chicago, IL
+          </span>
+</div>
+        <div class="item-description">
+            Aromas of dark cherry and rich plum are rounded with a lush body and layers of red fruit. Our rosé cider proves that dry can be beautiful too.
+        </div>
+    </div>
+    <div class="item-servings">
+        <p class="item-serving">
+          <span class="serving-size">12oz</span>
+          <span class="serving-type">
+            Can
+          </span>
+          <span class="serving-price">$7</span>
+        </p>
+    </div>
+  </div>
+</div>
+
+</div>
