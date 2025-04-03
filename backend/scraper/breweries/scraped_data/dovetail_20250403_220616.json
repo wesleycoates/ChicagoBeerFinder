@@ -1,0 +1,114 @@
+{
+    "metadata": {
+        "brewery": "Dovetail Brewery",
+        "scraped_at": "20250403_220616",
+        "url": "https://www.dovetailbrewery.com/beers"
+    },
+    "beers": [
+        {
+            "name": "HEFEWEIZEN",
+            "type": "HEFEWEIZEN",
+            "abv": 4.8,
+            "description": "Easy to drink with a lingering, pleasant aftertaste. A rich, yolky-orange wheat beer, featuring the aroma of clove and fruit in perfect balance; refreshing with a hint of mandarin-orange-like acidity.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "KÖLSCH",
+            "type": "KÖLSCH",
+            "abv": 4.6,
+            "description": "A refreshing, mildly spicy, mildly fruity ale. A happy beer, easy to drink, makes you want to have glass after glass. (Contains wheat).",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "HELLES lAGER",
+            "type": "HELLES lAGER",
+            "abv": 4.4,
+            "description": "Our flagship Helles is the ultimate easy-to-drink beer. Refreshing with an aroma of grain and the pleasant floral and citrus of Saphir hops.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "VIENNA LAGER",
+            "type": "VIENNA LAGER",
+            "abv": 5.0,
+            "description": "Mozart played full-volume in the brewhouse as the Dovetail Vienna Lager was born. Copper in color, with a warm, malty character, it is brewed with 100% Vienna malt and Styrian Golding hops.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "PILSNER",
+            "type": "PILSNER",
+            "abv": 4.7,
+            "description": "This pilsner is a showcase for Czech Saaz hops, brewed with 100% Pilsner malt and “heaven’s water”—a Chicago-recreated version of the soft water of Plzen. It features the spiciness of the hop, as well as a very smooth and hospitable bitterness, and a lovely caramelization from the triple-decoction process.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "RAUCHBIER",
+            "type": "RAUCHBIER",
+            "abv": 5.3,
+            "description": "Our version of the Bamberg classic. Dark with reddish tones and an off- white head of rocky foam standing above the rim of the glass; as you bring it to your nose, you feel like you are eating a chocolate bar in a smokehouse, full and rich with generous hopping to balance the flavor of beechwood smoked malt.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "LAGER",
+            "type": "LAGER",
+            "abv": null,
+            "description": "A golden, malty, rich, creamy complex lager with aroma of malt and fresh hops. Easy to drink with a lingering pleasant aftertaste and foam that stands like a cloud above the rim of the glass; lacing at every sip. Only available on draft at the taproom, or at bars and restaurants—canned once, but never again!",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "Rauchdoppelbock",
+            "type": "Rauchdoppelbock",
+            "abv": null,
+            "description": "Seasonal release: RELEASED IN WINTER, AFTER THE NEW YEAR",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "maibock",
+            "type": "maibock",
+            "abv": 6.3,
+            "description": "RELEASED IN SPRINGMeant to be celebrated and enjoyed at Mayfestiversary, this beer was brewed in January and then hibernated for 3 months (just like us!) Now the day has come to spring forward and rejoice! Celebrate and savor this honey-toned beer: pale, light and exuberant.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "festbier",
+            "type": "festbier",
+            "abv": null,
+            "description": "Seasonal release: RELEASED IN EARLY FALL",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "holiday bock",
+            "type": "holiday bock",
+            "abv": 6.9,
+            "description": "It's the most wonderful time for a beer! This beer is brewed for winter fun. It’s a 100% barley malt lager with reddish tones from the generous addition of caramel malt. It’s a darker, higher strength beer perfect for colder weather, sure to warm you after a snowball fight or bring more happy to a lively party.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "ALTBIER",
+            "type": "ALTBIER",
+            "abv": 4.2,
+            "description": "Literally, the “old style” of German beers. Malty, bitter and balanced. A top-fermented beer that undergoes cold-conditioning for a crisp, clean finish. .3L served in a traditional stange for that true Altstadt feel!",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "GRODZISKIE",
+            "type": "GRODZISKIE",
+            "abv": 3.8,
+            "description": "Pale in color, with a spirited effervescence, Grodziskie is the specialty beer of its namesake town in Poland. More carbonated than Hefe and lower in alcohol, this 100% smoked wheat beer features light, citrus-like overtones with a surprising glimmer of spice and smoke.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "CZECH DARK LAGER",
+            "type": "CZECH DARK LAGER",
+            "abv": 5.3,
+            "description": "Our Pilsner in a sweater. Inspired by JP's afternoon in Prague drinking at U Fleku—a brewery that’s been making dark lager more than 500 years—Dovetail’s CDL is a showcase of chocolate, bread crust, caramel and subtle coffee roast. Triple-decocted, open-fermented, and lagered for a long time just like how that do it in that other Pilsen.",
+            "brewery": "Dovetail Brewery"
+        },
+        {
+            "name": "SAISON",
+            "type": "SAISON",
+            "abv": 7.0,
+            "description": "Brewed with 100% Pilsner malt, French Strisselspalt and Hallertau Blanc hops, and an expressive Belgian yeast, this beer is a rustic expression of straw and hay, grass and white grape aromas, while open-fermentation nurtures notes of bubblegum and black pepper.",
+            "brewery": "Dovetail Brewery"
+        }
+    ]
+}

@@ -5,6 +5,8 @@ from half_acre import HalfAcreScraper
 from maplewood import MaplewoodScraper
 from revolution import RevolutionBreweryScraper
 from hopewell import HopewellScraper
+from dovetail import DovetailScraper
+from OIB import OldIrvingBreweryScraper
 
 def run_scrapers():
     """Run all brewery scrapers"""
@@ -15,6 +17,8 @@ def run_scrapers():
         MaplewoodScraper(),
         RevolutionBreweryScraper(),
         HopewellScraper(),
+        DovetailScraper(),
+        OldIrvingBreweryScraper(),
         # Add more scrapers here as they're developed
     ]
     
