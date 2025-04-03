@@ -4,6 +4,7 @@ from offcolor import OffColorScraper
 from half_acre import HalfAcreScraper
 from maplewood import MaplewoodScraper
 from revolution import RevolutionBreweryScraper
+from hopewell import HopewellScraper
 
 def run_scrapers():
     """Run all brewery scrapers"""
@@ -13,6 +14,7 @@ def run_scrapers():
         HalfAcreScraper(),
         MaplewoodScraper(),
         RevolutionBreweryScraper(),
+        HopewellScraper(),
         # Add more scrapers here as they're developed
     ]
     

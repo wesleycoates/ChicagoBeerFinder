@@ -1,0 +1,82 @@
+{
+  "brewery": {
+    "name": "Hopewell Brewing",
+    "address": "2760 N Milwaukee Ave",
+    "city": "Chicago",
+    "state": "IL",
+    "website": "https://www.hopewellbrewing.com"
+  },
+  "beers": [
+    {
+      "name": "Pils",
+      "type": "Pilsner",
+      "abv": 5.1,
+      "description": "Hopewell Pils is a\u00a0crystal clear, hop-forward Pilsner inspired by the Northern German brewing tradition. Lightly bready malt is met with the floral zip of classic German noble hops, followed by a\u00a0crispy clean, drying finish. A\u00a0very precious Pilsner for very precious\u00a0people.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Tankbeer",
+      "type": "Lager",
+      "abv": 4.4,
+      "description": "Tankbeer is an unfiltered, naturally carbonated Lager inspired by the rich traditions of Czech Republic bar culture. With notes of fresh dough, fragrant noble hop spice and a\u00a0pleasantly pillowy body, this beer transports you to the brewer's cellar, where the beer is always\u00a0fresh.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Ride or Die",
+      "type": "Pale Ale",
+      "abv": 5.5,
+      "description": "A Pale Ale you can depend on \u2014 a bona fide fridge staple. Bright neon flavors of grapefruit and pine give way to a\u00a0pleasantly soft malt base and a\u00a0quick slice of balancing bitterness. Reliably tasty without\u00a0a\u00a0fuss.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Going Places",
+      "type": "IPA",
+      "abv": 6.8,
+      "description": "An IPA for those on the up-and-up. A\u00a0vibrant combo of new-wave hops offers fresh citrus, tropical fruit and sticky pine with a\u00a0prickly finish, putting this hoppy bev on the path ahead. Let's\u00a0get\u00a0it.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Lightbeam",
+      "type": "Hazy IPA",
+      "abv": 6.3,
+      "description": "A Hazy IPA that radiates the full spectrum of modern hop eccentricities. An initial burst swells with the essence of ripe mango, papaya and apricot, while reverberant threads of green grass and prickly pine tether its final form. Here's to a\u00a0bright spot.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Outside Voice",
+      "type": "XPA",
+      "abv": 4.8,
+      "description": "An Extra Pale Ale (XPA) fashioned for warm, sunny days and the cookouts that coincide. Notes of dank tropical fruit lead the way, followed by an undercurrent of citrus zest and piney bitterness.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Plain English",
+      "type": "London-style Brown Ale",
+      "abv": 4.2,
+      "description": "A malty yet sessionable Brown Ale modeled after the traditional examples found in London and the southern half of England at large. Notes of toffee, caramel and light chocolate fill out this full-bodied brew, but its low ABV and dry finish make it an everyday\u00a0drinker.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Shaker",
+      "type": "'90s Brewpub-style Amber Ale",
+      "abv": 5.9,
+      "description": "A hopped up amber ale that conjures the classics of the \u200b'90s brewpub boom. Hopped thoroughly with tried-and-true varieties that dominated the era, bringing notes ofpine sap, grapefruit, fresh grass and resin. This one's forthe old\u00a0heads.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Soup",
+      "type": "Belgian-style Dubbel",
+      "abv": 7.0,
+      "description": "A complex, red-hued Belgian ale with notes of gingersnap, clove, light toffee and\u00a0banana.",
+      "brewery": "Hopewell Brewing"
+    },
+    {
+      "name": "Olde Duck",
+      "type": "Barrel-aged Barleywine",
+      "abv": 12.4,
+      "description": "An English-style Barleywine aged 18 months in third use Bourbon barrels that previously held Deluxe Imperial Stout, and Heaven Hill before that. Rich and malty with notes of toffee, caramel, raisin, vanilla and light\u00a0oak.",
+      "brewery": "Hopewell Brewing"
+    }
+  ],
+  "scrape_date": "2025-04-02T23:59:54.597090"
+}
