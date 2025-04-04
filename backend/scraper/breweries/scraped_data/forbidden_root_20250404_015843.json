@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Panda Party",
+        "abv": "6.5%",
+        "style": "N/A",
+        "category": "Seasonal",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    },
+    {
+        "name": "Hoodie Weather",
+        "abv": "5.5%",
+        "style": "N/A",
+        "category": "Seasonal",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    },
+    {
+        "name": "Summer Symphony",
+        "abv": "6.2%",
+        "style": "N/A",
+        "category": "Seasonal",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    },
+    {
+        "name": "Purple Pils",
+        "abv": "5.1%",
+        "style": "N/A",
+        "category": "Seasonal",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    },
+    {
+        "name": "Radio Swan",
+        "abv": "6.4%",
+        "style": "N/A",
+        "category": "Rotating IPA Series",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    },
+    {
+        "name": "Ghost Tropic",
+        "abv": "8.2%",
+        "style": "N/A",
+        "category": "Rotating IPA Series",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    },
+    {
+        "name": "Snoochie Boochies",
+        "abv": "8%",
+        "style": "N/A",
+        "category": "Rotating IPA Series",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    },
+    {
+        "name": "Strawberry Basil Hefeweizen",
+        "abv": "5%",
+        "style": "N/A",
+        "category": "Year Round",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    },
+    {
+        "name": "Peach Wit",
+        "abv": "5.1%",
+        "style": "N/A",
+        "category": "Year Round",
+        "brewery": "Forbidden Root",
+        "scrape_date": "2025-04-04"
+    }
+]

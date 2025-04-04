@@ -1,0 +1,451 @@
+<div class="jet-listing-grid__items grid-col-desk-2 grid-col-tablet-2 grid-col-mobile-1 jet-listing-grid--340" data-queried-id="1012|WP_Post" data-nav="{&quot;enabled&quot;:false,&quot;type&quot;:null,&quot;more_el&quot;:null,&quot;query&quot;:[],&quot;widget_settings&quot;:{&quot;lisitng_id&quot;:340,&quot;posts_num&quot;:20,&quot;columns&quot;:2,&quot;columns_tablet&quot;:2,&quot;columns_mobile&quot;:1,&quot;column_min_width&quot;:240,&quot;column_min_width_tablet&quot;:240,&quot;column_min_width_mobile&quot;:240,&quot;inline_columns_css&quot;:false,&quot;is_archive_template&quot;:&quot;&quot;,&quot;post_status&quot;:[&quot;publish&quot;],&quot;use_random_posts_num&quot;:&quot;&quot;,&quot;max_posts_num&quot;:9,&quot;not_found_message&quot;:&quot;No data was found&quot;,&quot;is_masonry&quot;:false,&quot;equal_columns_height&quot;:&quot;&quot;,&quot;use_load_more&quot;:&quot;&quot;,&quot;load_more_id&quot;:&quot;&quot;,&quot;load_more_type&quot;:&quot;click&quot;,&quot;load_more_offset&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;use_custom_post_types&quot;:&quot;&quot;,&quot;custom_post_types&quot;:[],&quot;hide_widget_if&quot;:&quot;&quot;,&quot;carousel_enabled&quot;:&quot;&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;arrows&quot;:&quot;true&quot;,&quot;arrow_icon&quot;:&quot;fa fa-angle-left&quot;,&quot;dots&quot;:&quot;&quot;,&quot;autoplay&quot;:&quot;true&quot;,&quot;pause_on_hover&quot;:&quot;true&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;true&quot;,&quot;center_mode&quot;:&quot;&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500,&quot;inject_alternative_items&quot;:&quot;&quot;,&quot;injection_items&quot;:[],&quot;scroll_slider_enabled&quot;:&quot;&quot;,&quot;scroll_slider_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;custom_query&quot;:false,&quot;custom_query_id&quot;:&quot;&quot;,&quot;_element_id&quot;:&quot;&quot;,&quot;collapse_first_last_gap&quot;:false,&quot;list_items_wrapper_tag&quot;:&quot;div&quot;,&quot;list_item_tag&quot;:&quot;div&quot;,&quot;empty_items_wrapper_tag&quot;:&quot;div&quot;}}" data-page="1" data-pages="1" data-listing-source="posts" data-listing-id="340" data-query-id=""><div class="jet-listing-grid__item jet-listing-dynamic-post-336" data-post-id="336">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/panda-party/">
+							<img fetchpriority="high" decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/pandaparty-shadow-1.webp" class="attachment-full size-full wp-image-3129" alt="panda party beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/pandaparty-shadow-1.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/pandaparty-shadow-1-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Seasonal</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Panda Party</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">6.5%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Black Lager</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-335" data-post-id="335">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/hoodie-weather/">
+							<img decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/hoodie-weather-shadow.webp" class="attachment-full size-full wp-image-3119" alt="Hoodie Weather Beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/hoodie-weather-shadow.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/hoodie-weather-shadow-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Seasonal</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Hoodie Weather</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">5.5%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Vienna-Style Lager ale</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-334" data-post-id="334">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/summer-symphony/">
+							<img decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/summer-symphony-shadow.webp" class="attachment-full size-full wp-image-3128" alt="summer Symphony Beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/summer-symphony-shadow.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/summer-symphony-shadow-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Seasonal</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Summer Symphony</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">6.2%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Fruited Golden Ale</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-329" data-post-id="329">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/purple-pils/">
+							<img loading="lazy" decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/purple-pils-shadow.webp" class="attachment-full size-full wp-image-3123" alt="Purple Pils Beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/purple-pils-shadow.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/purple-pils-shadow-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Seasonal</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Purple Pils</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">5.1%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Pilsner</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-327" data-post-id="327">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/radio-swan/">
+							<img loading="lazy" decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/radio-swan-shadow.webp" class="attachment-full size-full wp-image-3124" alt="Radio Swan Beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/radio-swan-shadow.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/radio-swan-shadow-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Rotating IPA Series</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Radio Swan</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">6.4%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Rye IPA</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-326" data-post-id="326">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/ghost-tropic/">
+							<img loading="lazy" decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/ghost-tropic-shadow.webp" class="attachment-full size-full wp-image-3118" alt="Ghost Tropic Beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/ghost-tropic-shadow.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/ghost-tropic-shadow-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Rotating IPA Series</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Ghost Tropic</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">8.2%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">India Pale Ale</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-324" data-post-id="324">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/snoochie-boochies/">
+							<img loading="lazy" decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/snoochie-boochies-shadow.webp" class="attachment-full size-full wp-image-3125" alt="Snoochie Boochies Beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/snoochie-boochies-shadow.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/snoochie-boochies-shadow-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Rotating IPA Series</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Snoochie Boochies</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">8%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">India Pale Ale</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-322" data-post-id="322">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/strawberry-basil-hefeweizen/">
+							<img loading="lazy" decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/strawberry-basil-shadow.webp" class="attachment-full size-full wp-image-3126" alt="Strawberry Basil Beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/strawberry-basil-shadow.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/strawberry-basil-shadow-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Year Round</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Strawberry Basil Hefeweizen</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">5%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Wheat Beer</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div><div class="jet-listing-grid__item jet-listing-dynamic-post-304" data-post-id="304">		<div data-elementor-type="jet-listing-items" data-elementor-id="340" class="elementor elementor-340" data-elementor-post-type="jet-engine">
+				<div class="elementor-element elementor-element-4e4ac30 e-con-full e-flex e-con e-parent e-lazyloaded" data-id="4e4ac30" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+		<div class="elementor-element elementor-element-7075a2c e-con-full e-flex e-con e-child" data-id="7075a2c" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-94de8e3 elementor-widget elementor-widget-image" data-id="94de8e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://forbiddenroot.com/beers/peach-wit/">
+							<img loading="lazy" decoding="async" width="398" height="664" src="https://forbiddenroot.com/wp-content/uploads/2024/02/peachwit-shadow.webp" class="attachment-full size-full wp-image-3122" alt="Peach Wit Beer" srcset="https://forbiddenroot.com/wp-content/uploads/2024/02/peachwit-shadow.webp 398w, https://forbiddenroot.com/wp-content/uploads/2024/02/peachwit-shadow-180x300.webp 180w" sizes="(max-width: 398px) 100vw, 398px">								</a>
+															</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-73a4cde e-con-full e-flex e-con e-child" data-id="73a4cde" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+				<div class="elementor-element elementor-element-7152c6b elementor-widget elementor-widget-heading" data-id="7152c6b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Year Round</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-412d0f6 kc-beer-cont e-flex e-con-boxed e-con e-child" data-id="412d0f6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-0afa23b elementor-widget elementor-widget-heading" data-id="0afa23b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Peach Wit</h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-6005ab4 e-flex e-con-boxed e-con e-child" data-id="6005ab4" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c6f7399 kc-beer-label elementor-widget elementor-widget-heading" data-id="c6f7399" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">ABV:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2ee69f1 elementor-widget elementor-widget-heading" data-id="2ee69f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">5.1%</div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-fc19d73 e-flex e-con-boxed e-con e-child" data-id="fc19d73" data-element_type="container" data-settings="{&quot;jet_parallax_layout_list&quot;:[]}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3ca0779 kc-beer-label elementor-widget elementor-widget-heading" data-id="3ca0779" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default">STYLE:</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e0cbe0e kc-beer-name elementor-widget elementor-widget-heading" data-id="e0cbe0e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Wheat Beer</h2>				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		</div></div>
