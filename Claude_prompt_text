@@ -1,0 +1,12 @@
+Please remember, I am not an experienced web developer. I have some experience with R, Python, and coding concepts, but I am not a seasoned coder and I'm not familiar with modern pipelines and development/deployment tools. Accordingly, I'll need a fair amount of hand holding. Keep that in mind as you examine my project, code, and think through the strategies. 
+
+I have installed Chrome in a GitHub Codespace environment. I believe most dependencies have been installed via pip install commands. 
+
+With your help, I have already developed really great brewery-specific scrapers that work for a handful of breweries, such as Half Acre and Suncatcher. Notably, they are all part of a class that can be called automatically by my scraper_runner.py job, and they all point their JSON outputs to a directory called scraped_data (include date-timestamp in the JSON filename too). But for testing, I need to run the new brewery-specific .py scraper straight from the Terminal; after it works, I'll add it to the scraper_runner.py file.
+
+I think one of the main issues with these sites relates to managing Age Verification popups. For Revolution it's Yes/No and you click on Yes to enter. For Goose Island, it's a mm dd yyyy popup and click to enter. Maplewood also has a Yes/No option. Something that has helped us in troubleshooting on this with other breweries is twofold: 1) screenshots of the site before handling the Age Verification dialog feature and afterward, to verify that it was successfully addressed, and 2) instead of getting all of the beer data, see if we can pull anything at all from the site beyond the landing page / Age Verification screen.
+
+Here is the Age Verification area HTML:
+
+Here is the HTML for the beer details:
+
