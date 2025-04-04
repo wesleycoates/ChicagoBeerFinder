@@ -7,6 +7,7 @@ from revolution import RevolutionBreweryScraper
 from hopewell import HopewellScraper
 from dovetail import DovetailScraper
 from OIB import OldIrvingBreweryScraper
+from pilot_project import PilotProjectScraper
 
 def run_scrapers():
     """Run all brewery scrapers"""
@@ -19,6 +20,7 @@ def run_scrapers():
         HopewellScraper(),
         DovetailScraper(),
         OldIrvingBreweryScraper(),
+        PilotProjectScraper(),
         # Add more scrapers here as they're developed
     ]
     

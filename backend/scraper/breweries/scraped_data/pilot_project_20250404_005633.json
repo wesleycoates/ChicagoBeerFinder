@@ -1,0 +1,168 @@
+{
+  "brewery": "Pilot Project Brewing",
+  "location": "Logan Square, Chicago, IL",
+  "url": "https://www.pilotprojectbrewing.com",
+  "beers": [
+    {
+      "name": "Custom Beer Flight:",
+      "style": "Unknown",
+      "abv": null,
+      "description": "Pick four 5 oz tasters of any of our drafts on tap, served in house only.[Redeem one flight card to receive 10% off to-go product or merch.](Bottles/Cans* are not available as a flight option)",
+      "pricing": "",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Serpente",
+      "style": "Italian Pilsner",
+      "abv": 4.8,
+      "description": "A crisp, floral and herbaceous hop profile is backed with a light body reminiscent of cracker, bread middle, and sunshine.",
+      "pricing": "$5 Half Pour // $7 Full Pour // To Go:  $15 4-Pack",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "1984",
+      "style": "Pale Lager",
+      "abv": 5.0,
+      "description": "As Funkytown's Experienceship win, they had the privilege of traveling too Boston Brewery to work directly alongside Samuel Adam experts to craft a one-of-a-kind beer. Dubbed, the 1984 Pale Lager, the year is the one in which all three oof the founders were born and the same year Samuel Adam was founded by Jim Koch! Light, clean, and crisp, this beer has herbal and floral notes on the nose. A Motueka hop addition adds a slight citrus taste that balances out its dry finish.",
+      "pricing": "$5 Half Pour // $7 Full Pour // To Go: $15 4-Pack",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "The Fat Mariachi",
+      "style": "Mexican Lager",
+      "abv": 5.5,
+      "description": "The mexican lager brewed by Mexicans. Light bodied, without sacrificing a drinkable body. Refreshing and dry, but with enough character and hoppy bite to give it some taste. Yeast is reminiscent of those big mexican macro beers, only tastier.",
+      "pricing": "$7 16oz Can* // To Go: $13 4-PackDonna\u2019s Pickle Beer // Pickle Brine Lager // 4.4%Donna's finest homemade brine with big, bright herbal and floral notes is integrated beautifully with an all American Lager and accentuated by Saaz and Hallertau Mittelfruh hops. You'll relish every sip.",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Lager - Standard Goods // 5.0%",
+      "style": "Unknown",
+      "abv": null,
+      "description": "Crisp, clean, and checks all the boxes. Standard Goods exists because it ought to. With all the approachability and affordability of a macro offering, without extracts, or other BS. We're proud of what's in this beer and proud of what's not. It\u2019s made and tastes like a lager should.",
+      "pricing": "$5 12oz Can* // To Go: $10 6-Pack",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Amai",
+      "style": "Belgian Witbier",
+      "abv": 4.8,
+      "description": "Named after the Flemish expression for amazement, Amai is enveloped with aromas of citrus, spice, and chamomile that pair perfectly with notes of coriander, clove, and noble hops. If you're feeling nostalgic, garnish with an orange wedge",
+      "pricing": "$6 Half Pour // $8 Full Pour // To Go: Not Available",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Zicatela Sunsets",
+      "style": "Pale Ale",
+      "abv": 6.1,
+      "description": "A dry, super easy-drinking, fruity, neo-West Coast IPA to usher in the start of spring. Modeled after the beers we drank with surfers in our favorite Oaxacan surfing spot of Zicatela, we worked with a new yeast that allows us to extract notes of honeyed melon rind, sauvignon blanc, and candied lemongrass while maintaining the classic west coast clear IPA body that we grew up on. Pairs well with tunes by Bob Marley.",
+      "pricing": "$6 Half Pour // $8 Full Pour // To Go: Not AvailableHip-Hops and R&Brew Vol. 1 - Funkytown // Pale Ale // 5.5%Funkytown's beer that started it all. Smooth and mellow with notes of citrus orange, fresh strawberry, and lychee. Crush responsibly.",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Supernaturalist",
+      "style": "Hazy Pale Ale",
+      "abv": 5.5,
+      "description": "This double dry hopped Pale Ale is inspired by something quite simple and beautiful. Looking up. Because who knows what\u2019s really up there? Hopped with Strata, Comet, Eclipse, and Galaxy, this exploration has notes of ripe apricot, citrus zest, pink starburst, underripe pineapple, and a light, dry resin. Supernaturalist is made for stargazers, the ponderers, and because it\u2019s a beer, the-ever-so-curious balance of tropical sweetness and zesty citrus.",
+      "pricing": "$6 Half Pour // $8 Full Pour // To Go: $15 4-PackPale Ale - Standard Goods // 4.5%Hoppy, floral and crisp. Standard Goods exists because it ought to. With all the approachability and affordability of a big brewery, but without extracts, or other BS. We're proud of what's in this beer and proud of what's not. It goes great with just about anything.",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Frozen Coyote",
+      "style": "Double IPA",
+      "abv": 8.0,
+      "description": "Sometimes, when you least expect it, something big happens. It could be in the grocery store; but, in our case, it was right here in the brewery. Our Coyote showed up touting aggressive notes of overripe pineapple and gushers balanced by a lasting, cannabis bitterness. Its dry finish doesn't undercut the lingering warmth that'll carry you right through the refrigerated section.",
+      "pricing": "$6 Half Pour // $8 Full Pour // To Go: Not Available",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Mountain Sound",
+      "style": "Hazy IPA",
+      "abv": 7.4,
+      "description": "Two Rivers flooded a valley and a Sound was made. If a Sound had a taste, it'd be of juicy, punchy, vibrant pineapple, with a bracing and sharp resin bite which softens to a hint of boozy warmth. Take the forbidden cannonball and enjoy the leap!",
+      "pricing": "$6 Half Pour // $8 Full Pour // To Go: Not AvailableMountains Calling Home - Brewer\u2019s Kitchen // Hazy IPA // 6.3% As a part of BK's hop feature series; the rare Nectaron hop is on full display with bold notes of peach, apricot, nectarine and light pine in this tropical hazy.",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Punch Kissed Parasol",
+      "style": "Fruit Punch Sour",
+      "abv": 4.8,
+      "description": "A near perfect blend of pomegranate, tangerine, and dark cherry make for this sun crusher reminiscent of your favorite childhood fruit punch. Oh yeah!",
+      "pricing": "$6 Half Pour // $8 Full Pour // To Go: $15 4-Pack And So She Did - Pilot Project // Pineapple Lime Kettle Sour // 4.8%The women of Pilot Project developed this Pineapple Lime Kettle Sour as their staff beer pick in honor of International Women's Month. This beer welcomes spring home with light notes of tropical sweetness, with just enough citric zip to keep it dry and spritzy! \"She believed she could, so she did!\"",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "The Raven - Cerv. Paracaidista // Imperial Stout with Vanilla Bean, Haitian Cacao Nibs",
+      "style": "Unknown",
+      "abv": null,
+      "description": "with Vanilla Bean, Haitian Cacao Nibs",
+      "pricing": "$8 Full Pour // To Go: Not AvailableBrushfire \u2013 Brewer\u2019s Kitchen // Imperial Stout// 8% \u00a0                                                                                                                                             Brushfire CONTAINS LACTOSE! A thick, sweet imperial stout made with the addition of lactose and cocoa nibs. The dark malts and extended boil boasts notes of light oak smoke, candied dark cherries, and deep roasted chocolate toffee. At 8%, it\u2019s a sipper and meant to be enjoyed over a long conversation or reading next to a cozy fire as it continues to warm and express it\u2019s unique complexity.",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "Vibes from the Orchard",
+      "style": "Hard Apple Cider",
+      "abv": 6.3,
+      "description": "Hard apple cider blended with stone-fruit and cherry, with the finish of sweet cherry and a hint of berry. Designed and blended by The Vibes Beer/Cider Project. The project is a multi-tiered project focused on providing education, networking opportunities, and support for those in craft beer that identify as women, non-binary, or transgendered. This cider blending session included 40 participants from breweries and shops across Chicagoland and Milwaukee area.",
+      "pricing": "$7 12oz Can // To Go: Not Available",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "White Peach Ginger",
+      "style": "Hard Kombucha",
+      "abv": 5.5,
+      "description": "Fresh Ginger, White Peony Tea, and white peaches provide the perfect poolside companion, post-yoga happy hour, or just about anytime spirited sipper.",
+      "pricing": "$7 Half Pour // $9 Full Pour // To Go: $16 6-PackHibiscus Berry - ROVM // Hard Kombucha // 5.5%Fresh Ginger, White Peony Tea, and white peaches provide the perfect poolside companion, post-yoga happy hour, or just about anytime spirited sipper. Low cal, low carb, low sugar. [Gluten Free, Non GMO]",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "NA Pilsner - Years // <0.5%",
+      "style": "Unknown",
+      "abv": null,
+      "description": "This new This non-alcoholic Pilsner offers a light body of honeyed-biscuit and bread-crust and finishes with a dryness that recalls fresh-cut-grass and a crisp herbaceous bitterness.",
+      "pricing": "$7 12oz Can* // To Go: $13 6-Pack",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    },
+    {
+      "name": "NA Pale Ale - Years // <0.5%",
+      "style": "Unknown",
+      "abv": null,
+      "description": "Modeled after the classic American Pale Ale, our latest offering is a marriage of tradition and innovation. With hop notesof lightly-bitter ruby grapefruit and pine, the body of the beer rounds out with a shortbread and lemon biscuit sweetness.",
+      "pricing": "$6 Full Pour // To Go: $13 6-Pack",
+      "brewery": "Pilot Project Brewing",
+      "location": "Logan Square, Chicago, IL",
+      "brewery_url": "https://www.pilotprojectbrewing.com"
+    }
+  ],
+  "scraped_date": "2025-04-04T00:56:33.867695"
+}
