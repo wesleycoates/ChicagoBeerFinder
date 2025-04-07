@@ -1,0 +1,756 @@
+[
+    {
+        "name": "Blazed Orange Milkshake",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/blazedorangemilkshake/",
+        "style": "Milkshake Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, Strata",
+        "last_canned": "April 1, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "A Deeper Dish",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/adeeperdish/",
+        "style": "Triple India Pale Ale",
+        "abv": "10.5% ABV",
+        "hops": "Citra & Vic Secret",
+        "last_canned": "March 31, 205",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Aspect of Aries",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/aspect-of-aries/",
+        "style": "Double India Pale Ale",
+        "abv": "8.0% ABV",
+        "hops": "Enigma, Simcoe, Riwaka",
+        "last_canned": "March 26, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Pink Citrus Hop Water For The World",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/pink-citrus-hop-water-for-the-world/",
+        "style": "Sparkling Hop Water",
+        "abv": "0.00% ABV",
+        "hops": "Citra, Mosaic, El Dorado",
+        "last_canned": "March 24, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Double Pepperoni",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/doublepepperoni/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Simcoe, Nelson, Vic Secret, Citra",
+        "last_canned": "March 25, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Welcome to Zumo",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/welcome-to-zumo/",
+        "style": "India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, Zumo",
+        "last_canned": "March 17, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "A Myriad of Pyramids",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/amyriadofpyramids/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Peacharine, Simcoe",
+        "last_canned": "March 18, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Hydrofoam",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/hydrofoam/",
+        "style": "India Pale Ale",
+        "abv": "6.5% ABV",
+        "hops": "Citra, Motueka, Motueka Subzero Hopkief",
+        "last_canned": "March 19, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "A Decade of Decadence",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/a-decade-of-decadence/",
+        "style": "Double India Pale Ale",
+        "abv": "8.5% ABV",
+        "hops": "Mosaic, Citra, Simcoe, Galaxy",
+        "last_canned": "March 11, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Riff Driven",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/riff-driven/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, Eclipse, Sabro",
+        "last_canned": "March 12, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Hop Water For The World",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/hopwaterfortheworld/"
+    },
+    {
+        "name": "Simcoe Traveling Scientist",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/simcoe-traveling-scientist/",
+        "style": "American Pale Ale",
+        "abv": "5.75% ABV",
+        "hops": "Simcoe, Quantum Simcoe",
+        "last_canned": "March 3, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Lord Octomoss",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/lordoctomoss/",
+        "style": "Double India Pale Ale",
+        "abv": "8.0% ABV",
+        "hops": "Mosaic, Citra, Simcoe",
+        "last_canned": "March 4, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Tropical Hop Water For The World",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/tropical-hop-water-for-the-world/",
+        "style": "Sparkling Hop Water",
+        "abv": "0.00% ABV",
+        "hops": "Citra, Mosaic, El Dorado",
+        "last_canned": "February 24, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Fat Bear",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/fatbear/",
+        "style": "Imperial Stout",
+        "abv": "10.5% ABV",
+        "last_canned": "February 26, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Narragansett Ridge",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/narragansettridge/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, Nectaron",
+        "last_canned": "February 25, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Queso Fundido",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/queso-fundido/",
+        "style": "India Pale Ale",
+        "abv": "6.5% ABV",
+        "hops": "Citra, Galaxy, Sabro",
+        "last_canned": "February 20, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Teetering Wooden Crates of Oranges",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/teetering-wooden-crates-of-oranges/",
+        "style": "Extra Pale Ale",
+        "abv": "5.0% ABV",
+        "hops": "Citra, Tangiere",
+        "last_canned": "February 20, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Peak Peacharine",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/peakpeacharine/",
+        "style": "Triple India Pale Ale",
+        "abv": "10.5% ABV",
+        "hops": "Peacharine",
+        "last_canned": "February 17, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Tavern King",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/tavernking/",
+        "style": "Double India Pale Ale",
+        "abv": "8.0% ABV",
+        "hops": "Citra, Vic Secret, Mosaic, Nelson Sauvin",
+        "last_canned": "February 18, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Cooler By The Lakefront",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/coolerbythelakefront/",
+        "style": "India Pale Ale",
+        "abv": "7.0% ABV",
+        "hops": "HBC-1019, HBC-586",
+        "last_canned": "February 19, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Sweet Home",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/sweethome/",
+        "style": "India Pale Ale",
+        "abv": "6.5% ABV",
+        "hops": "Citra, El Dorado, Motueka",
+        "last_canned": "February 10, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "I Want to Believe",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/iwanttobelieve/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, El Dorado, Belma",
+        "last_canned": "February 11, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Resplendence",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/resplendence/",
+        "style": "Bourbon BA Barleywine",
+        "abv": "16.0% ABV",
+        "last_canned": "February 10, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Waves of Winter",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/wavesofwinter/",
+        "style": "American Pale Ale",
+        "abv": "6.0% ABV",
+        "hops": "Citra, Eclipse",
+        "last_canned": "February 10, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Cosmic Fountain",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/cosmicfountain2/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, Waimea, Mosaic",
+        "last_canned": "February 4, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Your Wish Is Granted",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/yourwishisgranted/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, Nelson Sauvin",
+        "last_canned": "February 5, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Interocean",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/interocean/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Nectaron, Mosaic",
+        "last_canned": "February 3, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Double Snorkel Squad",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/doublesnorkelsquad/",
+        "style": "Double India Pale Ale",
+        "abv": "8.0% ABV",
+        "hops": "Citra",
+        "last_canned": "January 27, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Inscription Rock",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/inscriptionrock/",
+        "style": "India Pale Ale",
+        "abv": "7.0% ABV",
+        "hops": "Mosaic, Krush",
+        "last_canned": "January 27, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Two Thumbs Up",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/twothumbsup/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Motueka, Nelson Sauvin, Mosaic Hyperboost",
+        "last_canned": "January 21, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Dark Hedges",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/darkhedges/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Simcoe, Peacharine, Nelson Sauvin",
+        "last_canned": "January 20, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Choice Stock",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/choicestock/",
+        "style": "India Pale Ale",
+        "abv": "6.5% ABV",
+        "hops": "Nectaron, Strata",
+        "last_canned": "January 22, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Cooper's Brown",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/coopersbrown/",
+        "style": "American Brown Ale",
+        "abv": "5.25% ABV",
+        "hops": "Cascade, Saaz",
+        "last_canned": "January 20, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Sun-Baked",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/sunbaked/",
+        "style": "India Pale Ale",
+        "abv": "7.0% ABV",
+        "hops": "Citra, Nectaron, Simcoe Hyperboost",
+        "last_canned": "January 20, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Yutori",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/yutori/",
+        "style": "Dry Rice Lager",
+        "abv": "5.0% ABV",
+        "hops": "HRC-004",
+        "last_canned": "January 17, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Butcher Gold",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/butchergold/",
+        "style": "American Style Lager",
+        "abv": "4.75% ABV",
+        "hops": "Liberty",
+        "last_canned": "January 17, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Orange Moss",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/orangemoss/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, Simcoe, Tangier",
+        "last_canned": "January 14, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Blizzard of '67",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/blizzard-of-67/",
+        "style": "Triple India Pale Ale",
+        "abv": "10.0% ABV",
+        "hops": "Citra, Mosaic, El Dorado & Ekuanot",
+        "last_canned": "January 13, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Zombie Hopsicle II",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/zombiehopsicle-ii/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra & Strata",
+        "last_canned": "January 6, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Urbs In Horto",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/urbsinhorto/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Strata & Mosaic",
+        "last_canned": "January 7, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Newfallen",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/newfallen/",
+        "style": "India Pale Ale",
+        "abv": "6.5% ABV",
+        "hops": "Amarillo, Centennial Hyperboost, Citra",
+        "last_canned": "January 8, 2025",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Galaxy Traveling Scientist",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/galaxytravelingscientist-1/",
+        "style": "American Pale Ale",
+        "abv": "5.75% ABV",
+        "hops": "Galaxy",
+        "last_canned": "December 21, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Giardiniera",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/giardiniera/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Citra, El Dorado, Mosaic",
+        "last_canned": "December 23, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Flames, Crowns & Loot",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/flamescrownsloot/",
+        "style": "Double India Pale Ale",
+        "abv": "7.75% ABV",
+        "hops": "Simcoe, Citra, Riwaka, El Dorado",
+        "last_canned": "December 17, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Lady Octopus",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/ladyoctopus/",
+        "style": "Triple India Pale Ale",
+        "abv": "10.5% ABV",
+        "hops": "Mosaic",
+        "last_canned": "December 16, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Destination Mars",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/destinationmars/",
+        "style": "India Pale Ale",
+        "abv": "6.75% ABV",
+        "hops": "Citra, Nelson, Riwaka",
+        "last_canned": "December 18, 2024",
+        "formats": "Draft, 16 oz. cans",
+        "label_artwork": "Dan Grzeca",
+        "flavors": "Tropical, Grapefruit, Orange"
+    },
+    {
+        "name": "Larval Stage",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/larvalstage/",
+        "style": "Red India Pale Ale",
+        "abv": "6.5% ABV",
+        "hops": "Citra, Krush, Citra Hyperboost",
+        "last_canned": "December 13, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Milkstachio",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/milkstachio/",
+        "style": "Pistachio Milk Stout",
+        "abv": "6.0% ABV",
+        "last_canned": "December 13, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Double Blazed Orange Milkshake",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/doubleblazedorangemilkshake/",
+        "style": "Milkshake Double India Pale Ale",
+        "abv": "9.5% ABV",
+        "hops": "Citra & Strata",
+        "last_canned": "December 10, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "The Jewels",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/thejewels/",
+        "style": "Double India Pale Ale",
+        "abv": "7.5% ABV",
+        "hops": "Mosaic, Vic Secret",
+        "last_canned": "December 9, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Grid",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/grid/",
+        "style": "American Pale Ale",
+        "abv": "5.75% ABV",
+        "hops": "Citra & Mosaic",
+        "last_canned": "December 11, 2024",
+        "label_artwork": "Dan Grzeca"
+    },
+    {
+        "name": "Only Interested In Pine",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/onlyinterestedinpine/"
+    },
+    {
+        "name": "Dun Dun Dun",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/dundundun/"
+    },
+    {
+        "name": "Meet the Krushes",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/meetthekrushes/"
+    },
+    {
+        "name": "Double Grid",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/doublegrid/"
+    },
+    {
+        "name": "Holiday Train",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/holidaytrain/"
+    },
+    {
+        "name": "Best Buds",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/bestbuds/"
+    },
+    {
+        "name": "Peak Motueka",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/peakmotueka/"
+    },
+    {
+        "name": "Hoppy Days Are Here Again",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/hoppydaysarehereagain/"
+    },
+    {
+        "name": "Fight Strap",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/fightstrap/"
+    },
+    {
+        "name": "Unwind Your Mind",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/unwindyourmind/"
+    },
+    {
+        "name": "Deepen",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/deepen/"
+    },
+    {
+        "name": "Anniversary Blend #2",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/anniversaryblend2/"
+    },
+    {
+        "name": "Little Pizza Table",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/littlepizzatable/"
+    },
+    {
+        "name": "Cosmic Glow",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/cosmicglow/"
+    },
+    {
+        "name": "Penne Pils",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/pennepils/"
+    },
+    {
+        "name": "End Over End",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/endoverend/"
+    },
+    {
+        "name": "Cricket Hill",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/crickethill/"
+    },
+    {
+        "name": "Galaxy Bowl",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/galaxybowl/"
+    },
+    {
+        "name": "Minted",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/minted/"
+    },
+    {
+        "name": "Triple Grid",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/triplegrid/"
+    },
+    {
+        "name": "Green Moss",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/greenmoss/"
+    },
+    {
+        "name": "Lost In The Tropics",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/lostinthetropics/"
+    },
+    {
+        "name": "The West Coast Sound",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/thewestcoastsound/"
+    },
+    {
+        "name": "Nelson Cool",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/nelsoncool/"
+    },
+    {
+        "name": "Duchess the Elephant",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/duchestheelephant/"
+    },
+    {
+        "name": "Blazed Orange",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/blazedorange/"
+    },
+    {
+        "name": "Honey Bear",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/honeybear/"
+    },
+    {
+        "name": "Normalize the Signal",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/normalizethesignal/"
+    },
+    {
+        "name": "Mild Sauce",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/mildsauce/"
+    },
+    {
+        "name": "Roost",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/roost/"
+    },
+    {
+        "name": "Tavern Cut",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/taverncut/"
+    },
+    {
+        "name": "Fresh Produce",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/freshproduce/"
+    },
+    {
+        "name": "Rocklawn",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/rocklawn/"
+    },
+    {
+        "name": "Gulf Coastal",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/gulfcoastal/"
+    },
+    {
+        "name": "A Roar of Colors",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/aroarofcolors/"
+    },
+    {
+        "name": "ChicagoFest",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/chicagofest/"
+    },
+    {
+        "name": "Lord Galactopus",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/lordgalactopus/"
+    },
+    {
+        "name": "Chicagohenge",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/chicagohenge/"
+    },
+    {
+        "name": "Gut Feeling",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/gutfeeling/"
+    },
+    {
+        "name": "Back Yard Party",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/backyardparty/"
+    },
+    {
+        "name": "The Mind Breaker",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/themindbreaker/"
+    },
+    {
+        "name": "Sport Pep",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/sportpep/"
+    },
+    {
+        "name": "Through The Uprights",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/through-the-uprights/"
+    },
+    {
+        "name": "Traveling  Scientist",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/traveling-scientist/"
+    },
+    {
+        "name": "Soar",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/soar/"
+    },
+    {
+        "name": "Your Wish Is Hazy",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/yourwishishazy/"
+    },
+    {
+        "name": "Skrap Metal",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/skrapmetal/"
+    },
+    {
+        "name": "Snorkel Squad",
+        "brewery": "Hop Butcher for the World",
+        "source_url": "https://www.hopbutcher.com/snorkelsquad/"
+    }
+]

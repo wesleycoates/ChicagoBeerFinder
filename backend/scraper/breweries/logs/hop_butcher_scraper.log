@@ -1,0 +1,321 @@
+2025-04-07 13:02:32,027 - INFO: Fetching content from https://www.hopbutcher.com
+2025-04-07 13:02:32,029 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:02:32,087 - DEBUG: https://www.hopbutcher.com:443 "GET / HTTP/1.1" 200 34858
+2025-04-07 13:02:32,096 - INFO: Response status code: 200
+2025-04-07 13:02:32,096 - INFO: Response content length: 272265 characters
+2025-04-07 13:02:32,097 - INFO: Saved page source to debug/hop_butcher_page_source.html
+2025-04-07 13:02:32,201 - INFO: Name selector 'h1[data-shrink-original-size="42"]' found 0 elements
+2025-04-07 13:02:32,210 - INFO: Name selector 'h1.beer-name' found 0 elements
+2025-04-07 13:02:32,218 - INFO: Name selector 'h1.project-title' found 0 elements
+2025-04-07 13:02:32,233 - INFO: Found 265 paragraphs with preserve-empty attribute
+2025-04-07 13:02:32,234 - INFO: Successfully scraped 254 beers
+2025-04-07 13:02:32,236 - INFO: Saved 254 beers to scraped_data/hop_butcher_beers_20250407_130232.json
+2025-04-07 13:08:27,779 - INFO: Fetching content from https://www.hopbutcher.com
+2025-04-07 13:08:27,780 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:27,820 - DEBUG: https://www.hopbutcher.com:443 "GET / HTTP/1.1" 200 34858
+2025-04-07 13:08:27,830 - INFO: Response status code: 200
+2025-04-07 13:08:27,831 - INFO: Saved page source to debug/hop_butcher_page_source.html
+2025-04-07 13:08:27,978 - INFO: Found 0 gallery items
+2025-04-07 13:08:27,992 - INFO: Found 100 beer links
+2025-04-07 13:08:27,992 - INFO: Scraping beer page: Blazed Orange Milkshake - https://www.hopbutcher.com/blazedorangemilkshake/
+2025-04-07 13:08:27,993 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:28,044 - DEBUG: https://www.hopbutcher.com:443 "GET /blazedorangemilkshake/ HTTP/1.1" 200 11714
+2025-04-07 13:08:29,056 - INFO: Scraping beer page: A Deeper Dish - https://www.hopbutcher.com/adeeperdish/
+2025-04-07 13:08:29,057 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:29,098 - DEBUG: https://www.hopbutcher.com:443 "GET /adeeperdish/ HTTP/1.1" 200 11535
+2025-04-07 13:08:30,109 - INFO: Scraping beer page: Aspect of Aries - https://www.hopbutcher.com/aspect-of-aries/
+2025-04-07 13:08:30,111 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:30,158 - DEBUG: https://www.hopbutcher.com:443 "GET /aspect-of-aries/ HTTP/1.1" 200 11526
+2025-04-07 13:08:31,179 - INFO: Scraping beer page: Pink Citrus Hop Water For The World - https://www.hopbutcher.com/pink-citrus-hop-water-for-the-world/
+2025-04-07 13:08:31,180 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:31,262 - DEBUG: https://www.hopbutcher.com:443 "GET /pink-citrus-hop-water-for-the-world/ HTTP/1.1" 200 11546
+2025-04-07 13:08:32,273 - INFO: Scraping beer page: Double Pepperoni - https://www.hopbutcher.com/doublepepperoni/
+2025-04-07 13:08:32,274 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:32,322 - DEBUG: https://www.hopbutcher.com:443 "GET /doublepepperoni/ HTTP/1.1" 200 11520
+2025-04-07 13:08:33,333 - INFO: Scraping beer page: Welcome to Zumo - https://www.hopbutcher.com/welcome-to-zumo/
+2025-04-07 13:08:33,334 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:33,380 - DEBUG: https://www.hopbutcher.com:443 "GET /welcome-to-zumo/ HTTP/1.1" 200 11510
+2025-04-07 13:08:34,400 - INFO: Scraping beer page: A Myriad of Pyramids - https://www.hopbutcher.com/amyriadofpyramids/
+2025-04-07 13:08:34,401 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:34,439 - DEBUG: https://www.hopbutcher.com:443 "GET /amyriadofpyramids/ HTTP/1.1" 200 11528
+2025-04-07 13:08:35,453 - INFO: Scraping beer page: Hydrofoam - https://www.hopbutcher.com/hydrofoam/
+2025-04-07 13:08:35,454 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:35,491 - DEBUG: https://www.hopbutcher.com:443 "GET /hydrofoam/ HTTP/1.1" 200 11484
+2025-04-07 13:08:36,504 - INFO: Scraping beer page: A Decade of Decadence - https://www.hopbutcher.com/a-decade-of-decadence/
+2025-04-07 13:08:36,505 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:36,607 - DEBUG: https://www.hopbutcher.com:443 "GET /a-decade-of-decadence/ HTTP/1.1" 200 11470
+2025-04-07 13:08:37,622 - INFO: Scraping beer page: Riff Driven - https://www.hopbutcher.com/riff-driven/
+2025-04-07 13:08:37,624 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:37,750 - DEBUG: https://www.hopbutcher.com:443 "GET /riff-driven/ HTTP/1.1" 200 11453
+2025-04-07 13:08:38,761 - INFO: Scraping beer page: Hop Water For The World - https://www.hopbutcher.com/hopwaterfortheworld/
+2025-04-07 13:08:38,762 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:38,976 - DEBUG: https://www.hopbutcher.com:443 "GET /hopwaterfortheworld/ HTTP/1.1" 200 11496
+2025-04-07 13:08:39,987 - INFO: Scraping beer page: Simcoe Traveling Scientist - https://www.hopbutcher.com/simcoe-traveling-scientist/
+2025-04-07 13:08:39,988 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:40,096 - DEBUG: https://www.hopbutcher.com:443 "GET /simcoe-traveling-scientist/ HTTP/1.1" 200 11457
+2025-04-07 13:08:41,113 - INFO: Scraping beer page: Lord Octomoss - https://www.hopbutcher.com/lordoctomoss/
+2025-04-07 13:08:41,114 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:41,196 - DEBUG: https://www.hopbutcher.com:443 "GET /lordoctomoss/ HTTP/1.1" 200 11444
+2025-04-07 13:08:42,225 - INFO: Scraping beer page: Tropical Hop Water For The World - https://www.hopbutcher.com/tropical-hop-water-for-the-world/
+2025-04-07 13:08:42,226 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:42,326 - DEBUG: https://www.hopbutcher.com:443 "GET /tropical-hop-water-for-the-world/ HTTP/1.1" 200 11546
+2025-04-07 13:08:43,338 - INFO: Scraping beer page: Fat Bear - https://www.hopbutcher.com/fatbear/
+2025-04-07 13:08:43,339 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:43,427 - DEBUG: https://www.hopbutcher.com:443 "GET /fatbear/ HTTP/1.1" 200 11500
+2025-04-07 13:08:44,438 - INFO: Scraping beer page: Narragansett Ridge - https://www.hopbutcher.com/narragansettridge/
+2025-04-07 13:08:44,440 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:44,484 - DEBUG: https://www.hopbutcher.com:443 "GET /narragansettridge/ HTTP/1.1" 200 11451
+2025-04-07 13:08:45,495 - INFO: Scraping beer page: Queso Fundido - https://www.hopbutcher.com/queso-fundido/
+2025-04-07 13:08:45,496 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:45,603 - DEBUG: https://www.hopbutcher.com:443 "GET /queso-fundido/ HTTP/1.1" 200 11625
+2025-04-07 13:08:46,621 - INFO: Scraping beer page: Teetering Wooden Crates of Oranges - https://www.hopbutcher.com/teetering-wooden-crates-of-oranges/
+2025-04-07 13:08:46,622 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:46,918 - DEBUG: https://www.hopbutcher.com:443 "GET /teetering-wooden-crates-of-oranges/ HTTP/1.1" 200 None
+2025-04-07 13:08:47,930 - INFO: Scraping beer page: Peak Peacharine - https://www.hopbutcher.com/peakpeacharine/
+2025-04-07 13:08:47,931 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:48,039 - DEBUG: https://www.hopbutcher.com:443 "GET /peakpeacharine/ HTTP/1.1" 200 11517
+2025-04-07 13:08:49,050 - INFO: Scraping beer page: Tavern King - https://www.hopbutcher.com/tavernking/
+2025-04-07 13:08:49,051 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:49,137 - DEBUG: https://www.hopbutcher.com:443 "GET /tavernking/ HTTP/1.1" 200 11460
+2025-04-07 13:08:50,148 - INFO: Scraping beer page: Cooler By The Lakefront - https://www.hopbutcher.com/coolerbythelakefront/
+2025-04-07 13:08:50,149 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:50,264 - DEBUG: https://www.hopbutcher.com:443 "GET /coolerbythelakefront/ HTTP/1.1" 200 11631
+2025-04-07 13:08:51,281 - INFO: Scraping beer page: Sweet Home - https://www.hopbutcher.com/sweethome/
+2025-04-07 13:08:51,282 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:51,407 - DEBUG: https://www.hopbutcher.com:443 "GET /sweethome/ HTTP/1.1" 200 11440
+2025-04-07 13:08:52,417 - INFO: Scraping beer page: I Want to Believe - https://www.hopbutcher.com/iwanttobelieve/
+2025-04-07 13:08:52,418 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:52,726 - DEBUG: https://www.hopbutcher.com:443 "GET /iwanttobelieve/ HTTP/1.1" 200 None
+2025-04-07 13:08:53,744 - INFO: Scraping beer page: Resplendence - https://www.hopbutcher.com/resplendence/
+2025-04-07 13:08:53,745 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:53,826 - DEBUG: https://www.hopbutcher.com:443 "GET /resplendence/ HTTP/1.1" 200 11486
+2025-04-07 13:08:54,836 - INFO: Scraping beer page: Waves of Winter - https://www.hopbutcher.com/wavesofwinter/
+2025-04-07 13:08:54,837 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:55,365 - DEBUG: https://www.hopbutcher.com:443 "GET /wavesofwinter/ HTTP/1.1" 200 None
+2025-04-07 13:08:56,382 - INFO: Scraping beer page: Cosmic Fountain - https://www.hopbutcher.com/cosmicfountain2/
+2025-04-07 13:08:56,383 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:56,429 - DEBUG: https://www.hopbutcher.com:443 "GET /cosmicfountain2/ HTTP/1.1" 200 11525
+2025-04-07 13:08:57,441 - INFO: Scraping beer page: Your Wish Is Granted - https://www.hopbutcher.com/yourwishisgranted/
+2025-04-07 13:08:57,442 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:57,616 - DEBUG: https://www.hopbutcher.com:443 "GET /yourwishisgranted/ HTTP/1.1" 200 11585
+2025-04-07 13:08:58,626 - INFO: Scraping beer page: Interocean - https://www.hopbutcher.com/interocean/
+2025-04-07 13:08:58,627 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:58,666 - DEBUG: https://www.hopbutcher.com:443 "GET /interocean/ HTTP/1.1" 200 11502
+2025-04-07 13:08:59,679 - INFO: Scraping beer page: Double Snorkel Squad - https://www.hopbutcher.com/doublesnorkelsquad/
+2025-04-07 13:08:59,680 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:08:59,810 - DEBUG: https://www.hopbutcher.com:443 "GET /doublesnorkelsquad/ HTTP/1.1" 200 11514
+2025-04-07 13:09:00,827 - INFO: Scraping beer page: Inscription Rock - https://www.hopbutcher.com/inscriptionrock/
+2025-04-07 13:09:00,828 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:00,934 - DEBUG: https://www.hopbutcher.com:443 "GET /inscriptionrock/ HTTP/1.1" 200 11436
+2025-04-07 13:09:01,958 - INFO: Scraping beer page: Two Thumbs Up - https://www.hopbutcher.com/twothumbsup/
+2025-04-07 13:09:01,959 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:02,337 - DEBUG: https://www.hopbutcher.com:443 "GET /twothumbsup/ HTTP/1.1" 200 None
+2025-04-07 13:09:03,353 - INFO: Scraping beer page: Dark Hedges - https://www.hopbutcher.com/darkhedges/
+2025-04-07 13:09:03,354 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:03,663 - DEBUG: https://www.hopbutcher.com:443 "GET /darkhedges/ HTTP/1.1" 200 None
+2025-04-07 13:09:04,679 - INFO: Scraping beer page: Choice Stock - https://www.hopbutcher.com/choicestock/
+2025-04-07 13:09:04,680 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:05,514 - DEBUG: https://www.hopbutcher.com:443 "GET /choicestock/ HTTP/1.1" 200 None
+2025-04-07 13:09:06,532 - INFO: Scraping beer page: Cooper's Brown - https://www.hopbutcher.com/coopersbrown/
+2025-04-07 13:09:06,533 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:06,715 - DEBUG: https://www.hopbutcher.com:443 "GET /coopersbrown/ HTTP/1.1" 200 11515
+2025-04-07 13:09:07,726 - INFO: Scraping beer page: Sun-Baked - https://www.hopbutcher.com/sunbaked/
+2025-04-07 13:09:07,727 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:07,926 - DEBUG: https://www.hopbutcher.com:443 "GET /sunbaked/ HTTP/1.1" 200 11527
+2025-04-07 13:09:08,944 - INFO: Scraping beer page: Yutori - https://www.hopbutcher.com/yutori/
+2025-04-07 13:09:08,945 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:09,113 - DEBUG: https://www.hopbutcher.com:443 "GET /yutori/ HTTP/1.1" 200 11504
+2025-04-07 13:09:10,124 - INFO: Scraping beer page: Butcher Gold - https://www.hopbutcher.com/butchergold/
+2025-04-07 13:09:10,125 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:10,485 - DEBUG: https://www.hopbutcher.com:443 "GET /butchergold/ HTTP/1.1" 200 None
+2025-04-07 13:09:11,503 - INFO: Scraping beer page: Orange Moss - https://www.hopbutcher.com/orangemoss/
+2025-04-07 13:09:11,504 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:11,591 - DEBUG: https://www.hopbutcher.com:443 "GET /orangemoss/ HTTP/1.1" 200 11521
+2025-04-07 13:09:12,601 - INFO: Scraping beer page: Blizzard of '67 - https://www.hopbutcher.com/blizzard-of-67/
+2025-04-07 13:09:12,602 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:13,090 - DEBUG: https://www.hopbutcher.com:443 "GET /blizzard-of-67/ HTTP/1.1" 200 None
+2025-04-07 13:09:14,101 - INFO: Scraping beer page: Zombie Hopsicle II - https://www.hopbutcher.com/zombiehopsicle-ii/
+2025-04-07 13:09:14,102 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:14,144 - DEBUG: https://www.hopbutcher.com:443 "GET /zombiehopsicle-ii/ HTTP/1.1" 200 11534
+2025-04-07 13:09:15,155 - INFO: Scraping beer page: Urbs In Horto - https://www.hopbutcher.com/urbsinhorto/
+2025-04-07 13:09:15,156 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:15,325 - DEBUG: https://www.hopbutcher.com:443 "GET /urbsinhorto/ HTTP/1.1" 200 11599
+2025-04-07 13:09:16,336 - INFO: Scraping beer page: Newfallen - https://www.hopbutcher.com/newfallen/
+2025-04-07 13:09:16,337 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:16,375 - DEBUG: https://www.hopbutcher.com:443 "GET /newfallen/ HTTP/1.1" 200 11508
+2025-04-07 13:09:17,388 - INFO: Scraping beer page: Galaxy Traveling Scientist - https://www.hopbutcher.com/galaxytravelingscientist-1/
+2025-04-07 13:09:17,389 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:17,554 - DEBUG: https://www.hopbutcher.com:443 "GET /galaxytravelingscientist-1/ HTTP/1.1" 200 11447
+2025-04-07 13:09:18,564 - INFO: Scraping beer page: Giardiniera - https://www.hopbutcher.com/giardiniera/
+2025-04-07 13:09:18,566 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:19,028 - DEBUG: https://www.hopbutcher.com:443 "GET /giardiniera/ HTTP/1.1" 200 None
+2025-04-07 13:09:20,045 - INFO: Scraping beer page: Flames, Crowns & Loot - https://www.hopbutcher.com/flamescrownsloot/
+2025-04-07 13:09:20,046 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:20,166 - DEBUG: https://www.hopbutcher.com:443 "GET /flamescrownsloot/ HTTP/1.1" 200 11619
+2025-04-07 13:09:21,182 - INFO: Scraping beer page: Lady Octopus - https://www.hopbutcher.com/ladyoctopus/
+2025-04-07 13:09:21,184 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:21,383 - DEBUG: https://www.hopbutcher.com:443 "GET /ladyoctopus/ HTTP/1.1" 200 11502
+2025-04-07 13:09:22,395 - INFO: Scraping beer page: Destination Mars - https://www.hopbutcher.com/destinationmars/
+2025-04-07 13:09:22,396 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:22,764 - DEBUG: https://www.hopbutcher.com:443 "GET /destinationmars/ HTTP/1.1" 200 None
+2025-04-07 13:09:23,778 - INFO: Scraping beer page: Larval Stage - https://www.hopbutcher.com/larvalstage/
+2025-04-07 13:09:23,779 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:24,331 - DEBUG: https://www.hopbutcher.com:443 "GET /larvalstage/ HTTP/1.1" 200 None
+2025-04-07 13:09:25,341 - INFO: Scraping beer page: Milkstachio - https://www.hopbutcher.com/milkstachio/
+2025-04-07 13:09:25,342 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:25,860 - DEBUG: https://www.hopbutcher.com:443 "GET /milkstachio/ HTTP/1.1" 200 None
+2025-04-07 13:09:26,878 - INFO: Scraping beer page: Double Blazed Orange Milkshake - https://www.hopbutcher.com/doubleblazedorangemilkshake/
+2025-04-07 13:09:26,879 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:26,961 - DEBUG: https://www.hopbutcher.com:443 "GET /doubleblazedorangemilkshake/ HTTP/1.1" 200 11586
+2025-04-07 13:09:27,971 - INFO: Scraping beer page: The Jewels - https://www.hopbutcher.com/thejewels/
+2025-04-07 13:09:27,972 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:28,224 - DEBUG: https://www.hopbutcher.com:443 "GET /thejewels/ HTTP/1.1" 200 11524
+2025-04-07 13:09:29,236 - INFO: Scraping beer page: Grid - https://www.hopbutcher.com/grid/
+2025-04-07 13:09:29,237 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:29,328 - DEBUG: https://www.hopbutcher.com:443 "GET /grid/ HTTP/1.1" 200 11556
+2025-04-07 13:09:30,340 - INFO: Scraping beer page: Only Interested In Pine - https://www.hopbutcher.com/onlyinterestedinpine/
+2025-04-07 13:09:30,341 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:30,427 - DEBUG: https://www.hopbutcher.com:443 "GET /onlyinterestedinpine/ HTTP/1.1" 200 11450
+2025-04-07 13:09:31,440 - INFO: Scraping beer page: Dun Dun Dun - https://www.hopbutcher.com/dundundun/
+2025-04-07 13:09:31,441 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:31,522 - DEBUG: https://www.hopbutcher.com:443 "GET /dundundun/ HTTP/1.1" 200 11496
+2025-04-07 13:09:32,532 - INFO: Scraping beer page: Meet the Krushes - https://www.hopbutcher.com/meetthekrushes/
+2025-04-07 13:09:32,533 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:32,634 - DEBUG: https://www.hopbutcher.com:443 "GET /meetthekrushes/ HTTP/1.1" 200 11484
+2025-04-07 13:09:33,644 - INFO: Scraping beer page: Double Grid - https://www.hopbutcher.com/doublegrid/
+2025-04-07 13:09:33,645 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:34,023 - DEBUG: https://www.hopbutcher.com:443 "GET /doublegrid/ HTTP/1.1" 200 None
+2025-04-07 13:09:35,043 - INFO: Scraping beer page: Holiday Train - https://www.hopbutcher.com/holidaytrain/
+2025-04-07 13:09:35,044 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:35,492 - DEBUG: https://www.hopbutcher.com:443 "GET /holidaytrain/ HTTP/1.1" 200 None
+2025-04-07 13:09:36,504 - INFO: Scraping beer page: Best Buds - https://www.hopbutcher.com/bestbuds/
+2025-04-07 13:09:36,505 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:36,692 - DEBUG: https://www.hopbutcher.com:443 "GET /bestbuds/ HTTP/1.1" 200 11489
+2025-04-07 13:09:37,703 - INFO: Scraping beer page: Peak Motueka - https://www.hopbutcher.com/peakmotueka/
+2025-04-07 13:09:37,704 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:37,875 - DEBUG: https://www.hopbutcher.com:443 "GET /peakmotueka/ HTTP/1.1" 200 11407
+2025-04-07 13:09:38,885 - INFO: Scraping beer page: Hoppy Days Are Here Again - https://www.hopbutcher.com/hoppydaysarehereagain/
+2025-04-07 13:09:38,886 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:38,968 - DEBUG: https://www.hopbutcher.com:443 "GET /hoppydaysarehereagain/ HTTP/1.1" 200 11605
+2025-04-07 13:09:39,979 - INFO: Scraping beer page: Fight Strap - https://www.hopbutcher.com/fightstrap/
+2025-04-07 13:09:39,980 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:40,060 - DEBUG: https://www.hopbutcher.com:443 "GET /fightstrap/ HTTP/1.1" 200 11414
+2025-04-07 13:09:41,070 - INFO: Scraping beer page: Unwind Your Mind - https://www.hopbutcher.com/unwindyourmind/
+2025-04-07 13:09:41,071 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:41,110 - DEBUG: https://www.hopbutcher.com:443 "GET /unwindyourmind/ HTTP/1.1" 200 11605
+2025-04-07 13:09:42,122 - INFO: Scraping beer page: Deepen - https://www.hopbutcher.com/deepen/
+2025-04-07 13:09:42,123 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:42,207 - DEBUG: https://www.hopbutcher.com:443 "GET /deepen/ HTTP/1.1" 200 11470
+2025-04-07 13:09:43,217 - INFO: Scraping beer page: Anniversary Blend #2 - https://www.hopbutcher.com/anniversaryblend2/
+2025-04-07 13:09:43,218 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:43,613 - DEBUG: https://www.hopbutcher.com:443 "GET /anniversaryblend2/ HTTP/1.1" 200 None
+2025-04-07 13:09:44,630 - INFO: Scraping beer page: Little Pizza Table - https://www.hopbutcher.com/littlepizzatable/
+2025-04-07 13:09:44,631 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:44,733 - DEBUG: https://www.hopbutcher.com:443 "GET /littlepizzatable/ HTTP/1.1" 200 11436
+2025-04-07 13:09:45,744 - INFO: Scraping beer page: Cosmic Glow - https://www.hopbutcher.com/cosmicglow/
+2025-04-07 13:09:45,745 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:45,785 - DEBUG: https://www.hopbutcher.com:443 "GET /cosmicglow/ HTTP/1.1" 200 11416
+2025-04-07 13:09:46,796 - INFO: Scraping beer page: Penne Pils - https://www.hopbutcher.com/pennepils/
+2025-04-07 13:09:46,797 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:46,882 - DEBUG: https://www.hopbutcher.com:443 "GET /pennepils/ HTTP/1.1" 200 11478
+2025-04-07 13:09:47,905 - INFO: Scraping beer page: End Over End - https://www.hopbutcher.com/endoverend/
+2025-04-07 13:09:47,906 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:48,252 - DEBUG: https://www.hopbutcher.com:443 "GET /endoverend/ HTTP/1.1" 200 None
+2025-04-07 13:09:49,269 - INFO: Scraping beer page: Cricket Hill - https://www.hopbutcher.com/crickethill/
+2025-04-07 13:09:49,270 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:49,499 - DEBUG: https://www.hopbutcher.com:443 "GET /crickethill/ HTTP/1.1" 200 11530
+2025-04-07 13:09:50,509 - INFO: Scraping beer page: Galaxy Bowl - https://www.hopbutcher.com/galaxybowl/
+2025-04-07 13:09:50,510 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:50,605 - DEBUG: https://www.hopbutcher.com:443 "GET /galaxybowl/ HTTP/1.1" 200 11522
+2025-04-07 13:09:51,616 - INFO: Scraping beer page: Minted - https://www.hopbutcher.com/minted/
+2025-04-07 13:09:51,617 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:51,859 - DEBUG: https://www.hopbutcher.com:443 "GET /minted/ HTTP/1.1" 200 11446
+2025-04-07 13:09:52,869 - INFO: Scraping beer page: Triple Grid - https://www.hopbutcher.com/triplegrid/
+2025-04-07 13:09:52,870 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:52,980 - DEBUG: https://www.hopbutcher.com:443 "GET /triplegrid/ HTTP/1.1" 200 11477
+2025-04-07 13:09:53,992 - INFO: Scraping beer page: Green Moss - https://www.hopbutcher.com/greenmoss/
+2025-04-07 13:09:53,993 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:54,573 - DEBUG: https://www.hopbutcher.com:443 "GET /greenmoss/ HTTP/1.1" 200 None
+2025-04-07 13:09:55,591 - INFO: Scraping beer page: Lost In The Tropics - https://www.hopbutcher.com/lostinthetropics/
+2025-04-07 13:09:55,592 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:55,675 - DEBUG: https://www.hopbutcher.com:443 "GET /lostinthetropics/ HTTP/1.1" 200 11489
+2025-04-07 13:09:56,685 - INFO: Scraping beer page: The West Coast Sound - https://www.hopbutcher.com/thewestcoastsound/
+2025-04-07 13:09:56,686 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:56,958 - DEBUG: https://www.hopbutcher.com:443 "GET /thewestcoastsound/ HTTP/1.1" 200 11558
+2025-04-07 13:09:57,969 - INFO: Scraping beer page: Nelson Cool - https://www.hopbutcher.com/nelsoncool/
+2025-04-07 13:09:57,970 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:58,015 - DEBUG: https://www.hopbutcher.com:443 "GET /nelsoncool/ HTTP/1.1" 200 11496
+2025-04-07 13:09:59,031 - INFO: Scraping beer page: Duchess the Elephant - https://www.hopbutcher.com/duchestheelephant/
+2025-04-07 13:09:59,032 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:09:59,193 - DEBUG: https://www.hopbutcher.com:443 "GET /duchestheelephant/ HTTP/1.1" 200 11508
+2025-04-07 13:10:00,205 - INFO: Scraping beer page: Blazed Orange - https://www.hopbutcher.com/blazedorange/
+2025-04-07 13:10:00,206 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:00,248 - DEBUG: https://www.hopbutcher.com:443 "GET /blazedorange/ HTTP/1.1" 200 11517
+2025-04-07 13:10:01,258 - INFO: Scraping beer page: Honey Bear - https://www.hopbutcher.com/honeybear/
+2025-04-07 13:10:01,259 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:01,366 - DEBUG: https://www.hopbutcher.com:443 "GET /honeybear/ HTTP/1.1" 200 11467
+2025-04-07 13:10:02,378 - INFO: Scraping beer page: Normalize the Signal - https://www.hopbutcher.com/normalizethesignal/
+2025-04-07 13:10:02,379 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:02,479 - DEBUG: https://www.hopbutcher.com:443 "GET /normalizethesignal/ HTTP/1.1" 200 11501
+2025-04-07 13:10:03,489 - INFO: Scraping beer page: Mild Sauce - https://www.hopbutcher.com/mildsauce/
+2025-04-07 13:10:03,490 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:03,798 - DEBUG: https://www.hopbutcher.com:443 "GET /mildsauce/ HTTP/1.1" 200 None
+2025-04-07 13:10:04,817 - INFO: Scraping beer page: Roost - https://www.hopbutcher.com/roost/
+2025-04-07 13:10:04,818 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:05,372 - DEBUG: https://www.hopbutcher.com:443 "GET /roost/ HTTP/1.1" 200 None
+2025-04-07 13:10:06,388 - INFO: Scraping beer page: Tavern Cut - https://www.hopbutcher.com/taverncut/
+2025-04-07 13:10:06,389 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:06,486 - DEBUG: https://www.hopbutcher.com:443 "GET /taverncut/ HTTP/1.1" 200 11517
+2025-04-07 13:10:07,496 - INFO: Scraping beer page: Fresh Produce - https://www.hopbutcher.com/freshproduce/
+2025-04-07 13:10:07,497 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:07,577 - DEBUG: https://www.hopbutcher.com:443 "GET /freshproduce/ HTTP/1.1" 200 11432
+2025-04-07 13:10:08,587 - INFO: Scraping beer page: Rocklawn - https://www.hopbutcher.com/rocklawn/
+2025-04-07 13:10:08,588 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:08,676 - DEBUG: https://www.hopbutcher.com:443 "GET /rocklawn/ HTTP/1.1" 200 11405
+2025-04-07 13:10:09,686 - INFO: Scraping beer page: Gulf Coastal - https://www.hopbutcher.com/gulfcoastal/
+2025-04-07 13:10:09,687 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:10,066 - DEBUG: https://www.hopbutcher.com:443 "GET /gulfcoastal/ HTTP/1.1" 200 None
+2025-04-07 13:10:11,078 - INFO: Scraping beer page: A Roar of Colors - https://www.hopbutcher.com/aroarofcolors/
+2025-04-07 13:10:11,079 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:11,649 - DEBUG: https://www.hopbutcher.com:443 "GET /aroarofcolors/ HTTP/1.1" 200 None
+2025-04-07 13:10:12,666 - INFO: Scraping beer page: ChicagoFest - https://www.hopbutcher.com/chicagofest/
+2025-04-07 13:10:12,667 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:12,945 - DEBUG: https://www.hopbutcher.com:443 "GET /chicagofest/ HTTP/1.1" 200 11399
+2025-04-07 13:10:13,962 - INFO: Scraping beer page: Lord Galactopus - https://www.hopbutcher.com/lordgalactopus/
+2025-04-07 13:10:13,963 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:14,266 - DEBUG: https://www.hopbutcher.com:443 "GET /lordgalactopus/ HTTP/1.1" 200 None
+2025-04-07 13:10:15,282 - INFO: Scraping beer page: Chicagohenge - https://www.hopbutcher.com/chicagohenge/
+2025-04-07 13:10:15,283 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:15,365 - DEBUG: https://www.hopbutcher.com:443 "GET /chicagohenge/ HTTP/1.1" 200 11414
+2025-04-07 13:10:16,376 - INFO: Scraping beer page: Gut Feeling - https://www.hopbutcher.com/gutfeeling/
+2025-04-07 13:10:16,377 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:16,466 - DEBUG: https://www.hopbutcher.com:443 "GET /gutfeeling/ HTTP/1.1" 200 11555
+2025-04-07 13:10:17,479 - INFO: Scraping beer page: Back Yard Party - https://www.hopbutcher.com/backyardparty/
+2025-04-07 13:10:17,480 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:17,769 - DEBUG: https://www.hopbutcher.com:443 "GET /backyardparty/ HTTP/1.1" 200 None
+2025-04-07 13:10:18,785 - INFO: Scraping beer page: The Mind Breaker - https://www.hopbutcher.com/themindbreaker/
+2025-04-07 13:10:18,786 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:18,876 - DEBUG: https://www.hopbutcher.com:443 "GET /themindbreaker/ HTTP/1.1" 200 11562
+2025-04-07 13:10:19,887 - INFO: Scraping beer page: Sport Pep - https://www.hopbutcher.com/sportpep/
+2025-04-07 13:10:19,888 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:19,993 - DEBUG: https://www.hopbutcher.com:443 "GET /sportpep/ HTTP/1.1" 200 11463
+2025-04-07 13:10:21,010 - INFO: Scraping beer page: Through The Uprights - https://www.hopbutcher.com/through-the-uprights/
+2025-04-07 13:10:21,011 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:21,347 - DEBUG: https://www.hopbutcher.com:443 "GET /through-the-uprights/ HTTP/1.1" 200 None
+2025-04-07 13:10:22,372 - INFO: Scraping beer page: Traveling  Scientist - https://www.hopbutcher.com/traveling-scientist/
+2025-04-07 13:10:22,373 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:22,712 - DEBUG: https://www.hopbutcher.com:443 "GET /traveling-scientist/ HTTP/1.1" 200 None
+2025-04-07 13:10:23,725 - INFO: Scraping beer page: Soar - https://www.hopbutcher.com/soar/
+2025-04-07 13:10:23,726 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:24,278 - DEBUG: https://www.hopbutcher.com:443 "GET /soar/ HTTP/1.1" 200 None
+2025-04-07 13:10:25,294 - INFO: Scraping beer page: Your Wish Is Hazy - https://www.hopbutcher.com/yourwishishazy/
+2025-04-07 13:10:25,295 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:25,799 - DEBUG: https://www.hopbutcher.com:443 "GET /yourwishishazy/ HTTP/1.1" 200 None
+2025-04-07 13:10:26,816 - INFO: Scraping beer page: Skrap Metal - https://www.hopbutcher.com/skrapmetal/
+2025-04-07 13:10:26,817 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:26,892 - DEBUG: https://www.hopbutcher.com:443 "GET /skrapmetal/ HTTP/1.1" 200 11533
+2025-04-07 13:10:27,908 - INFO: Scraping beer page: Snorkel Squad - https://www.hopbutcher.com/snorkelsquad/
+2025-04-07 13:10:27,909 - DEBUG: Starting new HTTPS connection (1): www.hopbutcher.com:443
+2025-04-07 13:10:28,253 - DEBUG: https://www.hopbutcher.com:443 "GET /snorkelsquad/ HTTP/1.1" 200 None
+2025-04-07 13:10:29,270 - INFO: Successfully scraped 100 beers
+2025-04-07 13:10:29,271 - INFO: Saved 100 beers to scraped_data/hop_butcher_beers_20250407_131029.json

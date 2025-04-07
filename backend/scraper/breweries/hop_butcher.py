@@ -6,6 +6,8 @@ from datetime import datetime
 import logging
 import traceback
 import re
+import time
+from urllib.parse import urljoin
 
 class HopButcherScraper:
     def __init__(self):
@@ -18,6 +20,11 @@ class HopButcherScraper:
         # Ensure scraped_data directory exists
         self.output_dir = 'scraped_data'
         os.makedirs(self.output_dir, exist_ok=True)
+        
+        # Headers to mimic a browser request
+        self.headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+        }
 
     def setup_logging(self):
         """
@@ -41,27 +48,52 @@ class HopButcherScraper:
 
     def scrape_beers(self):
         """
-        Scrape beer details from Hop Butcher website
+        Main method to scrape beers from Hop Butcher
+        """
+        try:
+            # Get beer links from the main page
+            beer_links = self.get_beer_links()
+            
+            if not beer_links:
+                self.logger.error("No beer links found")
+                return []
+            
+            self.logger.info(f"Found {len(beer_links)} beer links")
+            
+            # Scrape details for each beer
+            all_beers = []
+            for name, link in beer_links:
+                try:
+                    beer_details = self.scrape_beer_page(name, link)
+                    if beer_details:
+                        all_beers.append(beer_details)
+                    
+                    # Be nice to the server
+                    time.sleep(1)
+                except Exception as e:
+                    self.logger.error(f"Error scraping beer {name}: {e}")
+            
+            self.logger.info(f"Successfully scraped {len(all_beers)} beers")
+            return all_beers
+            
+        except Exception as e:
+            self.logger.error(f"Critical error in scrape_beers: {e}")
+            self.logger.error(traceback.format_exc())
+            return []
+
+    def get_beer_links(self):
+        """
+        Get links to individual beer pages from the main page
         
         Returns:
-            list: A list of dictionaries containing beer details
+            list: List of tuples (beer_name, beer_url)
         """
-        beers = []
+        self.logger.info(f"Fetching content from {self.base_url}")
+        
         try:
-            # Send request to the website
-            self.logger.info(f"Fetching content from {self.base_url}")
-            
-            # Headers to mimic a browser request
-            headers = {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            }
-            
-            # Fetch the page
-            response = requests.get(self.base_url, headers=headers)
-            
-            # Log response details
+            # Fetch the main page
+            response = requests.get(self.base_url, headers=self.headers)
             self.logger.info(f"Response status code: {response.status_code}")
-            self.logger.info(f"Response content length: {len(response.text)} characters")
             
             # Save raw HTML for debugging
             self.save_debug_html(response.text)
@@ -69,16 +101,126 @@ class HopButcherScraper:
             # Parse HTML
             soup = BeautifulSoup(response.text, 'html.parser')
             
-            # Try different strategies to find beers
-            beers = self.find_beers_multiple_strategies(soup)
+            # Find all beer links
+            beer_links = []
             
-            self.logger.info(f"Successfully scraped {len(beers)} beers")
-            return beers
+            # Try to find gallery items that contain links to beer pages
+            gallery_items = soup.select('.sqs-gallery-design-autocolumns-slide')
+            self.logger.info(f"Found {len(gallery_items)} gallery items")
+            
+            if gallery_items:
+                for item in gallery_items:
+                    link_element = item.select_one('a')
+                    name_element = item.select_one('.project-title h2')
+                    
+                    if link_element and name_element:
+                        beer_name = name_element.text.strip()
+                        beer_link = link_element.get('href')
+                        
+                        if beer_link:
+                            full_url = urljoin(self.base_url, beer_link)
+                            beer_links.append((beer_name, full_url))
+            
+            # If we didn't find gallery items, try alternative selectors
+            if not beer_links:
+                # Try more general selectors to find links
+                all_links = soup.select('a[href]')
+                pattern = re.compile(r'/([\w-]+)/$')  # Pattern for beer URLs
+                
+                for link in all_links:
+                    href = link.get('href', '')
+                    
+                    # Check if this link appears to be a beer page
+                    match = pattern.match(href)
+                    if match:
+                        # Try to find the beer name
+                        name_element = link.select_one('h1, h2, h3') or link
+                        beer_name = name_element.text.strip()
+                        
+                        if beer_name and href:
+                            full_url = urljoin(self.base_url, href)
+                            beer_links.append((beer_name, full_url))
+            
+            return beer_links
         
         except Exception as e:
-            self.logger.error(f"Critical error in scrape_beers: {e}")
+            self.logger.error(f"Error getting beer links: {e}")
             self.logger.error(traceback.format_exc())
-            return beers
+            return []
+
+    def scrape_beer_page(self, beer_name, url):
+        """
+        Scrape details from an individual beer page
+        
+        Args:
+            beer_name (str): The beer name
+            url (str): URL of the beer page
+            
+        Returns:
+            dict: Dictionary with beer details
+        """
+        self.logger.info(f"Scraping beer page: {beer_name} - {url}")
+        
+        try:
+            # Fetch the beer page
+            response = requests.get(url, headers=self.headers)
+            
+            if response.status_code != 200:
+                self.logger.error(f"Error fetching {url}: status code {response.status_code}")
+                return None
+            
+            # Parse HTML
+            soup = BeautifulSoup(response.text, 'html.parser')
+            
+            # Initialize beer details
+            beer = {
+                'name': beer_name,
+                'brewery': 'Hop Butcher for the World',
+                'source_url': url
+            }
+            
+            # Find the paragraphs containing beer details
+            paragraphs = soup.select('p[data-rte-preserve-empty="true"][style*="white-space:pre-wrap"]')
+            
+            # Extract details from paragraphs
+            for p in paragraphs:
+                text = p.get_text(strip=True)
+                if ':' in text:
+                    # Split the text into key and value
+                    parts = text.split(':', 1)
+                    if len(parts) == 2:
+                        key, value = parts
+                        
+                        # Clean and normalize the key
+                        key = key.strip().lower()
+                        
+                        # Fix common keys
+                        if 'style' in key:
+                            key = 'style'
+                        elif 'abv' in key:
+                            key = 'abv'
+                        elif 'hop' in key:
+                            key = 'hops'
+                        elif 'last canned' in key:
+                            key = 'last_canned'
+                        elif 'label artwork' in key:
+                            key = 'label_artwork'
+                        else:
+                            # Convert spaces to underscores for other keys
+                            key = key.replace(' ', '_')
+                        
+                        # Clean the value
+                        value = value.strip()
+                        
+                        # Store in beer dictionary
+                        beer[key] = value
+            
+            return beer
+        
+        except Exception as e:
+            self.logger.error(f"Error scraping beer page {url}: {e}")
+            self.logger.error(traceback.format_exc())
+            return None
 
     def save_debug_html(self, html_content):
         """
@@ -98,196 +240,6 @@ class HopButcherScraper:
             self.logger.info(f"Saved page source to {filename}")
         except Exception as e:
             self.logger.error(f"Error saving page source: {e}")
-
-    def find_beers_multiple_strategies(self, soup):
-        """
-        Try multiple strategies to find beer details
-        
-        Args:
-            soup (BeautifulSoup): Parsed HTML
-        
-        Returns:
-            list: List of found beers
-        """
-        beers = []
-        
-        # Strategies to find beers
-        strategies = [
-            self.find_beers_by_name_and_details,
-            self.find_beers_by_detailed_paragraphs,
-            self.find_beers_by_project_items
-        ]
-        
-        for strategy in strategies:
-            try:
-                found_beers = strategy(soup)
-                if found_beers:
-                    beers.extend(found_beers)
-                    break
-            except Exception as e:
-                self.logger.error(f"Error with strategy {strategy.__name__}: {e}")
-        
-        return beers
-
-    def find_beers_by_name_and_details(self, soup):
-        """
-        Find beers by matching names with their details
-        
-        Args:
-            soup (BeautifulSoup): Parsed HTML
-        
-        Returns:
-            list: List of found beers
-        """
-        beers = []
-        
-        # Find beer names (try multiple selectors)
-        name_selectors = [
-            'h1[data-shrink-original-size="42"]',
-            'h1.beer-name',
-            'h1.project-title'
-        ]
-        
-        for selector in name_selectors:
-            try:
-                name_elements = soup.select(selector)
-                self.logger.info(f"Name selector '{selector}' found {len(name_elements)} elements")
-                
-                for name_elem in name_elements:
-                    # Find the container (usually a parent or nearby div)
-                    container = name_elem.find_parent('div') or name_elem.find_next('div')
-                    
-                    if container:
-                        # Look for detail paragraphs
-                        detail_paragraphs = container.select('p[data-rte-preserve-empty="true"][style="white-space:pre-wrap;"]')
-                        
-                        # Extract details
-                        beer_details = self.extract_details_from_paragraphs(name_elem.get_text(strip=True), detail_paragraphs)
-                        
-                        if beer_details:
-                            beers.append(beer_details)
-            except Exception as e:
-                self.logger.error(f"Error with name selector {selector}: {e}")
-        
-        return beers
-
-    def find_beers_by_detailed_paragraphs(self, soup):
-        """
-        Find beers by looking for paragraphs with detailed information
-        
-        Args:
-            soup (BeautifulSoup): Parsed HTML
-        
-        Returns:
-            list: List of found beers
-        """
-        beers = []
-        
-        # Find paragraphs that might contain beer details
-        paragraphs = soup.select('p[data-rte-preserve-empty="true"][style="white-space:pre-wrap;"]')
-        
-        self.logger.info(f"Found {len(paragraphs)} paragraphs with preserve-empty attribute")
-        
-        # Group paragraphs that might belong to the same beer
-        current_beer = None
-        for p in paragraphs:
-            text = p.get_text(strip=True)
-            
-            # Check if this is a new beer name
-            if re.match(r'^[A-Z]', text):
-                # If we had a previous beer, add it
-                if current_beer:
-                    beers.append(current_beer)
-                
-                # Start a new beer
-                current_beer = {'name': text, 'source_url': self.base_url}
-            
-            # Extract details if current beer exists
-            elif current_beer:
-                if ':' in text:
-                    key, value = text.split(':', 1)
-                    key = key.strip().lower().replace(' ', '_')
-                    value = value.strip()
-
-                    if key and value:
-                        current_beer[key] = value
-        
-        # Add the last beer if exists
-        if current_beer:
-            beers.append(current_beer)
-        
-        return beers
-
-    def find_beers_by_project_items(self, soup):
-        """
-        Find beers by looking for project/item classes
-        
-        Args:
-            soup (BeautifulSoup): Parsed HTML
-        
-        Returns:
-            list: List of found beers
-        """
-        beers = []
-        
-        # Find project/beer items
-        project_selectors = [
-            '.project-item',
-            '.item[data-type="image"]',
-            '.gallery-item'
-        ]
-        
-        for selector in project_selectors:
-            try:
-                items = soup.select(selector)
-                self.logger.info(f"Selector '{selector}' found {len(items)} items")
-                
-                for item in items:
-                    # Try to find name and details
-                    name_elem = item.select_one('h1, h2, h3')
-                    if name_elem:
-                        name = name_elem.get_text(strip=True)
-                        
-                        # Find detail paragraphs
-                        detail_paragraphs = item.select('p[data-rte-preserve-empty="true"][style="white-space:pre-wrap;"]')
-                        
-                        # Extract details
-                        beer_details = self.extract_details_from_paragraphs(name, detail_paragraphs)
-                        
-                        if beer_details:
-                            beers.append(beer_details)
-            except Exception as e:
-                self.logger.error(f"Error with project selector {selector}: {e}")
-        
-        return beers
-
-    def extract_details_from_paragraphs(self, name, paragraphs):
-        """
-        Extract beer details from a list of paragraphs
-        
-        Args:
-            name (str): Beer name
-            paragraphs (list): List of BeautifulSoup paragraph elements
-        
-        Returns:
-            dict: Beer details dictionary
-        """
-        beer = {
-            'name': name,
-            'source_url': self.base_url
-        }
-        
-        for p in paragraphs:
-            text = p.get_text(strip=True)
-            if ':' in text:
-                key, value = text.split(':', 1)
-                key = key.strip().lower().replace(' ', '_')
-                value = value.strip()
-
-                if key and value:
-                    beer[key] = value
-        
-        return beer if len(beer) > 2 else None
 
     def save_to_json(self, beers):
         """

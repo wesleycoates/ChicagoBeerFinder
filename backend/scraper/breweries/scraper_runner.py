@@ -10,6 +10,7 @@ from OIB import OldIrvingBreweryScraper
 from pilot_project import PilotProjectScraper
 from on_tour import OnTourBrewingScraper
 from industry import IndustryAlesScraper
+from hop_butcher import HopButcherScraper
 
 def run_scrapers():
     """Run all brewery scrapers"""
@@ -25,6 +26,7 @@ def run_scrapers():
         PilotProjectScraper(),
         OnTourBrewingScraper(),
         IndustryAlesScraper(),
+        HopButcherScraper(),
         # Add more scrapers here as they're developed
     ]
     
