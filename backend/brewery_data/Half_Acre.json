@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Daisy Cutter",
+      "style": "Pale Ale",
+      "abv": 5.2,
+      "description": "A West Coast Pale Ale with boundless grassy, citrus notes."
+    },
+    {
+      "name": "Pony Pilsner",
+      "style": "Pilsner",
+      "abv": "5.8%",
+      "description": "A crisp, clean Czech-style Pilsner with a floral hop profile."
+    }
+  ]

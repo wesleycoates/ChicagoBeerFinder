@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Anti-Hero IPA",
+      "type": "IPA",
+      "abv": "6.7%",
+      "description": "Our flagship IPA features a blend of four hop varieties which creates a crisp bitterness and imparts massive floral and citrus aromas."
+    },
+    {
+      "name": "Freedom of Speech",
+      "type": "West Coast IPA",
+      "abv": "7.2%",
+      "description": "A West Coast-style IPA with bright notes of grapefruit, pine, and tropical fruit."
+    },
+    {
+      "name": "Fist City",
+      "type": "Pale Ale",
+      "abv": "5.5%",
+      "description": "A Pale Ale that's hop-forward but balanced with a smooth malt character."
+    }
+  ]
