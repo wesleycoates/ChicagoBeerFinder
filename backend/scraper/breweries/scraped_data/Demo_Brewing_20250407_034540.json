@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Tidal Flex",
+        "type": "Breakfast Stout",
+        "abv": 5.0,
+        "description": "Brewed in collaboration with Dark Matter Coffee, \"Tidal Flex\" is a rich, smooth brew delivering bold notes of coffee and subtle chocolate undertones, featuring their \"Agua\" single-origin roast. At 5% ABV, it's a perfectly balanced and sessionable way to start your day\u2014or any time you need a cozy pick-me-up.",
+        "brewery": "Demo Brewing",
+        "address": "1763 Berteau Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://demobrewing.com"
+    },
+    {
+        "name": "Wheat Your Heart Out",
+        "type": "American Wheat Beer",
+        "abv": 5.0,
+        "description": "Wheat Your Heart Out is a smooth and refreshing American Wheat Ale with forward malt character, complemented by a touch of coriander and orange zest for a bright, citrusy finish.\n\nGarnish with an orange and \ud83c\udf3e \ud83e\udef5 \ud83d\udc9b \ud83d\udc49",
+        "brewery": "Demo Brewing",
+        "address": "1763 Berteau Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://demobrewing.com"
+    },
+    {
+        "name": "Czech Yo Self",
+        "type": "Dark Czech Lager",
+        "abv": 5.4,
+        "description": "Rich malt-forward profile, offering notes of toasted bread and subtle caramel sweetness. Balanced with the delicate herbal aroma of Hallertauer and Saaz hops, it finishes smooth and satisfying, making it the perfect winter lager.",
+        "brewery": "Demo Brewing",
+        "address": "1763 Berteau Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://demobrewing.com"
+    },
+    {
+        "name": "Cold Pizza",
+        "type": "American Amber Ale",
+        "abv": 5.9,
+        "description": "This amber ale was made with a huge assortment of base and specialty grains that give it a balanced malt backbone, followed up with columbus and mosaic hops for a floral finish. So many different malts contributed to the grain bill that it's almost as if we used the leftovers from other brews... \ud83e\udd14",
+        "brewery": "Demo Brewing",
+        "address": "1763 Berteau Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://demobrewing.com"
+    },
+    {
+        "name": "Voyager to Europa",
+        "type": "Imperial Breakfast Stout",
+        "abv": 8.0,
+        "description": "Imperial breakfast stout made with a double dose of coffee and cold brew coffee, maple syrup, and oatmeal. In addition to the pours in the taproom, this was bottled and is for same in 22oz bottles to-go.",
+        "brewery": "Demo Brewing",
+        "address": "1763 Berteau Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://demobrewing.com"
+    },
+    {
+        "name": "Ambrosia",
+        "type": "Double NEIPA",
+        "abv": 9.3,
+        "description": "Huge 9.3% Hazy Double IPA hopped with Nectaron, Citra, and Galaxy hops, offering juicy notes of nectarine and sweet orange.",
+        "brewery": "Demo Brewing",
+        "address": "1763 Berteau Ave",
+        "city": "Chicago",
+        "state": "IL",
+        "website": "https://demobrewing.com"
+    }
+]
