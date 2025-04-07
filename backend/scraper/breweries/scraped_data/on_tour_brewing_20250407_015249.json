@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Champagne Velvet",
+        "style": "Lager - American Pre-Prohibition",
+        "abv": 5.2,
+        "ibu": 29,
+        "brewing_location": "Bloomington, IN",
+        "description": "In 1902, Walter Bruhn, the son of German immigrants, created a recipe for a new pilsener beer named Champagne Velvet. Over the next 50 years it grew to become one of Indiana’s most popular beers, a go-to for many of our grandparents and great-grandparents. It was “The Beer with the Million Dollar Flavor,” which wasn’t just marketing fluff; it was actually insured with a $1 million policy.  Industrial consolidation took down this regional favorite and the recipe went missing for many years until a fan rescued the hand-written recipe from deep in a trademark portfolio. Upland reformulated the recipe using that scrap of paper and proudly brings this Midwestern legend back to life. Champagne Velvet has a refreshingly light pilsener body with some sweet complexities given off by the corn malt used in this recipe, making this the perfect lager. It’s smooth and light, but still full of flavor, the perfect everyday beer for craft beer drinkers and a step up for domestic drinkers.",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    },
+    {
+        "name": "Fruit Punch Allure",
+        "style": "Sour - Fruited Berliner Weisse",
+        "abv": 4.6,
+        "ibu": 3,
+        "brewing_location": "Lemont, IL",
+        "description": "Alluringly tart and fruity, this fruited sour ale is loaded with juicy fruits enhancing its already magnetic seductiveness. Enchantingly light in body and effervescent, we sour this beer with lactobacillus in the kettle before adding heaps of our favorite fruit punch medley. Refreshing and easy drinking, this beer is perfect for any time of the year.",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    },
+    {
+        "name": "Amber Pines",
+        "style": "Red Ale - American Amber",
+        "abv": 5.7,
+        "ibu": 30,
+        "brewing_location": "Lemont, IL",
+        "description": "An American Amber Ale brewed with Maris Otter, Munich, Victory, Caramel, and a touch of Rye and Chocolate malts with a big late addition of Simcoe, Chinook, Centennial, and Idaho 7 hops.",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    },
+    {
+        "name": "Nose Over Tail",
+        "style": "Bock - Hell",
+        "abv": 7.0,
+        "ibu": 28,
+        "brewing_location": "Lemont, IL",
+        "description": "2023 World Beer Cup Silver. Winter is just about the worst thing ever, so we can’t stress how nose over tail excited we are knowing our shovels and car scrapers might be taking an extended vacation. Literally translating to “May Bock” in German, Maibock is a strong lager traditionally consumed during the all too brief months that transition Winter to Summer. Meant for beer gardens everywhere, this beer is malt forward and silky smooth with just enough of a noble hop backing to balance the plethora of caramel and bread-like malts.",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    },
+    {
+        "name": "Campside Pale Ale",
+        "style": "Pale Ale - American",
+        "abv": 5.4,
+        "ibu": 35,
+        "brewing_location": "Bloomington, IN",
+        "description": "Showcasing the most effervescent American hops, our Campside Pale Ale profiles the distinct fragrance of grapefruit, apricot, and pine. With a crisp but subtle bitterness and a refreshingly light malt character, this is the perfect year-round beverage for those who think flavor is just as important as refreshment.",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    },
+    {
+        "name": "In the Cards",
+        "style": "Pale Ale - New England",
+        "abv": 5.5,
+        "ibu": 20,
+        "brewing_location": "Lemont, IL",
+        "description": "Mysticism and mayhem lie in the cards. In the cards, you'll see your inner self, hear your inner voice, and debate your inner intuition. This Hazy American Pale Ale is Double Dry Hopped with Citra, Cryo Loral, and Mosaic hops and fermented with Kveik yeast. While we cannot control how your cards fall, we can make the unpredictable present more enjoyable.",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    },
+    {
+        "name": "M-43 N.E. India Pale Ale",
+        "style": "IPA - New England",
+        "abv": 6.8,
+        "ibu": 65,
+        "brewing_location": "Williamston, MI",
+        "description": "M-43 is designed to accentuate the deep and complex character from the combination of hops. Citrus and tropical notes of pineapple, mango, and grapefruit come through in the huge, yet surprisingly delicate aroma with a soft, pillowy mouthfeel. \n\nThis beer is a perfect interplay between top-grade malt and hops, MI water, and brewing technique which cannot be faked.",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    },
+    {
+        "name": "Clear Conscience",
+        "style": "Cider - Dry",
+        "abv": 6.0,
+        "ibu": null,
+        "brewing_location": "Suttons Bay, MI",
+        "description": "Feel free from guilt and responsibility while you sip on this clean, dry cider.\nNorthern Spy, Honeycrisp, McIntosh, VerSnyder blend",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    },
+    {
+        "name": "Heavenly Body Golden Wheat",
+        "style": "Non-Alcoholic - Wheat",
+        "abv": 0.5,
+        "ibu": 7,
+        "brewing_location": "St. Louis, MO",
+        "description": "Heavenly Body Golden Wheat NA is based on a Great American Beer Festival award-winning recipe. This American-Style Wheat has more flavor than its light lager cousins. We add a hint of Cascade and German Traditional hops for a slight citrus character that balances the lighter malts. This is a great easy-to-drink NA craft beer for after sports, yoga, or anytime you are taking care to watch what is going in your heavenly body.",
+        "brewery": "On Tour Brewing",
+        "brewery_location": "Chicago, IL",
+        "source_url": "https://ontourbrewing.com/menu/",
+        "scraped_date": "2025-04-07 01:52:49"
+    }
+]
