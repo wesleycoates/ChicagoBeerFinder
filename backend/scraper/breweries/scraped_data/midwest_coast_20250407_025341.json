@@ -1,0 +1,96 @@
+{
+  "brewery": "Midwest Coast Brewing",
+  "date_scraped": "2025-04-07T02:53:41.407715",
+  "beers": [
+    {
+      "name": "West Town Brown",
+      "type": "AMERICAN BROWN ALE",
+      "abv": "5.3%",
+      "description": "Don’t be scared off by dark beers! Toasted chocolate and caramel notes lead the charge in this beer tracing its roots back to 18th century England, but this American style brings a little more hop character to the show."
+    },
+    {
+      "name": "English Sporting Beer",
+      "type": "2020 GABF BRONZE MEDALENGLISH PALE ALE",
+      "abv": "5.3%",
+      "description": "The ESB (Extra Special Bitter) is a staple in the pub culture in England.  A traditional style, English Sporting Beer has a nice malt backbone that balances well with earthy, herbal, and slightly fruity English hops."
+    },
+    {
+      "name": "Volkslager",
+      "type": "This pilsner is all Old World lager goodness, brought to you by nearly",
+      "abv": "100%",
+      "description": ""
+    },
+    {
+      "name": "Vaguely Stylish",
+      "type": "WEST COAST IPA",
+      "abv": "6.5%",
+      "description": "Traditional West Coast IPA with traditional West Coast hops. Centennial, Cascade, and Chinook hops highlight a solid malt backbone in what’s become the classic American craft beer style."
+    },
+    {
+      "name": "Peremoha",
+      "type": "2022 US BEER OPEN GOLD MEDALUKRAINIAN GOLDEN ALE",
+      "abv": "6.3%",
+      "description": "Brewed in collaboration with Varvar Brew (a Ukrainian brewery), “Peremoha” means “Victory” in Ukrainian and this Ukrainian Golden Ale won a gold medal in the 2022 US Beer Open. This beer includes coriander, and has slight sweetness from hints of phenols from Belgian yeast."
+    },
+    {
+      "name": "Three from the Tee",
+      "type": "CREAM ALE",
+      "abv": "4.5%",
+      "description": "For those of us who tend to go a little wayward from the tee box, this beer is right down the middle of the fairway.  Old school American pilsner malt and old school American hops run this beer."
+    },
+    {
+      "name": "Irish Tommy",
+      "type": "IRISH RED ALE",
+      "abv": "4.1%",
+      "description": "A highly drinkable pint with approachable hop bitterness and enough roasted barley to deliver a beautiful red hue, Irish Tommy will satisfy from Bridgeport to Beverly and from Midway to South Shore."
+    },
+    {
+      "name": "Hanging Curve",
+      "type": "BLONDE ALE",
+      "abv": "4.7%",
+      "description": "Perfect for warm weather hangs at the ballpark, this blonde ale is easy drinking and crushable with it’s low ABV."
+    },
+    {
+      "name": "Dune Surfer",
+      "type": "SESSION HAZY IPA",
+      "abv": "4.8%",
+      "description": "Part of our session hazy beach series, Dune Surfer pairs citrusy powerhouse hops Citra and Amarillo to scratch that tropical itch in a rather sessionable package with orange and grapefruit notes."
+    },
+    {
+      "name": "Vertical Canine",
+      "type": "DOUBLE IPA",
+      "abv": "8.1%",
+      "description": "Loaded up with Simcoe, Amarillo, and Centennial hops, this double IPA is what drinking big, hoppy beers is all about. And it’s named after our brewery dog Opie, who can hop over 6 foot fences and is quite the vertical canine."
+    },
+    {
+      "name": "Golden Foil",
+      "type": "MEXICAN LAGER",
+      "abv": "5.1%",
+      "description": "All the crisp drinkability you’d want from a lager with a hint of corn highlight this style from the country with the most beer exports in the world. Did you also know the #1 beer in America is a Mexican Lager (or at least it was for a bit)?"
+    },
+    {
+      "name": "Oktoberfest",
+      "type": "MÄRZEN",
+      "abv": "5.8%",
+      "description": "Nothing welcomes the arrival of Fall like a good Festbier! Crafted with traditional German malts and Noble hops, this malty lager will have you donning your liederhösen and singing “ein Prosit der Gemütlichkeit” with the best of them."
+    },
+    {
+      "name": "Friendsgiving",
+      "type": "HOLIDAY ALE",
+      "abv": "8%",
+      "description": "We took a strong ale base and loaded it up with cinnamon sticks, nutmeg, and orange peel to make a beer that is just so fitting for this time of year."
+    },
+    {
+      "name": "Fire Watch",
+      "type": "OATMEAL STOUT",
+      "abv": "5.8%",
+      "description": "Originating from old Navy days when someone was responsible for standing watch overnight to make sure the boat didn’t catch on fire, this dark, nutty oatmeal stout boasts hints of chocolate and a perfect blend of sweetness and roast."
+    },
+    {
+      "name": "Winter Garden",
+      "type": "CHOCOLATE RYE PORTER",
+      "abv": "7.7%",
+      "description": "We made a porter with rye to provide you protection from the winter and added some chocolate malt because let's face it, chocolate just makes everything better."
+    }
+  ]
+}
