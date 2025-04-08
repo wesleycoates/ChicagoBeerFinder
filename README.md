@@ -1,9 +1,7 @@
 <div align="center">
-  <img src="assets/chicago_app_icon_.png" alt="Chicago Beer Finder Logo" width="200"/>
+  <img src="https://raw.githubusercontent.com/wesleycoates/ChicagoBeerFinder/main/assets/chicago-beer-logo.svg" alt="Chicago Beer Finder Logo" width="200"/>
 
   # Chicago Beer Finder
-
-  Web app to help catalog Chicago beers, styled with the colors of the Chicago flag
 </div>
 
 ## About
