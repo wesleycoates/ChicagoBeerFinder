@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/chicago_app_icon.png" alt="Chicago Beer Finder Logo" width="200"/>
+  <img src="./assets/chicago_app_banner.svg" alt="Chicago Beer Finder Logo" width="200"/>
 
   # Chicago Beer Finder
 </div>
