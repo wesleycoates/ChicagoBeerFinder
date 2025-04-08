@@ -1,12 +1,12 @@
-# React + Vite
+<div align="center">
+  <img src="assets/chicago-beer-logo.svg" alt="Chicago Beer Finder Logo" width="200"/>
+  
+  # Chicago Beer Finder
+  
+  Web app to help catalog Chicago beers, styled with the colors of the Chicago flag
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## About
+Basic tenants: I have used Claude AI to give me a boost in this overall project and app setup.
+Claude walked me through how to stand up a basic GitHub CodeSpaces environment, gave me step-by-step instructions and code
+to include within this repository...
