@@ -14,7 +14,7 @@ function App() {
   const [error, setError] = useState('');
   const [isVerified, setIsVerified] = useState(false);
   const [selectedBeer, setSelectedBeer] = useState(null);
-  const [viewMode, setViewMode] = useState('list'); // 'list' or 'map' or 'breweries'
+  const [viewMode, setViewMode] = useState('list'); // 'list' or 'map'
   const [breweryData, setBreweryData] = useState([]);
   const [breweries, setBreweries] = useState([]);
   
@@ -23,15 +23,13 @@ function App() {
   const [filterOptions, setFilterOptions] = useState({
     types: [],
     abv_range: { min: 0, max: 30 },
-    breweries: [],
-    categories: [] // New addition for categories
+    breweries: []
   });
   const [selectedFilters, setSelectedFilters] = useState({
     type: '',
     min_abv: '',
     max_abv: '',
-    brewery: '',
-    category_id: '' // New addition for category filter
+    brewery: ''
   });
   
   const filtersRef = useRef(null);
@@ -56,19 +54,20 @@ function App() {
     }
   }, [isVerified]);
 
+
   // Add this useEffect for scrolling to filters when they're shown
-  useEffect(() => {
-    if (showFilters && filtersRef.current) {
-      // Small delay to ensure DOM is updated
-      setTimeout(() => {
-        filtersRef.current.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
-    }
-  }, [showFilters]);
+useEffect(() => {
+  if (showFilters && filtersRef.current) {
+    // Small delay to ensure DOM is updated
+    setTimeout(() => {
+      filtersRef.current.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  }
+}, [showFilters]);
 
   const searchBeers = async () => {
     if (!query.trim() && !selectedFilters.type && !selectedFilters.min_abv && 
-        !selectedFilters.max_abv && !selectedFilters.brewery && !selectedFilters.category_id) {
+        !selectedFilters.max_abv && !selectedFilters.brewery) {
       setError('Please enter a search term or select filters');
       return;
     }
@@ -84,7 +83,6 @@ function App() {
       if (selectedFilters.min_abv) params.append('min_abv', selectedFilters.min_abv);
       if (selectedFilters.max_abv) params.append('max_abv', selectedFilters.max_abv);
       if (selectedFilters.brewery) params.append('brewery', selectedFilters.brewery);
-      if (selectedFilters.category_id) params.append('category_id', selectedFilters.category_id);
       
       const response = await axios.get(`/api/search?${params.toString()}`);
       
@@ -112,9 +110,7 @@ function App() {
             name: beer.beer,
             type: beer.type,
             abv: beer.abv,
-            description: beer.description,
-            category: beer.category,
-            parent_category: beer.parent_category
+            description: beer.description
           });
         });
         
@@ -148,8 +144,7 @@ function App() {
       type: '',
       min_abv: '',
       max_abv: '',
-      brewery: '',
-      category_id: ''
+      brewery: ''
     });
   };
 
@@ -175,7 +170,6 @@ function App() {
   const closeModal = () => {
     setSelectedBeer(null);
   };
-  
   const getUniqueBreweries = () => {
     if (!results || results.length === 0) return [];
     
@@ -198,39 +192,6 @@ function App() {
     });
     
     return uniqueBreweries;
-  };
-  
-  // Helper function to render category options with proper indentation
-  const renderCategoryOptions = () => {
-    const options = [];
-    
-    // Add a default "Any Category" option
-    options.push(
-      <option key="any" value="">Any Category</option>
-    );
-    
-    // Add parent categories and their children
-    if (filterOptions.categories && filterOptions.categories.length > 0) {
-      filterOptions.categories.forEach(category => {
-        // Add parent category
-        options.push(
-          <option key={category.id} value={category.id}>{category.name}</option>
-        );
-        
-        // Add subcategories with indentation
-        if (category.subcategories && category.subcategories.length > 0) {
-          category.subcategories.forEach(subcategory => {
-            options.push(
-              <option key={subcategory.id} value={subcategory.id}>
-                &nbsp;&nbsp;— {subcategory.name}
-              </option>
-            );
-          });
-        }
-      });
-    }
-    
-    return options;
   };
   
   return (
@@ -269,32 +230,20 @@ function App() {
           
           {showFilters && (
             <div 
-              className="filters-container"
-              ref={filtersRef}
-              id="filter-panel" 
-              aria-label="Filter options"
+            className="filters-container"
+            ref={filtersRef}
+            id="filter-panel" 
+            aria-label="Filter options"
             >
-              {/* New Beer Category Filter */}
               <div className="filter-group">
-                <label htmlFor="beer-category">Beer Category</label>
-                <select 
-                  id="beer-category"
-                  value={selectedFilters.category_id}
-                  onChange={(e) => handleFilterChange('category_id', e.target.value)}
-                >
-                  {renderCategoryOptions()}
-                </select>
-              </div>
-              
-              <div className="filter-group">
-                <label htmlFor="beer-type">Beer Type</label>
+              <label htmlFor="beer-type">Beer Type</label>
                 <select 
                   id="beer-type"
                   value={selectedFilters.type}
                   onChange={(e) => handleFilterChange('type', e.target.value)}
                 >
                   <option value="">Any Type</option>
-                  {filterOptions.types && filterOptions.types.map((type, index) => (
+                  {filterOptions.types.map((type, index) => (
                     <option key={index} value={type}>{type}</option>
                   ))}
                 </select>
@@ -305,8 +254,8 @@ function App() {
                 <div className="abv-range">
                   <input
                     type="number"
-                    min={filterOptions.abv_range?.min || 0}
-                    max={filterOptions.abv_range?.max || 30}
+                    min={filterOptions.abv_range.min}
+                    max={filterOptions.abv_range.max}
                     step="0.1"
                     placeholder="Min"
                     value={selectedFilters.min_abv}
@@ -317,8 +266,8 @@ function App() {
                   <span>to</span>
                   <input
                     type="number"
-                    min={filterOptions.abv_range?.min || 0}
-                    max={filterOptions.abv_range?.max || 30}
+                    min={filterOptions.abv_range.min}
+                    max={filterOptions.abv_range.max}
                     step="0.1"
                     placeholder="Max"
                     value={selectedFilters.max_abv}
@@ -330,14 +279,14 @@ function App() {
               </div>
               
               <div className="filter-group">
-                <label htmlFor="brewery">Brewery</label>
+              <label htmlFor="brewery">Brewery</label>
                 <select
                   id="brewery"
                   value={selectedFilters.brewery}
                   onChange={(e) => handleFilterChange('brewery', e.target.value)}
                 >
                   <option value="">Any Brewery</option>
-                  {filterOptions.breweries && filterOptions.breweries.map((brewery, index) => (
+                  {filterOptions.breweries.map((brewery, index) => (
                     <option key={index} value={brewery}>{brewery}</option>
                   ))}
                 </select>
@@ -349,6 +298,7 @@ function App() {
                   aria-label="Apply filters"
                 >
                   Apply Filters
+
                 </button>
                 <button
                   onClick={clearFilters}
@@ -367,23 +317,34 @@ function App() {
             <button 
               className={viewMode === 'list' ? 'active' : ''} 
               onClick={() => setViewMode('list')}
-              aria-pressed={viewMode === 'list'}
             >
               List View
             </button>
             <button 
               className={viewMode === 'map' ? 'active' : ''}
               onClick={() => setViewMode('map')}
-              aria-pressed={viewMode === 'map'}
             >
               Map View
             </button>
             <button 
               className={viewMode === 'breweries' ? 'active' : ''}
               onClick={() => setViewMode('breweries')}
-              aria-pressed={viewMode === 'breweries'}
             >
               All Breweries
+            </button>
+        </div>
+          <div className="view-modes">
+            <button 
+              className={viewMode === 'list' ? 'active' : ''} 
+              onClick={() => setViewMode('list')}
+            >
+              List View
+            </button>
+            <button 
+              className={viewMode === 'map' ? 'active' : ''} 
+              onClick={() => setViewMode('map')}
+            >
+              Map View
             </button>
           </div>
 
@@ -394,39 +355,12 @@ function App() {
             ) : (
               <p>No brewery data available. Try searching for beers first.</p>
             )
-          ) : viewMode === 'breweries' && breweries.length > 0 ? (
-            <div>
-              <h2>All Breweries in Chicago</h2>
-              <LeafletMap breweries={breweries} />
-            </div>
           ) : (
-            <div className="results" aria-live="polite">
-              {results.length > 0 && (
-                <h2 className="visually-hidden">Search Results</h2>
-              )}  
-              
+            <div className="results">
               {results.map((beer, index) => (
-                <div 
-                  className="beer-card" 
-                  key={index}
-                  tabIndex="0"
-                  onClick={() => handleBeerClick(beer)}
-                >
+                <div className="beer-card" key={index}>
                   <h3>{beer.beer}</h3>
                   <div className="beer-details">
-                    {/* Display beer category info if available */}
-                    {(beer.category || beer.parent_category) && (
-                      <p>
-                        <strong>Category:</strong> {' '}
-                        {beer.parent_category && (
-                          <span className="category-badge parent-category">{beer.parent_category}</span>
-                        )}
-                        {beer.parent_category && beer.category && ' → '}
-                        {beer.category && (
-                          <span className="category-badge">{beer.category}</span>
-                        )}
-                      </p>
-                    )}
                     <p><strong>Type:</strong> {beer.type}</p>
                     <p><strong>ABV:</strong> {beer.abv}%</p>
                     {beer.description && <p><strong>Description:</strong> {beer.description}</p>}
@@ -435,30 +369,65 @@ function App() {
                     <h4>Available at: {beer.brewery}</h4>
                     <p>{beer.address}</p>
                     <p>{beer.city}, {beer.state}</p>
-                    {beer.website && (
-                      <a 
-                        href={beer.website} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label={`Visit ${beer.brewery} website`}
-                      >
-                        Visit Website
-                      </a>
-                    )}
+                    {beer.website && <a href={beer.website} target="_blank" rel="noopener noreferrer">Visit Website</a>}
                   </div>
                 </div>
               ))}
-
-              {results.length === 0 && !loading && !error && (
-                <p>Search for beers to see results here</p>
-              )}
             </div>
           )}
-          
-          {/* Beer Detail Modal */}
-          {selectedBeer && (
-            <BeerDetail beer={selectedBeer} onClose={closeModal} />
+          {/* Map View for All Breweries */}
+          {viewMode === 'breweries' && breweries.length > 0 && (
+            <div>
+              <h2>All Breweries in Chicago</h2>
+              <LeafletMap breweries={breweries} />
+            </div>
           )}
+          <div className="results" aria-live="polite">
+            {results.length > 0 && (
+              <h2 className="visually-hidden">Search Results</h2>
+            )}  
+            
+            {results.map((beer, index) => (
+              <div 
+              className="beer-card" 
+              key={index}
+              tabIndex="0"
+              onClick={() => handleBeerClick(beer)}
+              >
+                <h3>{beer.beer}</h3>
+                <div className="beer-details">
+                  <p><strong>Type:</strong> {beer.type}</p>
+                  <p><strong>ABV:</strong> {beer.abv}%</p>
+                  {beer.description && <p><strong>Description:</strong> {beer.description}</p>}
+                </div>
+                <div className="location-details">
+                  <h4>Available at: {beer.brewery}</h4>
+                  <p>{beer.address}</p>
+                  <p>{beer.city}, {beer.state}</p>
+                  {beer.website && (
+                    <a 
+                      href={beer.website} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      aria-label={`Visit ${beer.brewery} website`}
+                    >
+                      Visit Website
+                    </a>
+                  )}
+                </div>
+
+                {/* Beer Detail Modal */}
+                {selectedBeer && (
+                  <BeerDetail beer={selectedBeer} onClose={closeModal} />
+                )}
+              </div>
+            ))}
+
+              {results.length === 0 && !loading && !error && (
+                  <p>Search for beers to see results here</p>
+                )}
+                
+          </div>
         </>
       )}
     </div>
