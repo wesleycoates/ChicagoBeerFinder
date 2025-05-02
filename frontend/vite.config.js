@@ -7,10 +7,16 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://beerfinder-api-877162996755.us-central1.run.app',
         changeOrigin: true,
         secure: false
       },
     },
   },
-})
+  build: {
+    // Add environment variables to be replaced at build time
+    define: {
+      'import.meta.env.VITE_API_URL': JSON.stringify('https://beerfinder-api-877162996755.us-central1.run.app'),
+    },
+  },
+});
